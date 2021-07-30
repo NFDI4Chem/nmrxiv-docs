@@ -1447,25 +1447,9 @@
     "@docusaurus/types" "2.0.0-beta.3"
     tslib "^2.1.0"
 
-"@docusaurus/theme-search-algolia@2.0.0-beta.3":
+"@docusaurus/theme-search-algolia@2.0.0-beta.3", "@docusaurus/theme-search-algolia@^2.0.0-beta.3":
   version "2.0.0-beta.3"
   resolved "https://registry.npmjs.org/@docusaurus/theme-search-algolia/-/theme-search-algolia-2.0.0-beta.3.tgz"
-  integrity sha512-fxWxcXGmqjwuA7zYRAbwqSANx3PVVjYUehV9SI28u5qq8U2tSYflhd1nGogM6guiV+Er6u8gwO91PL6wg3/vBA==
-  dependencies:
-    "@docsearch/react" "^3.0.0-alpha.36"
-    "@docusaurus/core" "2.0.0-beta.3"
-    "@docusaurus/theme-common" "2.0.0-beta.3"
-    "@docusaurus/utils" "2.0.0-beta.3"
-    "@docusaurus/utils-validation" "2.0.0-beta.3"
-    algoliasearch "^4.8.4"
-    algoliasearch-helper "^3.3.4"
-    clsx "^1.1.1"
-    eta "^1.12.1"
-    lodash "^4.17.20"
-
-"@docusaurus/theme-search-algolia@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@docusaurus/theme-search-algolia/-/theme-search-algolia-2.0.0-beta.3.tgz#9ca8142fe4686d262d546c9ba309d02d9d4d59a9"
   integrity sha512-fxWxcXGmqjwuA7zYRAbwqSANx3PVVjYUehV9SI28u5qq8U2tSYflhd1nGogM6guiV+Er6u8gwO91PL6wg3/vBA==
   dependencies:
     "@docsearch/react" "^3.0.0-alpha.36"
