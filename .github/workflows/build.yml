@@ -14,28 +14,28 @@ env:
   IMAGE: nmrxiv-docs
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12.x'
-      - name: Test Build
-        run: |
-          if [ -e yarn.lock ]; then
-            yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-            npm ci
-          else
-            npm i
-          fi
-          npm run build
+  # build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v1
+  #     - uses: actions/setup-node@v1
+  #       with:
+  #         node-version: '12.x'
+  #     - name: Test Build
+  #       run: |
+  #         if [ -e yarn.lock ]; then
+  #           yarn install --frozen-lockfile
+  #         elif [ -e package-lock.json ]; then
+  #           npm ci
+  #         else
+  #           npm i
+  #         fi
+  #         npm run build
 
   setup-build-publish-deploy:
     name: Setup, Build, Publish, and Deploy
     runs-on: ubuntu-latest
-    needs: build
+    #needs: build
     steps:
 
     - name: Checkout
