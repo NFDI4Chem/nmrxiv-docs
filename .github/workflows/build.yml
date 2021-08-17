@@ -8,7 +8,7 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: cluster-poc
+  GKE_CLUSTER: nmrxiv-docs-cluster-1
   GKE_ZONE: europe-west3-a
   DEPLOYMENT_NAME: nmrxiv-doc-gke-deployment
   IMAGE: nmrxiv-docs
