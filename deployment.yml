@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nmrxiv-doc-gke-deployment
+  labels:
+    app: nmrxiv-docs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nmrxiv-docs
+  template:
+    metadata:
+      labels:
+        app: nmrxiv-docs
+    spec:
+      containers:
+      - name: nmrxiv-docs
+        image: eu.gcr.io/chemotion-eln-playground/nmrxiv-docs:v1
+        ports:
+        - containerPort: 8080
+#        resources:
+#          requests:
+#            cpu: 100m
+#          limits:
+#            cpu: 100m
