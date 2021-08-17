@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nmrxiv-docs
-        image: eu.gcr.io/chemotion-eln-playground/nmrxiv-docs:$GITHUB_SHA
+        image: eu.gcr.io/PROJECT_ID/IMAGE:TAG
 #        resources:
 #          requests:
 #            cpu: 100m
