@@ -2,9 +2,7 @@ name : nmrXiv documentation - Github Actions
 
 on:
   push:
-   branches: [main]
-  push:
-    branches: [development]
+    branches: [development,main]
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
