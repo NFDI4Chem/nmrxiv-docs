@@ -5,7 +5,7 @@ sidebar_position: 2
 # Production
 
 Coming soon
-<!-- Let's translate `docs/intro.md` to French.
+Let's translate `docs/intro.md` to French.
 
 ## Configure i18n
 
@@ -86,4 +86,4 @@ Or build your site to include all the locales at once:
 
 ```bash
 npm run build
-``` -->
+```
