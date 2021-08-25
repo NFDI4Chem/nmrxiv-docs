@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+id: data-schema
+title: Data Schema
 ---
 
 # Data Schemas

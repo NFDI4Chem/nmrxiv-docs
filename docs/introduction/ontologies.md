@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+id: ontologies
+title: Ontologies
 ---
 
 # Ontologies
