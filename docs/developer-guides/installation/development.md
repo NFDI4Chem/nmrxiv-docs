@@ -4,8 +4,8 @@ id: development
 title: Development
 ---
 
-nmrXiv project is build on web application framework [Laravel](https://laravel.com/docs/8.x) which comes with [Sail](https://laravel.com/docs/8.x/sail) a built-in solution for running your Laravel project using Docker. 
-The whole project is package of below services and features.
+nmrXiv project is built with [Laravel](https://laravel.com/docs/8.x) web application framework which comes with [Sail](https://laravel.com/docs/8.x/sail), a built-in solution for running your Laravel project using Docker. 
+The whole project is a package of below services and features.
 * Mysql - Database.
 * Redis - an open source, advanced key-value store.
 * Selenium - testing framework.
@@ -15,7 +15,7 @@ The whole project is package of below services and features.
 
 ### Getting started on Mac
 
-### Dependenices 
+#### Dependencies
 
 
 ### Getting started on Windows
