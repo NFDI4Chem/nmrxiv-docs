@@ -68,7 +68,7 @@ To get more easy view of your containers open your Docker Desktop application.
 
 ### Getting started on Linux
 
-To do
+To do..
 
 ### Troubleshooting
 
