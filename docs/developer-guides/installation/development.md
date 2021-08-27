@@ -6,7 +6,7 @@ title: Development
 
 nmrXiv project is built with [Laravel](https://laravel.com/docs/8.x) web application framework which comes with [Sail](https://laravel.com/docs/8.x/sail), a built-in solution for running your Laravel project using Docker. 
 The whole project is a package of below services and features.
-* Mysql - Database.
+* Mysql - database.
 * Redis - an open source, advanced key-value store.
 * Selenium - testing framework.
 * Meilisearch - search engine.
@@ -16,8 +16,41 @@ The whole project is a package of below services and features.
 ### Getting started on Mac
 
 #### Dependencies
-
-
+* [Docker Desktop](https://www.docker.com/products/docker-desktop). 
+* [Composer](https://getcomposer.org/), which can be installed using [Homebrew](https://brew.sh/) by opening the chosen directory in the terminal and running:
+```bash
+brew install composer
+```
+#### Setup:
+* Open your chosen directory in the terminal.
+* Clone the [project from Github](https://github.com/NFDI4Chem/nmrxiv) by running:
+```bash
+git clone https://github.com/NFDI4Chem/nmrxiv.git
+```
+* Go to the project directory:
+```bash
+cd nmrxiv
+```
+* Navigate to the development branch:
+```bash
+git checkout development
+```
+* Create an `.env` file, and copy the existing `.env.example` into it:
+```bash
+cp .env.example .env 
+```
+* Update the depencencies from the `composer.json` file: 
+```bash
+composer update
+```
+* Install the dependencies from the `composer.lock` file:
+```bash
+composer install
+```
+* Start [Sail](https://laravel.com/docs/8.x/sail#starting-and-stopping-sail) to build application containers on your machine:
+```bash
+./vendor/bin/sail up
+```
 ### Getting started on Windows
 
 Before you clone the nmrXiv repository in our local machine, make sure to install [Docker Desktop](https://www.docker.com/products/docker-desktop). 
