@@ -53,10 +53,12 @@ composer install
 ```
 ### Getting started on Windows
 
-Before you clone the nmrXiv repository in our local machine, make sure to install [Docker Desktop](https://www.docker.com/products/docker-desktop). 
-Next, you should ensure that Windows Subsystem for Linux 2 (WSL2) is installed and enabled. WSL allows you to run Linux binary executables natively on Windows 10.
+#### Dependencies
+* [Docker Desktop](https://www.docker.com/products/docker-desktop).
+* [Composer](https://getcomposer.org/), which can be installed following the [Windows installer guidelines](https://getcomposer.org/download/).
+* [Windows Subsystem for Linux 2 (WSL2)](https://docs.microsoft.com/en-us/windows/wsl/). Make sure to enable and install WSL, and upgrade it to WSL2 as described in the [guidelines](https://docs.microsoft.com/en-us/windows/wsl/install-win10). WSL allows you to run Linux binary executables natively on Windows 10.
 
-To check the WSL mode, open the Windows Powershell and run:
+To check the WSL mode, open Windows Powershell and run:
 
 ```bash
 wsl.exe -l -v
@@ -72,15 +74,39 @@ wsl.exe --set-version (distro name) 2
 After installing and enabling WSL2, you should ensure that Docker Desktop is [configured to use the WSL2 backend.](https://docs.docker.com/desktop/windows/wsl/)
 
 :::
+* [Ubuntu app](https://www.microsoft.com/store/productId/9NBLGGH4MSV6)(Recommended).
 
-After the Docker installation is done follow below steps to clone the project and basic setups
-* Clone the project from our [Github repo.](https://github.com/NFDI4Chem/nmrxiv)
-* Switch to development branch.
-* Go to the project directory and create a `.env` file and copy the existing `.env.example` into it.
-* Run below command to build application containers on your machine. 
+#### Setup:
+* Open your chosen directory in [Ubuntu](https://www.microsoft.com/store/productId/9NBLGGH4MSV6) shell.
+* Clone the [project from Github](https://github.com/NFDI4Chem/nmrxiv) by running:
+```bash
+git clone https://github.com/NFDI4Chem/nmrxiv.git
+```
+* Go to the project directory:
+```bash
+cd nmrxiv
+```
+* Navigate to the development branch:
+```bash
+git checkout development
+```
+* Create an `.env` file, and copy the existing `.env.example` into it:
+```bash
+cp .env.example .env 
+```
+* Update the depencencies from the `composer.json` file: 
+```bash
+composer update
+```
+* Install the dependencies from the `composer.lock` file:
+```bash
+composer install
+```
+* Start [Sail](https://laravel.com/docs/8.x/sail#starting-and-stopping-sail) to build application containers on your machine:
 ```bash
 ./vendor/bin/sail up
 ```
+
 Once the application's Docker containers have been started, you can access the application in your web browser at: http://localhost.
 But now as you have the DB setup still pending you will face errors on the browser. To accomplish the DB setup first install any Native tool for Database Management of your choice on your local system.
 We prefer using [Table Plus](https://tableplus.com/download) or [DBeaver.](https://dbeaver.io/download/)
@@ -104,5 +130,7 @@ To get more easy view of your containers open your Docker Desktop application.
 To do..
 
 ### Troubleshooting
+#### Errors
+#### Others
 
 * In case if you have messed up with the DB connections or created the conatiner without cretaing the .env file, we recommend deleting all the volumes and existing images and containers and start with fresh build of containers creation after the rectification.
