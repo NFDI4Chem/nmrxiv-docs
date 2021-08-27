@@ -15,7 +15,8 @@ The whole project is package of below services and features.
 
 ### Getting started on Mac
 
-To do 
+### Dependenices 
+
 
 ### Getting started on Windows
 
