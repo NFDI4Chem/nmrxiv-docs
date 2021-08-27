@@ -9,7 +9,7 @@ module.exports = {
     // },
     title: 'nmrXiv',
     tagline: 'Highly visible, and consensus-driven NMR data repository and computational platform.',
-    url: 'https://nmrxiv.org',
+    url: 'https://docs.nmrxiv.org/',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -145,7 +145,7 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/NFDI4Chem/nmrxiv-docs/edit/master/website/',
+                    editUrl: 'https://github.com/NFDI4Chem/nmrxiv-docs/edit/development/docs',
                 },
                 // blog: {
                 //     showReadingTime: true,
