@@ -52,12 +52,11 @@ composer install
 ./vendor/bin/sail up
 ```
 
-Once the application's Docker containers have been started, you can access the application in your web browser at: http://localhost.
-But now as you have the DB setup still pending you will face errors on the browser. To accomplish the DB setup first install any Native tool for Database Management of your choice on your local system.
-We prefer using [Table Plus](https://tableplus.com/download) or [DBeaver.](https://dbeaver.io/download/)
+Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost).
+But now as you have the DB setup still pending you will face errors on the browser. To accomplish the DB setup first install any Native tool for Database Management of your choice on your local system. We recommend using [Table Plus](https://tableplus.com/download) or [DBeaver](https://dbeaver.io/download/).
 Connect to the DB using connection details given in `.env.example` file and create a DB named as `nmrxiv` while the mysql container is running in the background. 
 
-Once the DB setup is done migrate the DB data by running below command
+Once the DB setup is done, migrate the DB data by running the command below:
 ```bash
 ./vendor/bin/sail artisan migrate 
 ```
@@ -119,12 +118,11 @@ composer install
 ./vendor/bin/sail up
 ```
 
-Once the application's Docker containers have been started, you can access the application in your web browser at: http://localhost.
-But now as you have the DB setup still pending you will face errors on the browser. To accomplish the DB setup first install any Native tool for Database Management of your choice on your local system.
-We prefer using [Table Plus](https://tableplus.com/download) or [DBeaver.](https://dbeaver.io/download/)
+Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost).
+But now as you have the DB setup still pending you will face errors on the browser. To accomplish the DB setup first install any Native tool for Database Management of your choice on your local system. We recommend using [Table Plus](https://tableplus.com/download) or [DBeaver](https://dbeaver.io/download/).
 Connect to the DB using connection details given in `.env.example` file and create a DB named as "nmrxiv" while the mysql container is running in the background. 
 
-Once the DB setup is done migrate the DB data by running below command
+Once the DB setup is done, migrate the DB data by running the command below:
 ```bash
 ./vendor/bin/sail artisan migrate 
 ```
