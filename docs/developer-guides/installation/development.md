@@ -51,6 +51,18 @@ composer install
 ```bash
 ./vendor/bin/sail up
 ```
+
+Once the application's Docker containers have been started, you can access the application in your web browser at: http://localhost.
+But now as you have the DB setup still pending you will face errors on the browser. To accomplish the DB setup first install any Native tool for Database Management of your choice on your local system.
+We prefer using [Table Plus](https://tableplus.com/download) or [DBeaver.](https://dbeaver.io/download/)
+Connect to the DB using connection details given in `.env.example` file and create a DB named as `nmrxiv` while the mysql container is running in the background. 
+
+Once the DB setup is done migrate the DB data by running below command
+```bash
+./vendor/bin/sail artisan migrate 
+```
+Now that you have completed the DB setup refresh you web browser to access the application!!! 
+
 ### Getting started on Windows
 
 #### Dependencies
@@ -110,7 +122,7 @@ composer install
 Once the application's Docker containers have been started, you can access the application in your web browser at: http://localhost.
 But now as you have the DB setup still pending you will face errors on the browser. To accomplish the DB setup first install any Native tool for Database Management of your choice on your local system.
 We prefer using [Table Plus](https://tableplus.com/download) or [DBeaver.](https://dbeaver.io/download/)
-Connect to the DB using connection details given in `.env.example` file and create a DB named as `nmrxiv` while the mysql container is running in the background. 
+Connect to the DB using connection details given in `.env.example` file and create a DB named as "nmrxiv" while the mysql container is running in the background. 
 
 Once the DB setup is done migrate the DB data by running below command
 ```bash
@@ -129,8 +141,11 @@ To get more easy view of your containers open your Docker Desktop application.
 
 To do..
 
+### After installation
+Please refer to the following [link](http://docs.nmrxiv.org/docs/developer-guides/development-workflow) for the next steps.
 ### Troubleshooting
+
 #### Errors
 #### Others
 
-* In case if you have messed up with the DB connections or created the conatiner without cretaing the .env file, we recommend deleting all the volumes and existing images and containers and start with fresh build of containers creation after the rectification.
+* In case if you have messed up with the DB connections or created the conatiner without cretaing the `.env` file, we recommend deleting all the volumes and existing images and containers and start with fresh build of containers creation after the rectification.
