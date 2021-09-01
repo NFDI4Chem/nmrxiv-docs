@@ -31,20 +31,19 @@ More fields and the <b>Description</b> of each field can be found in [docusaurus
 
 After you have inserted a new page, add its <b>id</b> from the metadata section at the top of the file to the [sidebars.js](https://github.com/NFDI4Chem/nmrxiv-docs/blob/development/sidebars.js) file, so that it is added to the TOC (table of contents) on the left of every documentation page, and it becomes visible on the page.
 
-### Assets
-#### images, gifs, videos, files
+### Inserting Images/gifs
 
-Images can be inserted as [Markdown](https://www.markdownguide.org/), or as [HTML](https://html.com/) for special configurations (optional "width" and "height" etc.) or if the image is inside an [HTML tag](https://html.com/#What_are_Tags_and_Attributes).
+Images/gifs can be inserted as [Markdown](https://www.markdownguide.org/), or as [HTML](https://html.com/) for special configurations (optional "width" and "height" etc.) or if the image is inside an [HTML tag](https://html.com/#What_are_Tags_and_Attributes).
 The `![...]` in [Markdown](https://www.markdownguide.org/) or `alt={...}` in [HTML](https://html.com/)/[React](https://reactjs.org/) creates an `alt` tag for an additional title, if the image loading fails.
-Keep in mind, that the image paths for [Markdown](https://www.markdownguide.org/) and [HTML](https://html.com/) differ due to different treatment of [Markdown](https://www.markdownguide.org/)  and [React](https://reactjs.org/) (which creates the [HTML](https://html.com/)) in [Docusaurus framework](https://docusaurus.io).
+Keep in mind, that the image/gif paths for [Markdown](https://www.markdownguide.org/) and [HTML](https://html.com/) differ due to different treatment of [Markdown](https://www.markdownguide.org/)  and [React](https://reactjs.org/) (which creates the [HTML](https://html.com/)) in [Docusaurus framework](https://docusaurus.io).
 
-Inserting an image with [Markdown](https://www.markdownguide.org/):
+Inserting an image/gif  with [Markdown](https://www.markdownguide.org/):
 
 ``` md
 ![Docusaurus Logo](/img/docusaurus.png)
 ```
 
-Inserting an image with [HTML](https://html.com/) ([React](https://reactjs.org/)):
+Inserting an image/gif  with [HTML](https://html.com/) ([React](https://reactjs.org/)):
 ``` js
 <img src={require('@site/static/img/docusaurus.png').default} width={"30px"} height={"30px"} alt={"Docusaurus Logo"} />
 ```
@@ -55,5 +54,13 @@ SVGs need a special treatment. First import them as [React component](https://re
 ``` js
 import Sun from '@site/static/img/sun.svg'
 <Sun title="Sun" className="logo" width={"30px"} height={"30px"} />
+```
+
+### Inserting Downloadable Files
+If you want to provide one or multiple file(s) to be downloaded directly form the documentation, upload them to the [files folder in GitHub](https://github.com/NFDI4Chem/nmrxiv-docs/tree/development/static/files), and insert a Download Button with the filepath(s) - separated by comma - in `files` and the text to be shown on the button in `text`:
+```
+import { DownloadBtn } from '@site/docs/download_files.js'
+
+<p><DownloadBtn files={['/chemotionsaurus/files/template%20_sample_import.xlsx, docker-compose.yml']}  text={"Download XLSX Template here "}/></p>
 ```
 ## Conventions
