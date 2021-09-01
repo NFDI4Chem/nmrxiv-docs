@@ -8,7 +8,7 @@ module.exports = {
     //     locales: ['en', 'fr'],
     // },
     title: 'nmrXiv',
-    tagline: 'Highly visible, and consensus-driven NMR data repository and computational platform. Hello World',
+    tagline: 'Highly visible, and consensus-driven NMR data repository and computational platform.',
     url: 'https://docs.nmrxiv.org/',
     baseUrl: '/',
     onBrokenLinks: 'throw',
