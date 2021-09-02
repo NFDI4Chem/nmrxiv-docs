@@ -63,8 +63,36 @@ import Sun from '@site/static/img/sun.svg'
 If you want to provide one or multiple file(s) to be downloaded directly form the documentation, upload them to the [files folder in GitHub](https://github.com/NFDI4Chem/nmrxiv-docs/tree/development/static/files), and insert a Download Button with the filepath(s) - separated by comma - in `files` and the text to be shown on the button in `text`:
 
 ```
-import { DownloadBtn } from '@site/docs/download_files.js'
+import { DownloadBtn } from '@site/docs/download-files.js'
 
-<DownloadBtn files={['/nmrxiv-docs/static/files/test-file.txt']}  text={"Download test file here "}/>
+<DownloadBtn files={['/nmrxiv-docs/static/files/test-file.txt']}  text={"Download test file here"}/>
 ```
+
+### Escape signs
+To show signs that are specified in the Markdown syntax, escape them with `\`.
+
+### Formatting
+#### Color
+Colored letters:
+```js
+<span style={{color:"yellow"}}>some text</span>
+```
+Colored background:
+```js
+<span style={{background:"yellow"}}>some text</span>
+```
+Example:
+
+<span style={{background:"yellow"}}>some text</span>
+
+#### Strikethrough
+```html
+<del>deleted text</del>
+```
+Example:
+<del>deleted text</del>
+
+
+
+
 ## Conventions
