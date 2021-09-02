@@ -37,10 +37,43 @@ After you have inserted a new page, add its <b>id</b> from the metadata section 
 ### Headings
 To create a heading, add one or more # signs in front of the word or phrase. The number of # you use should correspond to the heading level. A lot of # indicates a low level.
 
-### Escape signs
+### Escaping Signs
 To show signs that are specified in the Markdown syntax, escape them with `\`.
 
-### Inserting Images/gifs
+### Links
+Links can be added via [Markdown](https://www.markdownguide.org/) or [React](https://reactjs.org/):
+
+In Markdown:
+```md
+[Text to be shown on the page](actual link)
+```
+In React:
+```js
+import Link from '@docusaurus/Link';
+
+<Link to="/path">Title</Link>
+```
+### Lists
+#### Ordered List
+Write a random number with a dot:
+```
+1. First line.
+1. Second line.
+1. Third line.
+```
+1. First line.
+1. Second line.
+1. Third line.
+#### Unordered Lists:
+Use either * or - at the beginning of the line with text.
+```
+* First line.
+- Second line.
+```
+* First line.
+- Second line.
+
+### Images/gifs
 
 Images/gifs can be inserted as [Markdown](https://www.markdownguide.org/), or as [HTML](https://html.com/) for special configurations (optional "width" and "height" etc.) or if the image is inside an [HTML tag](https://html.com/#What_are_Tags_and_Attributes).
 The `![...]` in [Markdown](https://www.markdownguide.org/) or `alt={...}` in [HTML](https://html.com/)/[React](https://reactjs.org/) creates an `alt` tag for an additional title, if the image loading fails.
@@ -63,6 +96,12 @@ SVGs need a special treatment. First import them as [React component](https://re
 ``` js
 import Sun from '@site/static/img/sun.svg'
 <Sun title="Sun" className="logo" width={"30px"} height={"30px"} />
+```
+### Tables
+```
+| Header 1 | Header 2 |
+|---|---|
+| Field 1  |  Field 2 |
 ```
 
 ### Info Boxes
@@ -90,6 +129,27 @@ import { DownloadBtn } from '@site/docs/download-files.js'
 ```
 
 ### Formatting
+
+#### Bold
+
+```
+<b>Example</b>
+```
+<b>Example</b>
+
+#### Italics
+```
+<i>Example</i>
+```
+<i>Example</i>
+
+#### Highlighted Elements
+
+```
+`Example`
+```
+`Example`
+
 
 #### Line Breaks
 Add two blank lines (two "enter"s) where the line break is intended to be.
