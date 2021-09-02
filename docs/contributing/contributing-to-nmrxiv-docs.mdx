@@ -34,6 +34,12 @@ More fields and the <b>Description</b> of each field can be found in [docusaurus
 
 After you have inserted a new page, add its <b>id</b> from the metadata section at the top of the file to the [sidebars.js](https://github.com/NFDI4Chem/nmrxiv-docs/blob/development/sidebars.js) file, so that it is added to the TOC (table of contents) on the left of every documentation page, and it becomes visible on the page.
 
+### Headings
+To create a heading, add one or more # signs in front of the word or phrase. The number of # you use should correspond to the heading level. A lot of # indicates a low level.
+
+### Escape signs
+To show signs that are specified in the Markdown syntax, escape them with `\`.
+
 ### Inserting Images/gifs
 
 Images/gifs can be inserted as [Markdown](https://www.markdownguide.org/), or as [HTML](https://html.com/) for special configurations (optional "width" and "height" etc.) or if the image is inside an [HTML tag](https://html.com/#What_are_Tags_and_Attributes).
@@ -59,6 +65,21 @@ import Sun from '@site/static/img/sun.svg'
 <Sun title="Sun" className="logo" width={"30px"} height={"30px"} />
 ```
 
+### Info Boxes
+Highlighted info boxes with further informations are called "Admonitions" in [Docusaurus](https://docusaurus.io/docs/markdown-features/admonitions). There are 3 possibble admonitions in nmrXiv Docs:
+
+:::danger Caution
+Caution: When there is risk of losing data, breaking things down, and so on..
+:::
+
+:::caution Recommendation
+Recommendation: When a certain behaviour is recommended, but not necessary.
+:::
+
+:::info Info
+Info: Any important piece of information to be highlighted.
+:::
+
 ### Inserting Downloadable Files
 If you want to provide one or multiple file(s) to be downloaded directly form the documentation, upload them to the [files folder in GitHub](https://github.com/NFDI4Chem/nmrxiv-docs/tree/development/static/files), and insert a Download Button with the filepath(s) - separated by comma - in `files` and the text to be shown on the button in `text`:
 
@@ -68,10 +89,11 @@ import { DownloadBtn } from '@site/docs/download-files.js'
 <DownloadBtn files={['/nmrxiv-docs/static/files/test-file.txt']}  text={"Download test file here"}/>
 ```
 
-### Escape signs
-To show signs that are specified in the Markdown syntax, escape them with `\`.
-
 ### Formatting
+
+#### Line Breaks
+Add two blank lines (two "enter"s) where the line break is intended to be.
+
 #### Color
 Colored letters:
 ```js
