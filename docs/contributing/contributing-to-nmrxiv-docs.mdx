@@ -4,6 +4,7 @@ sidebar_position: 2
 id: contributing-to-nmrxiv-docs.mdx
 title: Contributing to nmrXiv Docs.mdx
 ---
+import { DownloadBtn } from '@site/docs/download_files.js
 
 This website is based on the [Docusaurus framework](https://docusaurus.io) that uses [Markdown](https://www.markdownguide.org/) with [JavaScript](https://www.javascript.com/) [(MDX)](https://mdxjs.com/). Therefore, the content is stored as a mixture mainly containing [Markdown](https://www.markdownguide.org/) with elements from [HTML](https://html.com/) and from the [JavaScript](https://www.javascript.com/) framework [React](https://reactjs.org/). The most important and used components are explained below. More information about [Markdown](https://www.markdownguide.org/) in docusaurus can be found in the [official Docusaurus documentation](https://docusaurus.io/docs/markdown-features).
 
@@ -65,6 +66,6 @@ If you want to provide one or multiple file(s) to be downloaded directly form th
 ```
 import { DownloadBtn } from '@site/docs/download_files.js'
 
-<p><DownloadBtn files={['/chemotionsaurus/files/template%20_sample_import.xlsx, docker-compose.yml']}  text={"Download XLSX Template here "}/></p>
+<DownloadBtn files={['/nmrxiv-docs/static/files/test-file.txt']}  text={"Download test file here "}/>
 ```
 ## Conventions
