@@ -54,18 +54,32 @@ import Link from '@docusaurus/Link';
 ```
 ### Lists
 #### Ordered List
-Write a random number with a dot:
+Enter the number that you want your list to start with, enter a dot and a space, then enter your text. When you hit enter, the next number will be generated automatically.
 ```
-1. First line.
-1. Second line.
-1. Third line.
+2. First line.
+3. Second line.
+4. Third line.
 ```
 Output:
-1. First line.
-1. Second line.
-1. Third line.
+
+2. First line.
+3. Second line.
+4. Third line.
+
+Please not, if you enter random numbers with dots, the generated list will still be ordered based on the first number!!
+```
+2. First line.
+5. Second line.
+2. Third line.
+```
+
+Output:
+
+2. First line.
+5. Second line.
+2. Third line.
 #### Unordered Lists:
-Use either * or - at the beginning of the line with text.
+Use either * or - at the beginning of the line, then enter a space and then your text.
 ```
 * First line.
 - Second line.
@@ -177,3 +191,24 @@ Colored background:
 <del>Example</del>
 
 ## Conventions
+
+### Bold Text
+All terms in this documentation that are bolded can also be found within the user/developer interface. 
+
+### Tables
+To maintain a consistent view throught the table, the first letter from the first word will always be capitalized (unless it is a unit). Full stops will be used when the correct langiage requires them. The following table provides more details and examples.
+
+| Case | Capitalization | Full stop | Example |
+|---|---|
+| Unit | to be written as provided by [The International System of Units (SI)](https://www.bipm.org/en/measurement-units) | No | "Hz", "°C", "cm" |
+| Single word| Only first letter, unless the word is usually written differently| No | "No", "True", "NMR" |
+| Phrase | Only first letter from the first word, unless other words require so | No | "NMR technique", "Chemical formula" |
+| Sentence | To be written according to the correct use of langauge| Yes | "Fields with description are usually provided as sentences which requires adding a full stop at the end of the sentence." |
+
+
+### Hyperlinks
+We would recommend the intensive use of hyperlinks instead of plain text whenever possible. The intro of this page is a good example for that.
+
+### Info Boxes
+Please refer to [Info Boxes](https://docs.nmrxiv.org/docs/contributing/contributing-to-nmrxiv-docs#info-boxes) to find the right usage of each type.
+
