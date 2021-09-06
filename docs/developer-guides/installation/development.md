@@ -21,6 +21,7 @@ The whole project is a package of below services and features.
 ```bash
 brew install composer
 ```
+* [git](https://git-scm.com/)
 #### Setup:
 * Open your chosen directory in the terminal.
 * Clone the [project from Github](https://github.com/NFDI4Chem/nmrxiv) by running:
@@ -86,6 +87,7 @@ After installing and enabling WSL2, you should ensure that Docker Desktop is [co
 
 :::
 * [Ubuntu app](https://www.microsoft.com/store/productId/9NBLGGH4MSV6)(Recommended).
+* [git](https://git-scm.com/)
 
 #### Setup:
 * Open your chosen directory in [Ubuntu](https://www.microsoft.com/store/productId/9NBLGGH4MSV6) shell.
