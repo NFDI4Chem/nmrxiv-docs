@@ -141,9 +141,9 @@ To get more easy view of your containers open your Docker Desktop application.
 This installation was tested on Ubuntu 20.04.
 #### Dependencies
 * [git](https://git-scm.com/).
-* [PHP](https://www.php.net/manual/en/install.php)
-* [Composer]( https://getcomposer.org/download/)
-* [Docker Engine](https://docs.docker.com/engine/install/ubuntu/)
+* [PHP](https://www.php.net/manual/en/install.php).
+* [Composer]( https://getcomposer.org/download/).
+* [Docker Engine](https://docs.docker.com/engine/install/ubuntu/).
 * [Docker Compose](https://docs.docker.com/compose/install/) for Linux.
 
 #### Setup:
