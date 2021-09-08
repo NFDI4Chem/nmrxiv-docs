@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
-id: contributing-to-nmrxiv-docs.mdx
-title: Contributing to nmrXiv Docs.mdx
+id: contributing-to-nmrxiv-docs
+title: Contributing to nmrXiv Docs
 ---
 
 This website is based on the [Docusaurus framework](https://docusaurus.io) that uses [Markdown](https://www.markdownguide.org/) with [JavaScript](https://www.javascript.com/) [(MDX)](https://mdxjs.com/). Therefore, the content is stored as a mixture mainly containing [Markdown](https://www.markdownguide.org/) with elements from [HTML](https://html.com/) and from the [JavaScript](https://www.javascript.com/) framework [React](https://reactjs.org/). The most important and used components are explained below. More information about [Markdown](https://www.markdownguide.org/) in docusaurus can be found in the [official Docusaurus documentation](https://docusaurus.io/docs/markdown-features).
@@ -145,6 +145,10 @@ import Sun from '@site/static/img/sun.svg'
 |---|---|
 | Field 1  |  Field 2 |
 ```
+Output:
+| Header 1 | Header 2 |
+|---|---|
+| Field 1  |  Field 2 |
 
 ### Info Boxes
 Highlighted info boxes with further informations are called "Admonitions" in [Docusaurus](https://docusaurus.io/docs/markdown-features/admonitions). There are 3 possibble admonitions in nmrXiv Docs:
@@ -177,12 +181,14 @@ import { DownloadBtn } from '@site/docs/download-files.js'
 ```
 <b>Example</b>
 ```
+Output:
 <b>Example</b>
 
 #### Italics
 ```
 <i>Example</i>
 ```
+Output:
 <i>Example</i>
 
 #### Highlighted Elements
@@ -190,8 +196,8 @@ import { DownloadBtn } from '@site/docs/download-files.js'
 ```
 `Example`
 ```
+Output:
 `Example`
-
 
 #### Line Breaks
 Add two blank lines (two "enter"s) where the line break is intended to be.
@@ -201,6 +207,7 @@ Add two blank lines (two "enter"s) where the line break is intended to be.
 ```js
 <span style={{color:"yellow"}}>Example</span>
 ```
+Output:
 <span style={{color:"yellow"}}>Example</span>
 
 * Colored background:
@@ -208,12 +215,14 @@ Add two blank lines (two "enter"s) where the line break is intended to be.
 <span style={{background:"yellow"}}>Example</span>
 ```
 
+Output:
 <span style={{background:"yellow"}}>Example</span>
 
 #### Strikethrough
 ```html
 <del>Example</del>
 ```
+Output:
 <del>Example</del>
 
 
@@ -229,7 +238,7 @@ All terms in this documentation that are bolded can also be found within the use
 To maintain a consistent view throught the table, the first letter from the first word will always be capitalized (unless it is a unit). Full stops will be used when the correct langiage requires them. The following table provides more details and examples.
 
 | Case | Capitalization | Full stop | Example |
-|---|---|
+|---|---|---|---|
 | Unit | to be written as provided by [The International System of Units (SI)](https://www.bipm.org/en/measurement-units) | No | "Hz", "°C", "cm" |
 | Single word| Only first letter, unless the word is usually written differently| No | "No", "True", "NMR" |
 | Phrase | Only first letter from the first word, unless other words require so | No | "NMR technique", "Chemical formula" |
