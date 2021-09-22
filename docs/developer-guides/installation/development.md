@@ -23,6 +23,7 @@ The whole project is a package of below services and features.
 brew install composer
 ```
 #### Setup:
+* Start Docker.
 * Open your chosen directory in the terminal.
 * Clone the [project from Github](https://github.com/NFDI4Chem/nmrxiv) by running:
 ```bash
@@ -53,15 +54,8 @@ composer install
 ./vendor/bin/sail up
 ```
 
-Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost).
-But now as you have the DB setup still pending you will face errors on the browser. To accomplish the DB setup first install any Native tool for Database Management of your choice on your local system. We recommend using [Table Plus](https://tableplus.com/download) or [DBeaver](https://dbeaver.io/download/).
-Connect to the DB using connection details given in `.env.example` file and create a DB named as `nmrxiv` while the mysql container is running in the background. 
+Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost). But first, you will be prompted to <b>Generate app key</b>. After pressing the generation button, the following message is shown on the screen: "The solution was executed successfully. Refresh now." After refreshing, you access the application.
 
-Once the DB setup is done, migrate the DB data by running the command below:
-```bash
-./vendor/bin/sail artisan migrate 
-```
-Now that you have completed the DB setup refresh you web browser to access the application!!! 
 
 ### Getting started on Windows
 
@@ -90,6 +84,7 @@ After installing and enabling WSL2, you should ensure that Docker Desktop is [co
 * [Ubuntu app](https://www.microsoft.com/store/productId/9NBLGGH4MSV6)(Recommended).
 
 #### Setup:
+* Start Docker.
 * Open your chosen directory in [Ubuntu](https://www.microsoft.com/store/productId/9NBLGGH4MSV6) shell.
 * Clone the [project from Github](https://github.com/NFDI4Chem/nmrxiv) by running:
 ```bash
@@ -120,15 +115,7 @@ composer install
 ./vendor/bin/sail up
 ```
 
-Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost).
-But now as you have the DB setup still pending you will face errors on the browser. To accomplish the DB setup first install any Native tool for Database Management of your choice on your local system. We recommend using [Table Plus](https://tableplus.com/download) or [DBeaver](https://dbeaver.io/download/).
-Connect to the DB using connection details given in `.env.example` file and create a DB named as "nmrxiv" while the mysql container is running in the background. 
-
-Once the DB setup is done, migrate the DB data by running the command below:
-```bash
-./vendor/bin/sail artisan migrate 
-```
-Now that you have completed the DB setup refresh you web browser to access the application!!! 
+Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost). But first, you will be prompted to <b>Generate app key</b>. After pressing the generation button, the following message is shown on the screen: "The solution was executed successfully. Refresh now." After refreshing, you access the application.
 
 :::info
 
@@ -147,6 +134,7 @@ This installation was tested on Ubuntu 20.04.
 * [Docker Compose](https://docs.docker.com/compose/install/) for Linux.
 
 #### Setup:
+* Start Docker.
 * Open your chosen directory in the terminal.
 * Clone the [project from Github](https://github.com/NFDI4Chem/nmrxiv) by running:
 ```bash
@@ -176,16 +164,7 @@ composer install
 ```bash
 ./vendor/bin/sail up
 ```
-
-Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost).
-But now as you have the DB setup still pending you will face errors on the browser. To accomplish the DB setup first install any Native tool for Database Management of your choice on your local system. We recommend using [Table Plus](https://tableplus.com/download) or [DBeaver](https://dbeaver.io/download/).
-Connect to the DB using connection details given in `.env.example` file and create a DB named as `nmrxiv` while the mysql container is running in the background. 
-
-Once the DB setup is done, migrate the DB data by running the command below:
-```bash
-./vendor/bin/sail artisan migrate 
-```
-Now that you have completed the DB setup refresh you web browser to access the application!!! 
+Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost). But first, you will be prompted to <b>Generate app key</b>. After pressing the generation button, the following message is shown on the screen: "The solution was executed successfully. Refresh now." After refreshing, you access the application.
 
 ### After installation
 Please refer to the following [link](http://docs.nmrxiv.org/docs/developer-guides/development-workflow) for the next steps.
