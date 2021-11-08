@@ -276,6 +276,31 @@ If your sail could not find the docker you need to open up the docker binary per
 $ sudo chmod 666 /var/run/docker.sock
 ```
 
+If your docker is failing to download os packages you need to update your firewall settings
+
+In your config file 
+
+``` 
+$ sudo nano /etc/firewalld/firewalld.conf
+```
+
+please change
+
+```
+FirewallBackend=nftables
+```
+
+to 
+```
+FirewallBackend=iptables
+```
+
+Save this change and reload firewall
+
+```
+$ sudo systemctl restart firewalld.service
+```
+
 Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost). 
 
 If you find the error message indicating app key doesnt exist. You will be prompted to <b>Generate app key</b> (you will find the button on the error page below the error message). After pressing the generation button, the following message is shown on the screen: "The solution was executed successfully. Refresh now." After refreshing, you access the application.
