@@ -123,14 +123,14 @@ module.exports = {
             darkTheme: darkCodeTheme,
         },
         algolia: {
-            apiKey: 'YOUR_API_KEY',
-            indexName: 'YOUR_INDEX_NAME',
+            apiKey: 'e997544c0977751470c79d938566002d',
+            indexName: 'nmrXiv-docs-index',
 
             // Optional: see doc section below
             contextualSearch: true,
 
             // Optional: see doc section below
-            appId: 'YOUR_APP_ID',
+            appId: '5BBX285FQW',
 
             // Optional: Algolia search parameters
             searchParameters: {},
