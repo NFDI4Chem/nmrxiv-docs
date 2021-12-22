@@ -39,6 +39,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    # Run the Algolia crawl command.
+    - name: Algolia Crawl
+      run: |-
+        docker run \
+        -it --env-file=.env -e "CONFIG=$(cat ./config.json | jq -r tostring)" \
+        algolia/docsearch-scraper
     # Setup gcloud CLI
     - uses: google-github-actions/setup-gcloud@94337306dda8180d967a56932ceb4ddcf01edae7
       with:
