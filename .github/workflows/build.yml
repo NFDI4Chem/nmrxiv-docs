@@ -40,10 +40,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    # Build the Algolia Index.
-    - name: Build Algolia Index
-      run: |-
-        docker run --env-file=.env -e "CONFIG=$(cat ./config.json | jq -r tostring)" algolia/docsearch-scraper
     # Setup gcloud CLI
     - uses: google-github-actions/setup-gcloud@94337306dda8180d967a56932ceb4ddcf01edae7
       with:
@@ -88,3 +84,12 @@ jobs:
         ./kustomize build . | kubectl apply -f -
         kubectl rollout status deployment/$DEPLOYMENT_NAME
         kubectl get services -o wide
+  
+  build-Algolia:
+    # Build the Algolia Index.
+    - name: Build Algolia Index
+      if: github.ref == 'refs/heads/main'
+      runs-on: ubuntu-latest
+      needs: setup-build-publish-deploy
+      run: |-
+        docker run --env-file=.env -e "CONFIG=$(cat ./config.json | jq -r tostring)" algolia/docsearch-scraper
