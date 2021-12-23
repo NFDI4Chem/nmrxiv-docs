@@ -87,9 +87,9 @@ jobs:
   
   build-Algolia:
     # Build the Algolia Index.
-    - name: Build Algolia Index
-      if: github.ref == 'refs/heads/main'
-      runs-on: ubuntu-latest
-      needs: setup-build-publish-deploy
-      run: |-
-        docker run --env-file=.env -e "CONFIG=$(cat ./config.json | jq -r tostring)" algolia/docsearch-scraper
+    name: Build Algolia Index
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    needs: setup-build-publish-deploy
+    run: |-
+      docker run --env-file=.env -e "CONFIG=$(cat ./config.json | jq -r tostring)" algolia/docsearch-scraper
