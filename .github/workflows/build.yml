@@ -92,6 +92,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: setup-build-publish-deploy
     steps:
-      name: Run the docker crawl command.
+    - name: Run the docker crawl command.
       run: |-
         docker run --env-file=.env -e "CONFIG=$(cat ./config.json | jq -r tostring)" algolia/docsearch-scraper
