@@ -87,7 +87,7 @@ php artisan view:cache
 ```
 
 ### Debug Mode
-The `APP_DEBUG` value which is stored in .env file should always be set to `false` and `APP_ENV` value to `development` in production environment. Setting this value as true may expose some sensitive configuration values to your application end users.
+The `APP_DEBUG` value which is stored in .env file should always be set to `false` and `APP_ENV` value to `production` in production environment. Setting the debug value as true may expose some sensitive configuration values to your application end users.
 
 ### Environment File Security
 The .env file should not be committed to application's source control, as this could be security risk in the event and any sensitive information would be exposed.
