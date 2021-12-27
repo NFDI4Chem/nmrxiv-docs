@@ -14,7 +14,10 @@ function HomepageHeader() {
         div className = "container" >
         <
         h1 className = "hero__title" > { siteConfig.title } < /h1> <
-        p className = "hero__subtitle" > { siteConfig.tagline } < /p> <
+        p className = "hero__subtitle" > <small>{ siteConfig.tagline }</small>   < /p> 
+        <
+        p className = "hero__subtitle" > <small><b>{ siteConfig.description }</b></small>   < /p> 
+        <
         div className = { styles.buttons } >
         <
         Link className = "button button--secondary button--lg"
@@ -39,7 +42,8 @@ export default function Home() {
         <
         HomepageFeatures / >
         <
-        /main> < /
+        /main>
+         < /
         Layout >
     );
 }

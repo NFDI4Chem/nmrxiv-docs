@@ -7,7 +7,7 @@ const FeatureList = [{
         Svg: require('../../static/img/fair.svg').default,
         description: ( <
             >
-            nmrXiv is a cloud - based infrastructure that uses freely shared source code and deployment methods.Application of industry - grade development practices to ensure platform reliability,
+            nmrXiv is a cloud - based infrastructure that uses freely shared source code and deployment methods. Application of industry - grade development practices to ensure platform reliability,
             safety, and efficacy. <
             />
         ),
@@ -19,7 +19,7 @@ const FeatureList = [{
             >
             Standards
             for data and metadata will be non -
-            prescriptivist by nature.Standards will be built with input and
+            prescriptivist by nature. Standards will be built with input and
 
             contributions from the community and made compatible with existing and potential newly developed formats and approaches. < / >
         ),

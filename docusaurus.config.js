@@ -19,7 +19,7 @@ module.exports = {
     themeConfig: {
         announcementBar: {
             id: 'support_us', // Any value that will identify this message.
-            content: 'You’re browsing the docs for Alpha version of nmrXiv. Please provide your feedback / suggestions <a target="_blank" rel="noopener noreferrer" href="mailto:info@nmrxiv.org?subject=nmrXiv feedback/suggestions&body=Hi,<Add your suggestions here>">here</a>',
+            content: 'You’re browsing the docs for beta version of nmrXiv. Please provide your feedback / suggestions <a target="_blank" rel="noopener noreferrer" href="mailto:info@nmrxiv.org?subject=nmrXiv feedback/suggestions&body=Hi,<Add your suggestions here>">here</a>',
             backgroundColor: '#fafbfc', // Defaults to `#fff`.
             textColor: '#091E42', // Defaults to `#000`.
             isCloseable: true, // Defaults to `true`.
