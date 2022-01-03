@@ -4,7 +4,7 @@ id: data analysis
 title: NMR Repositories Analysis
 ---
 # NMR Repositories Analysis
-Here you can find some graphs on NMR meta data provided in some NMR repositories, currently from (Metabolights)[https://www.ebi.ac.uk/metabolights/] and [Metabolomics Workbench](https://www.metabolomicsworkbench.org/).
+Here you can find some graphs on NMR meta data provided in some NMR repositories, currently from [Metabolights](https://www.ebi.ac.uk/metabolights/) and [Metabolomics Workbench](https://www.metabolomicsworkbench.org/).
 
 To find the corresponding notebooks used to generate the graphs, please follow this [link](https://github.com/NFDI4Chem/repo-scripts/tree/main/notebooks). To find the scripts used to generate the csv files used in the graphs, please follow this [link](https://github.com/NFDI4Chem/repo-scripts). PLease note that this repository is parivte at the moment.
 
