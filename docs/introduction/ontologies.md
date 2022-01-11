@@ -13,7 +13,7 @@ Being an NMR data repository, we find ourselves suited for gathering the relevan
 ## Domain-independent Ontologies:
 Those ontologies might or might not be domain-independent, but they were mentioned here as we are going to use them for terms related to making the data findable and citable, regardless of the domain of the data. They provide terms about data information such as identifiers, references, formats, and possible operations. 
 
-* [Bioinformatics operations, data types, formats, identifiers and topics - EDAM](https://terminology.nfdi4chem.de/ts/ontologies/edam):
+* [Bioinformatics operations, data types, formats, identifiers and topics - EDAM](https://terminology.nfdi4chem.de/ts/ontologies/edam)
 * [REPRODUCE-ME Ontology - REPR](https://www.ebi.ac.uk/ols/ontologies/reproduceme)
 * [Medical Subject Headings - MeSH](https://meshb-prev.nlm.nih.gov/treeView)
 * [NCI Thesaurus OBO Edition - NCIt](https://www.ebi.ac.uk/ols/ontologies/ncit)
