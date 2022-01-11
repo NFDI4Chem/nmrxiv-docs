@@ -6,7 +6,7 @@ title: Ontologies
 
 # Ontologies
 
-In nmrXiv, we aim to provide the data, present it unambiguously, and make it [FAIRer](https://www.go-fair.org/fair-principles) (Findable, Accessible, Interoperable, Reusable). This can be facilitated by using ontologies. However, it is challenging to make ontologies exhaustive as new terms arise, especially in an emerging domain such as metabolomics (analytical chemistry ~ NMR being one of the central analytical techniques).
+In nmrXiv, we aim to provide the data, present it unambiguously, and make it [FAIRer](https://www.go-fair.org/fair-principles) (Findable, Accessible, Interoperable, Reusable). This can be facilitated by using ontologies. However, it is challenging to make ontologies exhaustive as new terms arise, especially in  emerging domains such as metabolomics with NMR being one of the central analytical techniques there.
 
 Being an NMR data repository, we find ourselves suited for gathering the relevant missing terms via user submission and contributing those missing terms to ontologies we find relevant to nuclear magnetic resonance (NMR) data or repositories data in general (in other words, to domain-specific and domain-independent ontologies). We aim to achieve this through collaboration with NFDI4Chem - Task Area 6 (TA6).
 
