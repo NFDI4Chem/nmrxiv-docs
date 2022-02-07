@@ -18,6 +18,6 @@ FROM nginx:1.21.1-alpine
 # Create app directory
 WORKDIR /app
 
-COPY --from=builder ./app/website/nginx.conf /etc/nginx/
+COPY --from=builder ./app/website/devops/nginx.conf /etc/nginx/
 COPY --from=builder /app/website/build /usr/share/nginx/html
 CMD ["nginx", "-g", "daemon off;"]
