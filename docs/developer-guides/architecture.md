@@ -4,10 +4,8 @@ sidebar_position: 4
 
 # Architecture
 
-Welcome! Here you can find all the documentation about nmrXiv development and maintainence.
+<img src="/img/architecture.png"/>
 
-### Getting Started
-
-Get started with this **docs**.
+<img src="/img/backend.png"/>
 
 

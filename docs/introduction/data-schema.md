@@ -6,53 +6,23 @@ title: Data Schema
 
 # Data Schemas
 
-Coming soon
-<!-- Docusaurus can manage multiple versions of your docs.
+**Metadata:**
+nmrXiv will use the ISA (Investigation, Study, Assay) approach to capture the experimental meta data in a structured format. To enable NMR data to be citable, searchable and accessible we intend to implement Datacite and OpenAIRE schemas to store the domin independent metadata.
 
-## Create a docs version
+### ISA
 
-Release a version 1.0 of your project:
+ISA describes Investigations (project context) as one collection of Studies (unit of research) supported by one or many Assays (e.g., chromatography, NMR, etc.). ISA enables interoperability with other platforms and services while keeping the information in a simplistic and open text format that is FAIR compliant. The nmrXiv back-end will be designed to support ISA for newly entered data.
 
-```bash
-npm run docusaurus docs:version 1.0
-```
+While ISA captures rich description of the experimental metadata but it comes with few limitations from the data management (repository) perspective. Configurable templates on the go and redundant data being some of them. We intend to extend the existing ISA models with our own domain specific nmrXiv requirements to ensure total flexibility to the end user to define their own templates while still being complaint with ISA Specifications and the minimum information standards. 
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+<img src="/img/nmrXiv-isa.png"/>
 
-Your docs now have 2 versions:
+#### ISA converters
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+To achieve the desired nmrXiv data models (extended ISA models) we intend to develop data converters as an independent micro services (python based applications) to convert data from and to ISA. This enables nmrXiv and other repositories to untilize these as a plugins to capture and export data. We would also like to leverage the existing tool set in the domain such as nmrml2isa converters to capture rich meta data from the standard nmrML files.
 
-## Add a Version Dropdown
+**nmrml2isa** is a Python3 program that can be used to generate an ISA-Tab structured investigation out of nmrML files, providing the backbone of a study that can then be edited further to provide additional meta data that cannot be automatically extracted. 
 
-To navigate seamlessly across versions, add a version dropdown.
+### Data Cite
 
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The docs version dropdown appears in your navbar:
-
-![Docs Version Dropdown](/img/tutorial/docsVersionDropdown.png)
-
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello` -->
+The DataCite Metadata Schema is a list of core metadata properties chosen for an accurate and consistent identification of a resource for citation and retrieval purposes, along with recommended use instructions.
