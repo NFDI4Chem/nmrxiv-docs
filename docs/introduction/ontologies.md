@@ -47,7 +47,9 @@ It includes broad coverage of the cancer domain, including cancer-related diseas
 Ontology for Biomedical Investigations (OBI) serves as a resource for annotating biomedical investigations, including the study design, protocols and instrumentation used, the data generated and the types of analysis performed on the data. This ontology arose from the Functional Genomics Investigation Ontology (FuGO) and contains both terms common to all biomedical investigations, including functional genomics investigations and those that are more domain-specific.
 
 * [CHEBI Integrated Role Ontology - CHIRO](https://terminology.nfdi4chem.de/ts/ontologies/chiro):
- CHEBI provides a distinct role hierarchy for chemical entities.
+CHEBI provides a distinct role hierarchy for chemical entities.
+* [chemical information ontology - CHEMINF](https://terminology.nfdi4chem.de/ts/ontologies/cheminf):
+CHEMINF provides terms for cheminformatics software and algorithms, such as chemical identifiers and others.
 
 * [Units of measurement ontology - UO](https://terminology.nfdi4chem.de/ts/ontologies/uo):
 For metrical units.
