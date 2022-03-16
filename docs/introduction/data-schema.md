@@ -15,7 +15,7 @@ ISA describes Investigations (project context) as one collection of Studies (uni
 
 While ISA captures rich description of the experimental metadat, it comes with few limitations from the data management (repository) perspective. Configurable templates on the go and redundant data being some of them. We intend to extend the existing ISA models with our own domain specific nmrXiv requirements to ensure total flexibility to the end user to define their own templates while still being complaint with ISA Specifications and the minimum information standards. 
 
-![Docusaurus Logo](/img/nmrXiv.png)
+![isa](/img/nmrXiv-isa.png)
 
 #### ISA converters
 
