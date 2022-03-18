@@ -6,6 +6,7 @@
     "sitemap_urls": [
       "https://docs.nmrxiv.org/sitemap.xml"
     ],
+    "js_render": true,
     "sitemap_alternate_links": true,
     "stop_urls": [
       "/tests"
