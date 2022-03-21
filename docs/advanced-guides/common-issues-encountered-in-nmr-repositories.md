@@ -155,4 +155,4 @@ which makes it difficult for machine reading.
         1.5 M Potassium dihydrogen phosphate
         630 µl sample + internal standard solution
 As one can see, the ways the concentration was mentioned vary too (percentage, molarity..).
-
+* Typos: It was very common in [Metabolomics Workbench](https://www.metabolomicsworkbench.org/) to find the valuse "D20" instead of "D2O"
