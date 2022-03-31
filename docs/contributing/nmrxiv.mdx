@@ -1,13 +1,33 @@
 ---
 sidebar_position: 1
+id: contributing-to-nmrxiv-app
+title: Contributing to nmrXiv App
 ---
-# Contributing to nmrXiv
 
-## Contribution guidelines
+### Contribution guidelines
+Being open-source, anyone with the knowledge of coding can contribute to nmrXiv very easily. Before doing so make sure you follow the guidelines for developer workflow which is described below.
 
-### How to contribute to nmrXiv
+:::info Info
+Info: Before committing, make sure to go through [Laravel](https://laravel.com/docs/9.x/readme) and [Inertia.js](https://inertiajs.com/) documentation to know about their best practices.
+:::
 
-#### Did you find a bug?
+* You need to have write access to the [repo](https://github.com/NFDI4Chem/nmrxiv) for your Github account.
+* You can pick an existing open issue or create one if its not already in the [Issues](https://github.com/NFDI4Chem/nmrxiv/issues) tab and assign it to your name.
+* Choose the local editor of your choice, we recommend using [Visual Studio Code](https://code.visualstudio.com/).
+* Clone the code and follow the steps [here](https://docs.nmrxiv.org/docs/developer-guides/installation/development) for local installation.
+* Never push your code directly to the `development` or `main` branch. Once the local setup has been done, switch to the `development` branch and create a new branch with a name that matches your issue. The branch name should be all small with words separated by a hyphen.
+* After making code changes and before pushing your code make sure you have proper comments and indentation all over your code so that it's easy and clean to understand. You can install plugins to your VS Code such as [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) which will help to auto-format your codes.
+Once done you can create a Pull Request to the `development` branch with a proper and precise commit message or description.
+* Assign a reviewer for faster code review, assign the PR to yourself, select the project and it the end most importantly, select the issue which will automatically close it on the successful merge.
+<img src="/img/pull_request.gif"/>
+* Merging of Pull Request to `development` and `main` branch will be taken care of by the repo admins.
+* Once your branch is merged and Pull Request is closed please don't forget to delete your stale branch assuming further work isn’t being done in it. To read more about deleting and restoring your branch click [here](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/deleting-and-restoring-branches-in-a-pull-request)
+<img src="/img/delete_branch.png"/>
+:::caution Recommendation
+Caution: Don't leak secrets or commit local config files into source control.
+:::
+
+### Did you find a bug?
 
 * **Do not open up a GitHub discussion issue if the bug is a security vulnerability in nmrXiv**, and instead contact us here: <i>info@nmrxiv.org</i> (This email is not ready yet).
 
@@ -27,7 +47,7 @@ sidebar_position: 1
 
 * If you're unable to find an open issue addressing the problem, [open a new issue](https://github.com/NFDI4Chem/nmrxiv/issues/new/choose) under the approriate category. Be sure to include a <b>Title</b> and clear <b>Description</b>, with as much relevant information as possible, and a **code sample** or an **executable test case** demonstrating the expected behavior that is not occurring.
   
-#### **Did you write a patch that fixes a bug?**
+### **Did you write a patch that fixes a bug?**
 
 * Open a new GitHub pull request with the patch.
 
@@ -36,11 +56,11 @@ sidebar_position: 1
 * Before submitting, please read the <i>Contributing to nmrXiv</i> guide to know more about coding conventions and benchmarks.
 
 
-#### **Do you intend to add a new feature or change an existing one?**
+### **Do you intend to add a new feature or change an existing one?**
 
 * Do not open an issue on GitHub or suggest your change in the nmrXiv mailing list before you start coding.
 
-#### **Do you have questions about the source code?**
+### **Do you have questions about the source code?**
 
 * Ask any question about how to use nmrXiv in the nmrXiv mailing list.
 
