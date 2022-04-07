@@ -4,7 +4,7 @@ id: helm
 title: Helm
 ---
 
-nmrXiv is packaged and published as [Helm](https://helm.sh/) for Kubernetes deployment which makes the installation easy to define, install and upgrade.
+nmrXiv is packaged and published as [Helm](https://helm.sh/) for Kubernetes deployment, which makes the installation easy to define, install, and upgrade.
 You need to install Helm first to use the charts. Please refer to the Helm's [documentation](https://helm.sh/docs) to get started.
 
 The chart comes with following optional dependencies which you can opt to have in your deployment if you wish to:
@@ -34,4 +34,4 @@ To uninstall the chart:
     helm delete my-nmrxiv-app
 
 
-To learn more about the structure of the chart visit our [Github repo](https://github.com/NFDI4Chem/repo-helm-charts).
+To learn more about the structure of the chart, visit our [Github repo](https://github.com/NFDI4Chem/repo-helm-charts).

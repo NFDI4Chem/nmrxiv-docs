@@ -13,16 +13,14 @@ The whole project is a package of below services and features.
 * MailHog - mail testing server for development environment.
 
 
-### Getting started on Mac
+### Installing on macOS
 
-#### Dependencies
+##### Dependencies
 * [git](https://git-scm.com/).
 * [Docker Desktop](https://www.docker.com/products/docker-desktop). 
-* [Composer](https://getcomposer.org/), which can be installed using [Homebrew](https://brew.sh/) by opening the chosen directory in the terminal and running:
-```bash
-brew install composer
-```
-#### Setup:
+* [Composer](https://getcomposer.org/)
+
+##### Setup:
 * Start Docker.
 * Open your chosen directory in the terminal.
 * Clone the [project from Github](https://github.com/NFDI4Chem/nmrxiv) by running:
@@ -57,15 +55,18 @@ composer install
 Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost). But first, you will be prompted to <b>Generate app key</b>. After pressing the generation button, the following message is shown on the screen: "The solution was executed successfully. Refresh now." After refreshing, you access the application.
 
 
-### Getting started on Windows
+### Installing on Windows
 
-#### Dependencies
+##### Dependencies
 * [git](https://git-scm.com/).
 * [Docker Desktop](https://www.docker.com/products/docker-desktop).
+* [Ubuntu app](https://www.microsoft.com/store/productId/9NBLGGH4MSV6) (Recommended).
 * [Composer](https://getcomposer.org/), which can be installed following the [Windows installer guidelines](https://getcomposer.org/download/).
-* [Windows Subsystem for Linux 2 (WSL2)](https://docs.microsoft.com/en-us/windows/wsl/). Make sure to enable and install WSL, and upgrade it to WSL2 as described in the [guidelines](https://docs.microsoft.com/en-us/windows/wsl/install-win10). WSL allows you to run Linux binary executables natively on Windows 10.
+* [Windows Subsystem for Linux 2 (WSL2)](https://docs.microsoft.com/en-us/windows/wsl/). 
 
-To check the WSL mode, open Windows Powershell and run:
+Make sure to enable and install WSL, and to upgrade it to WSL2 as described in the [guidelines](https://docs.microsoft.com/en-us/windows/wsl/install-win10). WSL allows you to run Linux binary executables natively on Windows 10.
+
+To check the WSL mode, open **Windows Powershell** and run:
 
 ```bash
 wsl.exe -l -v
@@ -81,9 +82,9 @@ wsl.exe --set-version (distro name) 2
 After installing and enabling WSL2, you should ensure that Docker Desktop is [configured to use the WSL2 backend.](https://docs.docker.com/desktop/windows/wsl/)
 
 :::
-* [Ubuntu app](https://www.microsoft.com/store/productId/9NBLGGH4MSV6)(Recommended).
 
-#### Setup:
+
+##### Setup:
 * Start Docker.
 * Open your chosen directory in [Ubuntu](https://www.microsoft.com/store/productId/9NBLGGH4MSV6) shell.
 * Clone the [project from Github](https://github.com/NFDI4Chem/nmrxiv) by running:
@@ -119,16 +120,16 @@ Once the application's Docker containers have been started, you can access the a
 
 :::info
 
-To get more easy view of your containers open your Docker Desktop application.
+To get more easy view of your containers, open your Docker Desktop application.
 
 :::
 
 
-### Getting started on Linux
+### Installing on Linux
 
 #### Ubuntu 20.04
 
-#### Dependencies
+##### Dependencies
 * [git](https://git-scm.com/).
 * [PHP](https://www.php.net/manual/en/install.php).
 * [Composer]( https://getcomposer.org/download/).
@@ -338,4 +339,3 @@ Please refer to the following [link](http://docs.nmrxiv.org/docs/developer-guide
 
 #### Others
 * In case if you have messed up with the DB connections or created the conatiner without cretaing the `.env` file, we recommend deleting all the volumes and existing images and containers and start with fresh build of containers creation after the rectification.
-

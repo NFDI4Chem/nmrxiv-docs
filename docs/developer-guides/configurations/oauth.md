@@ -4,13 +4,13 @@ id: oauth
 title: OAuth
 ---
 
-In addition to basic username/password authentication, nmrXiv also supports authentication via [OAuth 2.0](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) which is an authorization framework that enables third party clients to obtain limited access to user accounts on an HTTP service.
-Currently nmrXiv supports login via below three clients.
-* Twitter
-* GitHub
-* ORCID
+In addition to basic username/password authentication, nmrXiv also supports authentication via [OAuth 2.0](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2), which is an authorization framework that enables third party clients to obtain limited access to user accounts on an HTTP service.
+Currently nmrXiv supports login via below three clients:
+* [Twitter](https://twitter.com/)
+* [GitHub](https://github.com/)
+* [ORCID](https://orcid.org/)
 
-In order to get this feature available in your application you must register your application with the service. This is done through a registration form in the **developer** or **API** portion of the service's website, where you will provide following information (and probably details about your application):
+In order to get this feature available in your application, you need to register your application with the service. This is done through a registration form in the **developer** or **API** portion of the service's website, where you will provide following information (and probably details about your application):
 * Application Name
 * Application Website
 * Redirect URI or Callback URL
