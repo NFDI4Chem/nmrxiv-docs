@@ -37,7 +37,7 @@ Here you can see the animated process of view a **Project** details and updating
 <img src="/img/project/update.gif"/>
 
 
-#### Delete Project (Project Settings)
+### Delete Project (Project Settings)
 To delete your Project, click on the **Project Setting** tab on the right top corner, a new page opens.
 ![Delete Project](/img/project/project-delete.png) 
 
