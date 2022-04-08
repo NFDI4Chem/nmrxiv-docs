@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: Teams
+title: Team
 ---
 You can create Teams if you wish to collaborate with others on projects. A user can create multiple teams in nmrXiv or be part of them, and based on that, the user can have one of two different views of the same **Team** depending on whether they created or joined the **Team**.
 
