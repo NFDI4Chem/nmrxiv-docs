@@ -4,10 +4,263 @@ id: file-format
 title: File Formats
 ---
 
-# File formats
+# File Formats
 
-nmrXiv will promote Open Data and Open Standards to maximize the long-term sustainability of the resource and FAIRness of the archived data. To reduce user burden and foster immediate utility, nmrXiv will accept raw NMR data in all original instrument formats. 
+nmrXiv will promote **Open Data** and **Open Standards** to maximize the long-term sustainability of the resource, and the FAIRness of the archived data. To reduce user burden and foster immediate utility, nmrXiv will accept raw NMR data in all original instrument formats. 
 
-Upon upload, the platform will convert all data to available Open data formats, such as JCAMP-DX, NMReData, nmrML. The type of information stored in existing formats is heterogeneous, and no single format is currently capable of fully capturing all information from NMR experiments and data processing. NMReData (co-developed by nmrXiv team members) is the most promising Open format as it supports all data types, except for raw spectral data. 
+Upon uploading files, the platform will convert all those files to available **Open** data formats, such as JCAMP-DX, NMReData, and nmrML. The type of information stored in existing formats is heterogeneous, and no single format is currently capable of fully capturing all information from NMR experiments and data processing. NMReData (co-developed by nmrXiv team members) is the most promising **Open** format as it supports all data types, except for raw spectral data. 
 
-As native instrument formats represent the most available data, they will be preserved and made available to users. This approach ensures traceability and secure, long-term access to every detail of measured data as new formats appear or existing ones evolve. At the same time, the availability and interoperability of several formats will facilitate the re-use of data with external tools. 
+As native instrument formats represent the most available data, they will be preserved and made available to users. This approach ensures traceability and secure long-term access to every detail of measured data as new formats appear or existing ones evolve. At the same time, the availability and interoperability of several formats will facilitate the re-use of data with external tools. 
+
+## Overview on Available NMR File Formats
+File formats that support NMR can be roughly devided into four categories:
+
+### Multi Domain Data Formats
+These formats are capable of supporting not solely NMR technique, but many other ones as well. They include:
+ <table>
+  <tr>
+    <th>Short Name</th>
+    <th>Maintainer</th>
+    <th>File Extension</th>
+    <th>Parent Format</th>
+    <th>Specification</th>
+  </tr>
+  <tr>
+    <td><a href="http://www.jcamp-dx.org/">JCAMP-DX</a></td>
+    <td>IUPAC</td>
+    <td>.dx, .jdx, .jcm</td>
+    <td>ASCII, Text</td>
+    <td>open</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.animl.org/overview">AnIML</a></td>
+    <td>ASTM</td>
+    <td></td>
+    <td>XML</td>
+    <td>open</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.unidata.ucar.edu/software/netcdf/">netCDF</a></td>
+    <td>UCAR</td>
+    <td>.nc, .cdf</td>
+    <td>CDF</td>
+    <td>Open</td>
+  </tr>
+  <tr>
+    <td><a href="https://datatracker.ietf.org/doc/html/rfc4180">CSV</a></td>
+    <td>IETF-RFC</td>
+    <td></td>
+    <td>ASCII, Text</td>
+    <td>Open</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.ascii-code.com/">ASCII</a></td>
+    <td>Open</td>
+    <td></td>
+    <td></td>
+    <td>open</td>
+  </tr>
+  <tr>
+    <td><a href="https://isa-specs.readthedocs.io/en/latest/isamodel.html">ISA</a></td>
+    <td>ISA Commons Community</td>
+    <td></td>
+    <td>TSV or JSON</td>
+    <td>Open</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.pistoiaalliance.org/projects/current-projects/unified-data-model/">UDM</a></td>
+    <td>Pistoia Alliance</td>
+    <td></td>
+    <td>XML</td>
+    <td>Open</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.allotrope.org/allotrope-framework">ADF</a></td>
+    <td>Allotrope</td>
+    <td></td>
+    <td>HDF5+RDF</td>
+    <td>For members</td>
+  </tr>
+</table> 
+
+### NMR Vendor Formats
+As instrument vendors typically provide the data processing software and produce evolving data formats together with the instrument hardware, developers of third party NMR analysis software often need to devote considerable effort into reading and writing these vendor-specific formats. Data in proprietary formats can age quickly, and NMR data stored in such formats can become obsolete, making valuable results inaccessible and irreproducible in the long term. However, we will still support this data along with the **Open** formats to make sure that the original data is maintained (From [nmrML: A Community Supported Open Data Standard for the Description, Storage, and Exchange of NMR Data](https://pubs.acs.org/doi/10.1021/acs.analchem.7b02795)).
+
+<table>
+  <tr>
+    <td>Agilent (Varian)</td>
+    <td>Bruker Formats</td>
+    <td>Bruker FID</td>
+    <td>Bruker JCAMP-DX</td>
+  </tr>
+  <tr>
+    <td>Bruker pulse</td>
+    <td>GE Nicolet</td>
+    <td>GE Omega</td>
+    <td>Jeol FID</td>
+  </tr>
+  <tr>
+    <td>JEOL Alice</td>
+    <td>JEOL Delta</td>
+    <td>JEOL EX/GX</td>
+    <td>JEOL Lambda</td>
+  </tr>
+  <tr>
+    <td>Magritek</td>
+    <td>Nanalysis</td>
+    <td>Nicolet</td>
+    <td>Varian Gemini</td>
+  </tr>
+  <tr>
+    <td>Oxford Instruments</td>
+    <td>Philips Achieva</td>
+    <td>QOneTec</td>
+    <td>RS2D</td>
+  </tr>
+  <tr>
+    <td>Siemens Syngo</td>
+    <td>Tecmag</td>
+    <td>Thermo Scientific SPC</td>
+    <td>Thermo Scientific JDX</td>
+  </tr>
+  <tr>
+    <td>Varian Gemini/VXR from VHelper</td>
+    <td>Varian VNMR</td>
+    <td>VARIAN/Chemagnetic Spinsight</td>
+    <td> </td>
+  </tr>
+</table> 
+
+### Software-Specifific NMR Formats
+Formats generated by NMR data processing tools.
+
+<table>
+  <tr>
+    <td>ACD/Labs</td>
+    <td>FELIX</td>
+    <td>Galactic GRAMS</td>
+    <td>Gaussian</td>
+  </tr>
+  <tr>
+    <td>LCModel</td>
+    <td>Lybrics, Acorn Inc.</td>
+    <td>MestReC (.mrc)</td>
+    <td>mnova</td>
+  </tr>
+  <tr>
+    <td>NMRPipe </td>
+    <td>NMRView</td>
+    <td>NUTS, Acorn NMR, Inc.</td>
+    <td>Rowland NMR Toolkit</td>
+  </tr>
+  <tr>
+    <td>Sparky, UCSF</td>
+    <td>SIMPSON</td>
+    <td>SwaN-MR</td>
+    <td>1D WinNMR</td>
+  </tr>
+</table> 
+
+### NMR Open Formats
+Currently, the most widely used **Open** NMR data exchange format is JCAMP-DX, but due to the broad scope and complexity of this format, alternative approaches with peer-maintained ontologies would be beneficial. In nmrXiv, within NFDI4Chem, we will be working on extending the available **Open** NMR format NMReData as a candidate alternative.
+Here we provide a list of some available **Open** formats (licensed with open license):
+<table>
+  <tr>
+    <th>Short Name</th>
+    <th>Maintainer</th>
+    <th>File Extension</th>
+    <th>Parent Format</th>
+    <th>Specification</th>
+  </tr>
+  <tr>
+    <td><a href="https://nmrml.org/">nmrML</a></td>
+    <td>COSMOS</td>
+    <td>.nmrML</td>
+    <td>XML</td>
+    <td>Open</td>
+  </tr>
+  <tr>
+    <td><a href="https://nmredata.org/">NMReDATA</a></td>
+    <td>NMReDATA Initiative</td>
+    <td>.sdf</td>
+    <td>SDF</td>
+    <td>Open</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/NMRExchangeFormat/NEF/">NEF (BMBR)</a></td>
+    <td>wwwPDB, CCPN</td>
+    <td></td>
+    <td>NMR Star</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://bmrb.io/standards/">NMR Star</a></td>
+    <td>BMRB (BioMagResBank)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://ccpn.ac.uk/v2-software/software/extras/datamodelfolder">CCPN data model</a></td>
+    <td>BMRB (BioMagResBank)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table> 
+
+We would like to thank Dr. Steffen Neumann, Mr. David Rauh, and Dr. Tilmann Fischer for their contribution to the NMR data formats details.
+## Overview on Available Open NMR File Formats Converters
+
+### nmrML Converters
+
+Maintainers of nmrML format provide converters from vendor formats (Bruker, JEOL and Agilent/Varian) to nmrML along with other converters covered in the following table (from [nmrML: A Community Supported Open Data Standard for the Description, Storage, and Exchange of NMR Data](https://pubs.acs.org/doi/10.1021/acs.analchem.7b02795)).
+
+<table>
+  <tr>
+    <th>Converter Name</th>
+    <th>Key Functions</th>
+    <th>Developer</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/nmrML/nmrML/tree/master/tools/Parser_and_Converters/Java">nmrML converter (Java)</a></td>
+    <td>Converts vendor to nmrML format (recommended)</td>
+    <td>Institut National de la Recherche Agronomique (INRA), France</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/nmrML/nmrML/tree/master/tools/Parser_and_Converters/python/pynmrml">nmrML converter (Python)</a></td>
+    <td>Converts vendor to nmrML format</td>
+    <td>The Metabolomics Innovation Center (TMIC), Canada</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/ISA-tools/nmrml2isa">nmrML to ISA converter</a></td>
+    <td>Generates prepopulated ISA files from nmrML files</td>
+    <td>EMBL-EBI, United Kingdom</td>
+  </tr>
+  <tr>
+    <td><a href="http://bmrbdep.pdbj.org/en/bmsxnmrml.html">BMSxNmrML</a></td>
+    <td>Converts BMRB metabolomics entries to nmrML format</td>
+    <td>Institute for Protein Research (IPR), Japan</td>
+  </tr>
+</table> 
+
+
+### ChemSpectra
+ChemSpectra is a software for visualizing and analyzing analytical data, integrating solutions for IR, MS, and 1H and 13C NMR data. It is provided in two versions, as a standalone version to be used as an independent service, and as an integrated editor.
+
+In order to standardize treatment of all data files uploaded to ChemSpectra as non-JCAMP-DX files, it converts them to JCAMP-DX. Those formats at the moment include mzML and fid as zip file. 
+
+For more details on ChemSpectra, please refer to [ChemSpectra: a web-based spectra editor for analytical data](https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00481-0)
+
+### NMRium
+
+NMRium can convert open and vendor file formats to other formats. As an input, it can handle:
+- Jcamp DX (.dx, .jdx, .jcamp)
+- zipped folder in Bruker format (raw data or processed)
+- Jeol (.jdf)
+- NMRium file (.nmrium)
+
+And as output, it gives back NMRium file (.nmrium), or NMReData.
+
+### TAPIR
+This converter is still being developed, and currently it can  handle only MS files, but it will be able to convert NMR files in the near future. For more details, please follow this [link](https://github.com/NFDI4Chem/formaTAPIRest).

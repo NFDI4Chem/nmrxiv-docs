@@ -5,7 +5,7 @@ sidebar_position: 2
 # Production
 
 ### Introduction
-When deploying the nmrXiv application to production, there are some important things we can do to make sure our application is running as efficiently as possible. In this document we will cover some basic configuration required for the same in production environment.
+When deploying the nmrXiv application to production, there are some needed steps to make sure our application is running as efficiently as possible. In this document, we will cover some basic configuration required for the same in production environment.
 
 ### Server Configuration
 
