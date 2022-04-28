@@ -10,7 +10,7 @@ This documentation site is composed of detailed walk-through explanations for ba
 
 We document all the adopted core concepts from data schemas, file formats, tools & converters, ontologies and FAIR best practices etc. here to ensure a clear scaffolding for developers to revisit previously developed parts and continue building upon them.
 
-nmrXiv architecture, deployment, and development practices are also documented here to ensure the core development and deployment principles are conveyed from the project's inception. <a class="link" aria-label="read more" href="/">Read more →</a> 
+nmrXiv architecture, deployment, and development practices are also documented here to ensure the core development and deployment principles are conveyed from the project's inception.
 
 
 
