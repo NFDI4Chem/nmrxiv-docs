@@ -209,7 +209,7 @@ Here we provide a list of some available **Open** formats (licensed with open li
   </tr>
 </table> 
 
-We would like to thank Dr. Steffen Neumann, Mr. David Rauh, and Dr. Tilmann Fischer for their contribution to the NMR data formats details.
+We would like to thank Dr. Steffen Neumann, Ms. Claudia Blankenburg, Mr. David Rauh, and Dr. Tilmann Fischer for their contribution to the NMR data formats details.
 ## Overview on Available Open NMR File Formats Converters
 
 ### nmrML Converters
