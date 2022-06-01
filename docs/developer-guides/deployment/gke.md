@@ -47,9 +47,7 @@ Steps to configure the Artifact Registry:
 
 ### Cluster Configuration:
 To start with, create a GKE-Standard Cluster with e2-standard-2(dual core, 8GB memory) machine type (or higher) with single or multiple Node Pool. Choose the other basic options as relevant such as Location and zone of your resources, Boot Disk size and type, Maximum Nodes per node etc. 
-
 Once your cluster is ready open the cloud shell and configure the kubectl command line access to your cluster.
-
 Helm is already installed in Google Cloud Shell to check the version type 
 ```bash
     helm version
@@ -57,14 +55,11 @@ Helm is already installed in Google Cloud Shell to check the version type
 ### Deploy with Helm:
 Next step is to just add the repo as follows and install the chart.
 Follow the steps provided [here](https://docs.nmrxiv.org/docs/developer-guides/deployment/helm) to install the chart using helm.
-
 You might need to have your own values.yml file instead of using the default one. 
-
 Once the helm deployment is successfully completed you can check the status of your resources in the workloads and services tab. 
 
 ### Ingress Setup:
 Your services are deployed but not exposed to the internet yet. Kubernetes allows administrators to bring their own Ingress Controllers instead of using the cloud provider's built-in offering. So to do so we can use Nginx or any other server of your choice. But here we are using Nginx(deployed via helm). Deploy and configure Nginx by following the steps provided in the [link](https://cloud.google.com/community/tutorials/nginx-ingress-gke). We have already done a few steps so you can directly jump to the Deploy ingress controller section.
-
 You might have to create your own ingress-resource file by taking the reference from below.
 
 ```bash
