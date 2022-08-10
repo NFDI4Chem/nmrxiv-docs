@@ -4,11 +4,11 @@ id: file-format
 title: File Formats
 ---
 
-# File Formats
+# NMR File Formats
 
 nmrXiv will promote **Open Data** and **Open Standards** to maximize the long-term sustainability of the resource, and the FAIRness of the archived data. To reduce user burden and foster immediate utility, nmrXiv will accept raw NMR data in all original instrument formats. 
 
-Upon uploading files, the platform will convert all those files to available **Open** data formats, such as JCAMP-DX, NMReData, and nmrML. The type of information stored in existing formats is heterogeneous, and no single format is currently capable of fully capturing all information from NMR experiments and data processing. NMReData (co-developed by nmrXiv team members) is the most promising **Open** format as it supports all data types, except for raw spectral data. 
+Upon uploading files, the platform will convert all those files to available **Open** data formats, such as JCAMP-DX, NMReData, and nmrML. The type of information stored in existing formats is heterogeneous, and no single format is currently capable of fully capturing all information from NMR experiments and data processing.
 
 As native instrument formats represent the most available data, they will be preserved and made available to users. This approach ensures traceability and secure long-term access to every detail of measured data as new formats appear or existing ones evolve. At the same time, the availability and interoperability of several formats will facilitate the re-use of data with external tools. 
 
@@ -210,6 +210,8 @@ Here we provide a list of some available **Open** formats (licensed with open li
 </table> 
 
 We would like to thank Dr. Steffen Neumann, Ms. Claudia Blankenburg, Mr. David Rauh, and Dr. Tilmann Fischer for their contribution to the NMR data formats details.
+
+
 ## Overview on Available Open NMR File Formats Converters
 
 ### nmrML Converters
@@ -264,3 +266,160 @@ And as output, it gives back NMRium file (.nmrium), or NMReData.
 
 ### TAPIR
 This converter is still being developed, and currently it can  handle only MS files, but it will be able to convert NMR files in the near future. For more details, please follow this [link](https://github.com/NFDI4Chem/formaTAPIRest).
+
+## Formats Support in nmrXiv
+Initially we will support the most common formats as mentioned in the table below, but this table will keep getting updated. Here we show what input in the files we want to be able to read, and what output we would like to provide to the users using our output files generated with NMRium. We provide more details on:
+- The availability of the the raw data (the free induction decays (FIDs), which represent the actual (raw) spectroscopic data from the excited nuclear spins in the NMR experiment). Here is an example from an nmrML on how this data looks like:
+
+  ```<fidData byteFormat="Complex128" encodedLength="324160" compressed="true">eJwMl4dfzl8Ux7U3lYZKy0qiomQLPd9zHlmhslMJ2aIoGe29hyhKKURIaWhoPd9zn6zEz46skFKKZMXPX3DPva/PPZ/3u9xlqVhxpdX8Udd0Gp02JIodL2UIN34vE/sdO4la8ZHCQ7lCseEBM/E981xh2fNnbNDxOyCwLRF+XBYhvrlcna1elI65.../jyvhLLF5zln64UoklPU75xwQ3IPL4Dx/Nfkc91ZJlO3dz/ABn2jzA=</fidData>```
+
+- The list of the peaks (the list of the chemical shifts and other possible attributes such as the type of the peak, as in doublets or multiplet). Here is an example from an NMReData on how this data looks like (Find more about NMReData [here](https://nmredata.org/wiki/NMReDATA_tag_format#Agregated_data_tags)): 
+  - A, 48.301, 1 ;A corresponds to the carbon of CH2\
+  - B, 20.322, 2 ;B corresponds to the carbon of CH3\
+
+- The possibility to annotate the data with more details provided by the users, as one can see in the same example from the NMReData file here,:
+  - A, 48.301, 1 ;A corresponds to the carbon of CH2\
+  - B, 20.322, 2 ;B corresponds to the carbon of CH3\
+
+  Where additionally to the peaks and the atoms labels, the user was able to further clarify the chemical groups.
+
+- The availablilty of Metadata, e.g., locations of files. Another example from NMReData file: 
+
+    ```Spectrum_Location=file:./nmr/11/1/pdata/1\```
+
+    ```>  <NMREDATA_VERSION>1.1\```
+
+    ```>  <NMREDATA_LEVEL>0\```
+
+- The availablilty of acquisition parameters related to the NMR assay, which can be usually provided by the instrument:
+
+```<acquisition>
+  <acquisition1D>
+      <acquisitionParameterSet numberOfScans="160" numberOfSteadyStateScans="0">
+          <sampleContainer name="tube" cvRef="NMRCV" accession="NMR:400128"/>
+          <sampleAcquisitionTemperature unitName="kelvin" unitCvRef="UO" value="299.15" unitAccession="UO:0000012"/>
+          <spinningRate unitName="hertz" unitCvRef="UO" value="0" unitAccession="UO:0000106"/>
+          <relaxationDelay unitName="second" unitCvRef="UO" value="22.2737024" unitAccession="UO:0000010"/>
+          <pulseSequence/>
+          <DirectDimensionParameterSet numberOfDataPoints="65536" decoupled="false">
+              <acquisitionNucleus name="1H" cvRef="ChEBI" accession="CHEBI_29236"/>
+              <effectiveExcitationField value="34482.7586207" unitName="megaHertz" unitCvRef="UO" unitAccession="UO:0000325"/>                  
+              <sweepWidth value="12019.2307692" unitName="hertz" unitCvRef="UO" unitAccession="UO:0000106"/>
+              <pulseWidth value="7.25" unitName="microsecond" unitCvRef="UO" unitAccession="UO:0000029"/>
+              <irradiationFrequency unitName="hertz" unitCvRef="UO" value="599.8311617" unitAccession="UO:0000106"/>
+              <decouplingNucleus name="1H" cvRef="ChEBI" accession="CHEBI_29236"/>
+              <samplingStrategy accession="1000349" cvRef="NMRCV" name="uniform sampling"/>
+          </DirectDimensionParameterSet>
+      </acquisitionParameterSet>
+      ....
+  </acquisition1D>
+</acquisition>
+```
+- The availabilty of the structure, where in some files, the mol data can be integrated with the the rest of the data, and in others, it can be provided as a separate mol file.
+
+- Additionally to what traditional formats usually provide, NMReData associates the NMR parameters extracted from 1D and 2D spectra of organic compounds to the proposed chemical structure.
+
+<table>
+  <tr>
+    <th>Data Format</th>
+    <th>RAW Spectral</th>
+    <th>Peaks</th>
+    <th>Annotation</th>
+    <th>Metadata</th>
+    <th>Acq. parameters</th>
+    <th>Spin parameters</th>
+    <th>Structure</th>
+  </tr>
+  <tr>
+    <td><a href="https://dataverse.harvard.edu/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/KUEDTG/GHQVO0">Bruker</a></td>
+    <td>in</td>
+    <td>in</td>
+    <td> </td>
+    <td>in</td>
+    <td>in</td>
+    <td> </td>
+    <td>in</td>
+  </tr>
+  <tr>
+    <td><a href="https://dataverse.harvard.edu/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/KUEDTG/FPJ8BX">JEOL</a></td>
+    <td>in</td>
+    <td>in</td>
+    <td> </td>
+    <td>in</td>
+    <td>in</td>
+    <td> </td>
+    <td>in</td>
+  </tr>
+  <tr>
+    <td><a href="">Varian/Agilent</a></td>
+    <td>in</td>
+    <td>in</td>
+    <td> </td>
+    <td>in</td>
+    <td>in</td>
+    <td> </td>
+    <td>in</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/NMReDATAInitiative/Examples-of-NMR-records">NMReData</a></td>
+    <td> </td>
+    <td>in/out</td>
+    <td>in/out</td>
+    <td>in/out</td>
+    <td>in/out</td>
+    <td>in/out (partially)</td>
+    <td>in/out</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.ch.ic.ac.uk/omf/cml/doc/examples/nmr.cml">CML Spect</a></td>
+    <td>in/out</td>
+    <td>in/out</td>
+    <td>in/out</td>
+    <td>in/out</td>
+    <td>in/out</td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td><a href="http://nmrml.org/examples/">nmrML</a></td>
+    <td>in/out</td>
+    <td></td>
+    <td></td>
+    <td>in/out</td>
+    <td>in/out</td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td><a href="">Allotrope ADF</a></td>
+    <td>in/out</td>
+    <td></td>
+    <td></td>
+    <td>in/out</td>
+    <td>in/out</td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td><a href="https://dataverse.harvard.edu/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/KUEDTG/SVIEUT">JCAMP-DX</a></td>
+    <td>in/out</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>in/out (sometimes)</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td><a href="">NMR Star</a></td>
+    <td></td>
+    <td>in/out</td>
+    <td></td>
+    <td>in/out</td>
+    <td>in/out</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table> 
+
+  
