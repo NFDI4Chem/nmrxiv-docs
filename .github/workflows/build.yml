@@ -9,7 +9,8 @@ env:
   GKE_CLUSTER: nmrxiv-dev
   GKE_ZONE: europe-west3-a
   DEPLOYMENT_NAME: doc-nmrxiv-doc
-  IMAGE: nmrxiv-docs
+  IMAGE: nmrxiv-doc
+  REPOSITORY_NAME: nmrxiv-dev 
 
 jobs:
   build:
@@ -61,7 +62,7 @@ jobs:
     - name: Build
       run: |-
         docker build -f ./devops/Dockerfile \
-          --tag "eu.gcr.io/$PROJECT_ID/$IMAGE:latest" \
+          --tag "europe-west3-docker.pkg.dev/$PROJECT_ID/$REPOSITORY_NAME/$IMAGE:latest" \
           --build-arg GITHUB_SHA="$GITHUB_SHA" \
           --build-arg GITHUB_REF="$GITHUB_REF" \
           .
@@ -69,7 +70,7 @@ jobs:
     # Push the Docker image to Google Container Registry
     - name: Publish
       run: |-
-        docker push "eu.gcr.io/$PROJECT_ID/$IMAGE:latest"
+        docker push "europe-west3-docker.pkg.dev/$PROJECT_ID/$REPOSITORY_NAME/$IMAGE:latest"
 
     # # Set up kustomize
     # - name: Set up Kustomize
