@@ -74,6 +74,11 @@ module.exports = {
                 //     position: 'left',
                 //     label: 'DOCS',
                 // },
+                // {
+                //     type: 'docsVersionDropdown',
+                //     position: 'right',
+                //     dropdownActiveClassDisabled: false,
+                // }
             ],
         },
         footer: {
@@ -146,6 +151,7 @@ module.exports = {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo
                     editUrl: 'https://github.com/NFDI4Chem/nmrxiv-docs/edit/development/',
+                   // includeCurrentVersion: false
                 },
                 // blog: {
                 //     showReadingTime: true,
