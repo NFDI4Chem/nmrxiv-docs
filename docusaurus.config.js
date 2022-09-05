@@ -35,27 +35,6 @@ module.exports = {
             // Should we use the prefers-color-scheme media-query,
             // using user system preferences, instead of the hardcoded defaultMode
             respectPrefersColorScheme: false,
-
-            // Dark/light switch icon options
-            switchConfig: {
-                // Icon for the switch while in dark mode
-                darkIcon: '🌙',
-
-                // CSS to apply to dark icon,
-                // React inline style object
-                // see https://reactjs.org/docs/dom-elements.html#style
-                darkIconStyle: {
-                    marginLeft: '0px',
-                },
-
-                // Unicode icons such as '\u2600' will work
-                // Unicode with 5 chars require brackets: '\u{1F602}'
-                lightIcon: '\u2600',
-
-                lightIconStyle: {
-                    marginLeft: '1px',
-                },
-            },
         },
         navbar: {
             title: '',
