@@ -421,5 +421,3 @@ Initially we will support the most common formats as mentioned in the table belo
     <td></td>
   </tr>
 </table> 
-
-  
