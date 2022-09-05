@@ -87,7 +87,7 @@ After installing and enabling WSL2, you should ensure that Docker Desktop is [co
 ##### Setup:
 * Start Docker.
 * Open [Ubuntu](https://www.microsoft.com/store/productId/9NBLGGH4MSV6) shell and clone the repo using the below command to your home directory. 
-We recommend running the project from your Linux directory and not from your local windows file system, to overcome some of the performance issues.
+We recommend running the project from your Linux directory and not from your local windows file system, for faster compilation and execution.
 ```bash
 cd /home/
 git clone https://github.com/NFDI4Chem/nmrxiv.git
