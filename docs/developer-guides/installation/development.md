@@ -7,10 +7,10 @@ title: Development
 nmrXiv project is built with [Laravel](https://laravel.com/docs/8.x) web application framework which comes with [Sail](https://laravel.com/docs/8.x/sail), a built-in solution for running your Laravel project using Docker. 
 The whole project is a package of below services and features.
 * PostgreSQL - database.
-* Redis - an open source, advanced key-value store.
+* Redis - an open-source, advanced key-value store.
 * Selenium - testing framework.
 * Meilisearch - search engine.
-* MailHog - mail testing server for development environment.
+* MailHog - mail testing server for the development environment.
 
 
 ### Installing on macOS
@@ -39,7 +39,7 @@ git checkout development
 ```bash
 cp .env.example .env 
 ```
-* Update the depencencies from the `composer.json` file: 
+* Update the dependencies from the `composer.json` file: 
 ```bash
 composer update
 ```
@@ -86,9 +86,10 @@ After installing and enabling WSL2, you should ensure that Docker Desktop is [co
 
 ##### Setup:
 * Start Docker.
-* Open your chosen directory in [Ubuntu](https://www.microsoft.com/store/productId/9NBLGGH4MSV6) shell.
-* Clone the [project from Github](https://github.com/NFDI4Chem/nmrxiv) by running:
+* Open [Ubuntu](https://www.microsoft.com/store/productId/9NBLGGH4MSV6) shell and clone the repo using the below command to your home directory. 
+We recommend running the project from your Linux directory and not from your local windows file system, to overcome some of the performance issues.
 ```bash
+cd /home/
 git clone https://github.com/NFDI4Chem/nmrxiv.git
 ```
 * Go to the project directory:
@@ -103,7 +104,7 @@ git checkout development
 ```bash
 cp .env.example .env 
 ```
-* Update the depencencies from the `composer.json` file: 
+* Update the dependencies from the `composer.json` file: 
 ```bash
 composer update
 ```
@@ -115,12 +116,27 @@ composer install
 ```bash
 ./vendor/bin/sail up
 ```
+* Run the below command to migrate the database with some dummy values.
+Don't forget to note down the admin's user id and password prompted at the end of migration output.
+```bash
+./vendor/bin/sail artisan migrate:refresh --seed
+```
 
-Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost). But first, you will be prompted to <b>Generate app key</b>. After pressing the generation button, the following message is shown on the screen: "The solution was executed successfully. Refresh now." After refreshing, you access the application.
+* Make sure you have node version > 16 installed in your WSL. Open another terminal and run the below command to boot up your local static web server.
+```bash
+npm install
+npm run dev
+```
+
+Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost). But first, you will be prompted to <b>Generate app key</b>. After pressing the generation button, the following message is shown on the screen: "The solution was executed successfully. Refresh now." After refreshing, you can access the application.
+
+Run `code .` to open the code base to your VSCode editor. 
+Thanks to [Vite](https://vitejs.dev/guide/) that any changes you make to the javascript file would be reflected in your browser immediately without requiring any refresh.
+
 
 :::info
 
-To get more easy view of your containers, open your Docker Desktop application.
+To get a more easy view of your containers, open your Docker Desktop application.
 
 :::
 
@@ -155,7 +171,7 @@ git checkout development
 ```bash
 cp .env.example .env 
 ```
-* Update the depencencies from the `composer.json` file: 
+* Update the dependencies from the `composer.json` file: 
 ```bash
 composer update
 ```
@@ -304,9 +320,9 @@ $ sudo systemctl restart firewalld.service
 
 Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost). 
 
-If you find the error message indicating app key doesnt exist. You will be prompted to <b>Generate app key</b> (you will find the button on the error page below the error message). After pressing the generation button, the following message is shown on the screen: "The solution was executed successfully. Refresh now." After refreshing, you access the application.
+If you find the error message indicating the app key doesn't exist. You will be prompted to <b>Generate app key</b> (you will find the button on the error page below the error message). After pressing the generation button, the following message is shown on the screen: "The solution was executed successfully. Refresh now." After refreshing, you access the application.
 
-At this stage you haven't run the application migrations (no database tables for the application to connect to). Again you will be prompted with an error message. You will also find a button just below the message to run migrations. Please click it and you are good to go.
+At this stage, you haven't run the application migrations (no database tables for the application to connect to). Again you will be prompted with an error message. You will also find a button just below the message to run migrations. Please click it and you are good to go.
 
 For local development, you will need nodejs and npm to install and compile node packages
 
@@ -325,7 +341,7 @@ Compile Javascript code
 $ npm run build
 ```
 
-Inorder to actively watch and compile changes
+In order to actively watch and compile changes
 ```
 $ npm run watch
 ```
@@ -338,4 +354,4 @@ Please refer to the following [link](http://docs.nmrxiv.org/docs/developer-guide
 #### Errors
 
 #### Others
-* In case if you have messed up with the DB connections or created the conatiner without cretaing the `.env` file, we recommend deleting all the volumes and existing images and containers and start with fresh build of containers creation after the rectification.
+* In case you have messed up with the DB connections or created the container without creating the `.env` file, we recommend deleting all the volumes and existing images and containers and starting with a fresh build of container creation after the rectification.
