@@ -31,7 +31,7 @@ To engage analytical chemistry researchers and adjacent communities through webi
 **Why another NMR Repository??** <br/>
 Over the past few decades, several repositories have been developed to host literature-derived and experimental NMR data; however, these repositories do not meet the needs of all chemical communities (also natural products & metabolomics) in several ways. This includes a lack of experimental data, limited search capabilities, and more importantly, they are not FAIR compliant.
 
-**nmrXiv** will be the **first FAIR and Open archive to preserve NMR data in its original instrument format** and will promote **Open Data and Open Standards** to maximise long term sustainability of the resource and FAIRness of the archived data.
+**nmrXiv** is the **first FAIR and Open archive to preserve NMR data in its original instrument format** and will promote **Open Data and Open Standards** to maximise long term sustainability of the resource and FAIRness of the archived data.
 :::
 <br/><br/>
 &emsp;&emsp;&emsp;<img alt="FSU Jena" src="https://www.uni-jena.de/unijenamedia/universitaet/abteilung-hochschulkommunikation/marketing/wort-bildmarke-universitaet-jena.jpg" width="24%" />
