@@ -21,7 +21,7 @@ Enable the FAIR Sharing of raw NMR data to enhance the quality of chemical resea
 
 **F**indable &middot; **A**ccessible &middot; **I**nteroperable &middot; **R**eusable
 
-*More details about the data standards and related topics* - [here](/docs/category/nmr-data)
+*More details about the data standards and related topics* - [here](/docs/category/data)
 
 
 ### Training
