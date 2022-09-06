@@ -1,5 +1,5 @@
 # Build stage
-FROM node:16-alpine3.11 as builder
+FROM node:16.17-alpine3.15 as builder
 
 WORKDIR /app/website
 COPY . /app/website

@@ -3,54 +3,36 @@ sidebar_position: 5
 id: nmrium
 title: NMRium
 ---
+
 # NMRium
 
-[NMRium](https://www.nmrium.org/) is an open source NMR spectra editor available as a standalone and a React component that can be integrated in other applications, which is whtat we plan to do in nmrXiv as we are interested in both using NMRium and contributing to its development. 
+[NMRium](https://www.nmrium.org/) is an open-source NMR spectra processing tool. 
 
-It provides a bundle of handy features including:
-* Open various vendor and open file formats (JCAMP-DX file, a zipped bruker folder, or a JEOL file).
-* It accepts 1D and 2D spectra.
-* Open source.
-* It handles chemical structures.
-* Safety: All the processing is done in the browser without sending any data to a server. 
-* aAdvanced peak picking detection for 1D and 2D and is able to generate the NMR string required for publication or patent.
-* All the processing and assignment can be stored as a “.nmrium” file. This file contains the original data as well as all the processing that was applied on the spectrum. Assignment of the molecule are also saved in the file. Additionally, export in NMReData is possible as well.
 
-For details on how to use NMRium, please check this [Tutorial](https://docs.nmrium.org/).
+&emsp;&emsp;&emsp;<img alt="NMRium" src="https://www.nmrium.org/brand/nmrium-logo.svg" width="24%" />
+
+It provides a bundle of handy features, such as:
+* Open various vendors and open file formats (JCAMP-DX file, a zipped Bruker folder, or a JEOL file).
+* It accepts 1D and 2D spectra (FT only).
+* Advanced peak picking detection for 1D and 2D NMR spectra. Also, it can generate the NMR string required for publication or patent.
+* All the processing and assignment can be stored as a “.nmrium” file. This file contains the original data as well as all the processing that was applied on the spectrum. Assignments of the molecule are also saved in the file. Additionally, export in NMReData is possible as well.
+
+### Demo
+
+<iframe width="100%" height="600" src="https://nmriumdev.nmrxiv.org"/>
+
+<br/><br/>
 
 ## Integrating NMRium in nmrXiv
-We are planning to use an iframe wrapper to tackle dependencies issues. Please find here the link to the [wrapper on GitHub](https://github.com/ComPlat/nmrium-react-wrapper)
 
-### Set up NMRium wrapper (For macOS and Ubuntu):
-**Dependencies**:
-* Git (sudo apt-get install git-all)
-* npm (sudo apt install npm)
-* yarn (sudo npm install --global yarn)
-* React 
+Development: https://nmriumdev.nmrxiv.org <br/>
+Production: https://nmrium.nmrxiv.org
 
-**Set up**:
-* Clone the [project from Github](https://github.com/ComPlat/nmrium-react-wrapper) by running:
-```bash
-git clone https://github.com/ComPlat/nmrium-react-wrapper
-```
+Since nmrXiv supports open-source initiatives natively, NMRium is our preferred NMR spectra processing and analysis tool. NMRium is available as a standalone, React component that can be integrated into other applications.
 
-* Go to the project directory:
-```bash
-cd nmrium-react-wrapper
-```
+To enable and ensure that the integration is framework independent, we wrapped NMRium in a React App and can now be integrated into any third-party application via an iframe, irrespective of the underlying javascript framework. This layer one solution (nmrium-react-wrapper) enables us to extend and expose the NMRium APIs and integrate other NMR tools seamlessly.
 
-* Install the project dependencies:
-```bash
-yarn install
-```
+This nmrium-react-wrapper is released under MIT opensource license - [GitHub](https://github.com/NFDI4Chem/nmrium-react-wrapper)
 
-* updates the caniuse-lite database with browsers:
-```bash
-npx browserslist@latest --update-db
-```
-
-* Run the wrapper locally:
-```bash
-yarn start
-```
+Please find the installation instructions and other documentation on the github readme page.
 
