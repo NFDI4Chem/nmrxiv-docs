@@ -4,7 +4,7 @@ id: intro
 title: Overview
 ---
 
-**nmrXiv** (pronounced `nm-archive`) is a FAIR and Open, Consensus-Driven Nuclear Magnetic Resonance (NMR) Data Repository and Computational platform. It is currently being developed as a part of NFDI4Chem with the ultimate goal of accelerating broader coordination and data sharing among researchers by creating a platform for managing, sharing, and analysing raw and processed NMR spectral data.
+**[nmrXiv](https://nmrxiv.org)** (pronounced `nm-archive`) is a FAIR and Open, Consensus-Driven Nuclear Magnetic Resonance (NMR) Data Repository and Computational platform. It is currently being developed as a part of [NFDI4Chem](https://www.nfdi4chem.de/) initiative with the ultimate goal of accelerating broader coordination and data sharing among researchers by creating a platform for managing, sharing, and analysing raw and processed NMR spectral data.
 
 This documentation site comprises detailed walk-through explanations from basic to more complex functionalities for developers (Developer Guides), submitters (Submission Guides) and users (Search and API) of **nmrXiv**. This documentation-first approach allows developers and users to discuss proposed features and ensure that the implementations reflect the actual use cases. All the adopted core concepts, such as data schemas, file formats, tools & converters, ontologies, FAIR best practices, etc., are documented to ensure a clear scaffolding for developers to revisit previously developed parts and continue building upon them.
 
@@ -24,7 +24,7 @@ Enable the FAIR Sharing of raw NMR data to enhance the quality of chemical resea
 *More details about the data standards and related topics* - [here](/docs/category/data)
 
 
-### Training
+### Workshops and Training
 To engage analytical chemistry researchers and adjacent communities through webinars, workshops, tutorials, and community calls to ensure that **nmrXiv** meets the researchers’ needs and implements adequate incentive mechanisms for data contributions and curation.
 
 :::note
@@ -33,3 +33,10 @@ Over the past few decades, several repositories have been developed to host lite
 
 **nmrXiv** will be the **first FAIR and Open archive to preserve NMR data in its original instrument format** and will promote **Open Data and Open Standards** to maximise long term sustainability of the resource and FAIRness of the archived data.
 :::
+<br/><br/>
+&emsp;&emsp;&emsp;<img alt="FSU Jena" src="https://www.uni-jena.de/unijenamedia/universitaet/abteilung-hochschulkommunikation/marketing/wort-bildmarke-universitaet-jena.jpg" width="24%" />
+&emsp;&emsp;&emsp;
+<img alt="NFDI4Chem" src="https://www.nfdi4chem.de/wp-content/uploads/2021/11/cropped-NFDI4Chem-Logo-Claim_mehrfarbig_schwarz-e1636478409489.png" width="24%" />
+&emsp;&emsp;&emsp;
+<img alt="NMRium" src="https://www.nmrium.org/brand/nmrium-logo.svg" width="24%" />
+&emsp;&emsp;&emsp;
