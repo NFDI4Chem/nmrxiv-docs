@@ -11,9 +11,9 @@ In this guide you will get an overview of the contribution workflow from opening
 ### Getting started
 Before you start contributing, make sure:
 * You have a GitHub account, for information on how to create an account, see [Signing up for GitHub.](https://docs.github.com/en/get-started/signing-up-for-github).
-* You have proper access to the [repo](https://github.com/NFDI4Chem/nmrxiv) for your Github account, for which you can contact repository owners.
+* You have proper access to the [repo](https://github.com/NFDI4Chem/nmrxiv) for your GitHub account, for which you can contact repository owners.
 * You have a code editor installed in your local system, we recommend using [Visual Studio Code](https://code.visualstudio.com/).
-* You have cloned the code and have nmrXiv running locally, for which you can follow the step-by-step documentation [here](https://docs.nmrxiv.org/docs/developer-guides/installation/development).
+* You have cloned the code and have nmrXiv running locally, for which you can follow the steps provided [here](https://docs.nmrxiv.org/docs/developer-guides/installation/development).
 
 ### Issues
 
@@ -30,8 +30,40 @@ Scan through our [existing issues](https://github.com/NFDI4Chem/nmrxiv/issues) t
 Never push your code directly to the `development` or `main` branch. Switch to the `development` branch and create a new branch in your repository. A short, descriptive branch name enables your collaborators to see ongoing work at a glance. The branch name should be all small with words separated by a hyphen, [click here](https://github.com/NFDI4Chem/nmrxiv/branches) to follow some examples. 
 
 #### Make Changes
-On your branch, make the desired changes to the repository. Your branch is a safe place to make changes. If you make a mistake, you can revert your changes or push additional changes to fix the mistake. Your changes will not end up on the default branch until you merge your branch. Commit and push your changes to your branch. Give each commit a descriptive message to help you and future contributors understand what changes the commit contains. 
-Once your changes are ready, don't forget to self-review to speed up the review process. Also, you have proper comments and indentations all over your code so that it's easy and clean to understand. You can install plugins to your VS Code such as [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) which will help to auto-format your codes.
+On your branch, make the desired changes to the repository. Your branch is a safe place to make changes. If you make a mistake, you can revert your changes or push additional changes to fix the mistake. Your changes will not end up on the default branch until you merge your branch. Commit and push your changes to your branch. Once your changes are ready, don't forget to self-review to speed up the review process. Also, you have proper comments all over your code so that it's easy and clean to understand. 
+
+#### Format
+For formatting, you can simply run below command which will help saving your time in code formatting and makes it simple to ensure that your code style stays clean, consistent and properly indented.
+```bash
+npm run format
+./vendor/bin/sail pint
+```
+
+#### Commit 
+To facilitate auto CHANGELOG generation, creation of GitHub releases, and version bumps(as per [Semantic Versioning](https://semver.org/)), please follow the structure of [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) for your commit messages.
+Each commit should also be descriptive enough to help you and future contributors to understand what changes the commit contains.
+```bash
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+choose your `<type>` from below:
+1. `fix` : a commit of the type fix patches a bug in your codebase (this correlates with PATCH in Semantic Versioning).
+2. `feat` : a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in Semantic Versioning).
+3. `BREAKING CHANGE` :  a commit that has a footer BREAKING CHANGE:, or appends a ! after the type/scope, introduces a breaking API change (correlating with MAJOR in Semantic Versioning). A BREAKING CHANGE can be part of commits of any type.
+
+An example would look like this:
+```bash
+fix: update iframe reference point
+
+Resolves the connection issue for the upload view. 
+
+Reviewed-by: XYZ
+Fixes: #123
+```
+Click here to learn more about [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/).
 
 #### Create a pull request
 When you're finished with the changes, create a pull request(also known as a PR) to the `development` branch.
