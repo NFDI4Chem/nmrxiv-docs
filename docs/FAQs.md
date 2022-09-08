@@ -4,7 +4,7 @@ sidebar_position: 7
 # FAQs
 
 ### How can I submit my data?
-You need to first register to [nmrXiv](https://nmrxiv.org/) with your email id and then submit your data via the automated submission pipeline. Read the [submission guides](/docs/category/submission-guides) to get more understanding.
+You need to first register to [nmrXiv](https://nmrxiv.org/) with your email id and then you can submit your data in 3 simple step via our automated submission pipeline. Please read the [submission guides](/docs/category/submission-guides) to get more understanding.
 
 ### Do I need to register before submitting the data to nmrXiv?
 Yes, you need to register via your email id or you can also log in via Single sign-on with your GitHub or Twitter ID.
@@ -52,7 +52,7 @@ You can edit the basic information in your account by clicking on the `Account` 
 Licensing your project is important before you make it public. You can choose the license from the license dropdown. Please go through this [discussion](https://github.com/NFDI4Chem/nmrxiv/discussions/123) to learn more about which license to choose.
 
 ### Can I use nmrXiv for my teaching and demo purposes?
-Yes, you can use our [staging site](https://dev.nmrxiv.org) for teaching, demoing, and also test most of the features. But please keep in mind this site is just for testing and demonstration purposes only and all your data can be reset anytime.
+Yes, you can use our [dev site](https://dev.nmrxiv.org) for teaching, demoing, and also test most of the features. But please keep in mind this site is just for testing and demonstration purposes only and all your data can be reset anytime.
 To learn more about our environment click [here](docs/developer-guides/deployment/environment).
 
 ### How to report a bug?

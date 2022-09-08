@@ -19,7 +19,7 @@ Before you start contributing, make sure:
 
 #### Create a new issue
 If you spot a problem with the application, [search if an issue already exists](https://github.com/NFDI4Chem/nmrxiv/issues). If a related issue doesn't exist, you can open a [new issue](https://github.com/NFDI4Chem/nmrxiv/issues/new/choose) with the appropriate form.
-[Click here](https://docs.nmrxiv.org/docs/contributing/contributing-to-nmrxiv-app#did-you-find-a-bug) to learn more about how to create an issue or report a bug.
+[Click here](/docs/FAQs#how-to-report-a-bug) to learn more about how to create an issue or report a bug.
 
 #### Solve an issue
 Scan through our [existing issues](https://github.com/NFDI4Chem/nmrxiv/issues) to find one that interests you. You can narrow down the search using `labels` as filters.
@@ -79,7 +79,7 @@ Reviewers should leave questions, comments, and suggestions. Reviewers can comme
 You can continue to commit and push changes in response to the reviews. Your pull request will update automatically.
 
 #### Merge your pull request
-Your pull request can be merged once it is approved by the reviewer. The primary merge should always be made to the `development` branch, from where your code will be deployed to the [staging environment](https://dev.nmrxiv.org) via our [CI/CD pipeline](https://docs.nmrxiv.org/docs/developer-guides/ci-cd). The [staging environment](https://dev.nmrxiv.org) provides the room to test your feature or code changes. Once it has passed all the test cases, your code changes will now be included as part of a release and be deployed finally to the [production environment](https://nmrxiv.org). These actions are restrictive and should only be performed by our repo admins and owners. 
+Your pull request can be merged once it is approved by the reviewer. The primary merge should always be made to the `development` branch, from where your code will be deployed to the [dev environment](https://dev.nmrxiv.org) via our [CI/CD pipeline](https://docs.nmrxiv.org/docs/developer-guides/ci-cd). The [dev environment](https://dev.nmrxiv.org) provides the room to test your feature or code changes. Once it has passed all the test cases, your code changes will now be included as part of a release and be deployed finally to the [production environment](https://nmrxiv.org). These actions are restrictive and should only be performed by our repo admins and owners. 
 
 #### Delete your branch
 After your branch is merged and the pull request is closed please don't forget to delete your stale branch. This indicates that the work on the branch is complete and prevents you or others from accidentally using old branches. For more information, see [Deleting and restoring branches in a pull request](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-branches-in-your-repository/deleting-and-restoring-branches-in-a-pull-request).
