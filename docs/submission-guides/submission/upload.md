@@ -4,7 +4,7 @@ title: Upload
 ---
 
 Submitting data to [nmrXiv](https://www.nmrxiv.org) is really simple and just a 3 step process. 
-Before you start submitting data you need to 
+Before you start submitting your data you need to 
 * First register and create an account in [nmrXiv](https://www.nmrxiv.org).
 * Make sure your folder is structured in the format described [here](/docs/submission-guides/submission/folder-structure).
 * Your folder contains files of a supported type.
