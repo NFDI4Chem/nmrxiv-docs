@@ -72,7 +72,7 @@ When you create a pull request, make sure
 <img src="/img/pull_request.gif"/>
 
 #### Address review comments
-Reviewers should leave questions, comments, and suggestions. Reviewers can comment on the whole pull request or add comments to specific lines. You and reviewers can insert images or code suggestions to clarify comments.
+Reviewers can leave questions, comments, and suggestions. Reviewers can comment on the whole pull request or add comments to specific lines. You and reviewers can insert images or code suggestions to clarify comments.
 You can continue to commit and push changes in response to the reviews. Your pull request will update automatically.
 
 #### Merge your pull request

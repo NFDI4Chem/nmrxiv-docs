@@ -1,43 +1,43 @@
 import React from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import styles from './HomepageFeatures.module.css';
+import Layout from '@theme/Layout';
 
 const FeatureList = [{
-        title: 'Voluntarily FAIR',
-        Svg: require('../../static/img/fair.svg').default,
+        title: 'Demo Version',
+        Svg: require('../../static/img/demo_version.svg').default,
+        button: 'Demo Version',
+        link: 'https://dev.nmrxiv.org',
         description: ( <
             >
-            nmrXiv is a cloud - based infrastructure that uses freely shared source code and deployment methods. Application of industry - grade development practices to ensure platform reliability,
-            safety, and efficacy. <
+            Try our demo version to test or preview the features.<
             />
         ),
     },
     {
-        title: 'Curation and analysis standards',
-        Svg: require('../../static/img/standards.svg').default,
+        title: 'Submission Guides',
+        Svg: require('../../static/img/submission_guides.svg').default,
+        button: 'Submission Guideline',
+        link: '/docs/category/submission-guides',
         description: ( <
-            >
-            Standards
-            for data and metadata will be non -
-            prescriptivist by nature. Standards will be built with input and
-
-            contributions from the community and made compatible with existing and potential newly developed formats and approaches. < / >
+            > Want to submit data? Read the submission guide. < / >
         ),
     },
     {
-        title: 'Community Engagement',
-        Svg: require('../../static/img/community.svg').default,
+        title: 'Contribution Guide',
+        Svg: require('../../static/img/developers_guide.svg').default,
+        button: 'Contribution Guide',
+        link: '/docs/category/developer-guides',
         description: ( <
             >
-            Engagement of the Natural Product and adjacent communities through webinars,
-            workshops, tutorials, and community calls will ensure that nmrXiv meets the researchers’ needs and implements adequate incentive mechanisms
-            for data contributions and curation. <
+            Want to contribute? Read our contribution guide <
             />
         ),
     },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ Svg, title, description, button, link }) {
     return ( <
         div className = { clsx('col col--4') } >
         <
@@ -50,26 +50,47 @@ function Feature({ Svg, title, description }) {
         div className = "text--center padding-horiz--md" >
         <
         h3 > { title } < /h3> <
-        p > { description } < /p> < /
-        div > <
-        /div>
+        p > { description } < /p> 
+        <Link className={clsx('button button--primary button--lg')}
+        to={ link }
+  >
+  { button }
+  </Link>
+        < /div > </div>
+
     );
 }
 
 export default function HomepageFeatures() {
-    return ( <
-        section className = { styles.features } >
-        <
-        div className = "container" >
-        <
-        div className = "row" > {
-            FeatureList.map((props, idx) => ( <
-                Feature key = { idx } {...props }
-                />
-            ))
-        } <
-        /div> < /
-        div > <
-        /section>
+    return ( 
+        <div
+        description="Description will go into a meta tag in <head />">
+          {FeatureList && FeatureList.length > 0 && (
+            <section className={styles.features}>
+            <div className="container">
+            <div className = "row"> 
+                {FeatureList.map((props, idx) => (
+                <Feature key={idx} {...props} />
+                ))}
+            </div></div>
+            </section>
+          )}
+  
+        {/* <div className="row" style={{marginLeft: "250px", height:"10%"}}>
+          <Link to='https://cheminf.uni-jena.de/' className={clsx('col col--3 margin-top--sm margin-bottom--sm')}>
+          <img class="h-6" src="https://www.uni-jena.de/unijenamedia/universitaet/abteilung-hochschulkommunikation/marketing/wort-bildmarke-universitaet-jena.jpg?height=100&width=200" alt="FSU Jena"/>
+          </Link>
+  
+          <Link to='https://www.nfdi4chem.de/' className={clsx('col col--3 margin-top--sm margin-bottom--sm')}>
+          <img class="h-6" src="https://www.nfdi4chem.de/wp-content/uploads/2021/11/cropped-NFDI4Chem-Logo-Claim_mehrfarbig_schwarz-e1636478409489.png" alt="NFDI4Chem"/>
+          </Link>
+  
+          <Link to='https://www.nmrium.org/' className={clsx('col col--3 margin-top--sm margin-bottom--sm')}>
+          <img class="h-6" src="https://www.nmrium.org/brand/nmrium-logo.svg" alt="NMRium"/>
+          </Link>
+        </div> */}
+
+      </div>
+
     );
 }
