@@ -2,9 +2,7 @@
 sidebar_position: 5
 ---
 
-# Development Workflow
-
-## Contribution guidelines
+# Code Contribution Guidelines
 Thank you for investing your time in contributing to our project! Any contribution you make will be reflected on [nmrxiv.org](https://nmrxiv.org) after it has passed all the test cases on [dev.nmrxiv.org](https://dev.nmrxiv.org). 
 In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
 
@@ -15,7 +13,6 @@ Before you start contributing, make sure:
 * You have a code editor installed in your local system, we recommend using [Visual Studio Code](https://code.visualstudio.com/).
 * You have cloned the code and have nmrXiv running locally, for which you can follow the steps provided [here](https://docs.nmrxiv.org/docs/developer-guides/installation/development).
 
-### Issues
 
 #### Create a new issue
 If you spot a problem with the application, [search if an issue already exists](https://github.com/NFDI4Chem/nmrxiv/issues). If a related issue doesn't exist, you can open a [new issue](https://github.com/NFDI4Chem/nmrxiv/issues/new/choose) with the appropriate form.
@@ -75,7 +72,7 @@ When you create a pull request, make sure
 <img src="/img/pull_request.gif"/>
 
 #### Address review comments
-Reviewers should leave questions, comments, and suggestions. Reviewers can comment on the whole pull request or add comments to specific lines. You and reviewers can insert images or code suggestions to clarify comments.
+Reviewers can leave questions, comments, and suggestions. Reviewers can comment on the whole pull request or add comments to specific lines. You and reviewers can insert images or code suggestions to clarify comments.
 You can continue to commit and push changes in response to the reviews. Your pull request will update automatically.
 
 #### Merge your pull request
@@ -89,9 +86,3 @@ After your branch is merged and the pull request is closed please don't forget t
 * Never leak your secrets or commit local config files(.env) into source control.
 * Follow the link to learn more about [Laravel](https://laravel.com/docs/9.x/readme) and [Inertia.js](https://inertiajs.com/) best practices.
 :::
-
-## Email Registration
-
-To be able to develop locally, you have to install [Node.js](https://nodejs.org/en/download/) to compile [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). 
-
-After having nmrXiv successfully installed and accessing the application in the web browser at [link](http://localhost), you need to create a new account. Press <b>Register</b> button. You will be prompted to enter registration details (<b>Name</b>, <b>Email</b>, <b>Password</b>). Agreeing to the <b>Terms of Service</b> and <b>Privacy Policy</b> by checking the corresponding box is required for the registration. After clicking <b>Register</b>, you will receive an email to confirm your email address, you can access it through [MailHog](https://github.com/mailhog/MailHog). Open a new window in your browser, and go to [http://localhost:8025/](http://localhost:8025/). Open the received email and click <b>Verify Email Address</b>. You will be forwarded to the <b>Dashboard</b>.

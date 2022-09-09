@@ -10,7 +10,7 @@ All the code changes, features, or any bug fixes have to pass through [developme
 Another important use of [development](https://dev.nmrxiv.org) is performance or stress testing.
 
 :::danger Caution
-Caution: This site is for demonstration purpose only. You can test most of the nmrXiv features but DO NOT use the current site for your work. All the data stored here can be reset anytime.
+Caution: The [development](https://dev.nmrxiv.org) environment is for demonstration purpose only. You can test most of the nmrXiv features but DO NOT use the current site for your work. All the data stored here can be reset anytime.
 :::
 
 ### [Production](https://www.nmrxiv.org/)

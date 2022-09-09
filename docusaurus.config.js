@@ -8,7 +8,7 @@ module.exports = {
     //     locales: ['en', 'fr'],
     // },
     title: 'nmrXiv',
-    tagline: 'Highly visible, and consensus-driven NMR data repository and computational platform.',
+    tagline: 'Open, FAIR and Consensus-Driven NMR spectroscopy data repository and analysis platform.',
     url: 'https://docs.nmrxiv.org/',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -100,7 +100,7 @@ module.exports = {
                 //     ],
                 // },
             ],
-            copyright: `© nmrXiv ${new Date().getFullYear()}. Docs built with Docusaurus. <br/> Released under the MIT License`,
+            copyright: `© nmrXiv ${new Date().getFullYear()}. Docs built with Docusaurus. <br/> Released under the MIT License.`,
         },
         prism: {
             theme: lightCodeTheme,
