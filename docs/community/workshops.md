@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 # NMR MIChI Workshops in NFDI4Chem 
 NFDI4Chem is facilitating and organising a series of international workshops in different subdisciplines of chemistry to develop domain-specific MI standards. Each of the developed standards will be a modular recommendation for Minimum Information on Chemical Investigations due to the sheer size and variability of the field. Prior to the publication of the standards, there will be a Request for Comments (RFC) as part of a public review of the standards. Here you can find all the workshops related to NMR and analytical chemistry. For a full-list of the workshops, please visit [this link](https://nfdi4chem.github.io/workshops/).
