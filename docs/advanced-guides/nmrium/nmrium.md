@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
 id: nmrium
-title: NMRium
+title: Overview
 ---
 
 # NMRium
