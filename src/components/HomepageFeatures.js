@@ -18,20 +18,20 @@ const FeatureList = [{
     {
         title: 'Submission Guides',
         Svg: require('../../static/img/submission_guides.svg').default,
-        button: 'Submission Guideline',
+        button: 'Submission Guides',
         link: '/docs/category/submission-guides',
         description: ( <
             > Want to submit data? Read the submission guide. < / >
         ),
     },
     {
-        title: 'Contribution Guide',
+        title: 'Contribution Guides',
         Svg: require('../../static/img/developers_guide.svg').default,
-        button: 'Contribution Guide',
+        button: 'Contribution Guides',
         link: '/docs/category/developer-guides',
         description: ( <
             >
-            Want to contribute? Read our contribution guide <
+            Want to contribute? Read the contribution guide. <
             />
         ),
     },
