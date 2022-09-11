@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
-id: linux
-title: Linux
+id: Ubuntu
+title: Ubuntu
 ---
 
 nmrXiv project is built with [Laravel](https://laravel.com/docs/8.x) web application framework which comes with [Sail](https://laravel.com/docs/8.x/sail), a built-in solution for running your Laravel project using Docker. 
@@ -52,6 +52,18 @@ composer install
 ```bash
 ./vendor/bin/sail up
 ```
+
+* Run the below command to migrate the database with some dummy values.
+Don't forget to note down the admin's user id and password provided at the end of migration output.
+```bash
+./vendor/bin/sail artisan migrate:refresh --seed
+```
+
+* Open another terminal and run the below command to boot up your local static web server.
+```bash
+npm install && npm run dev
+```
+
 Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost). But first, you will be prompted to <b>Generate app key</b>. After pressing the generation button, the following message is shown on the screen: "The solution was executed successfully. Refresh now." After refreshing, you access the application.
 
 :::caution Recommendation

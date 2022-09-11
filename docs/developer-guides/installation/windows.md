@@ -72,7 +72,7 @@ composer install
 ./vendor/bin/sail up
 ```
 * Run the below command to migrate the database with some dummy values.
-Don't forget to note down the admin's user id and password prompted at the end of migration output.
+Don't forget to note down the admin's user id and password provided at the end of migration output.
 ```bash
 ./vendor/bin/sail artisan migrate:refresh --seed
 ```
