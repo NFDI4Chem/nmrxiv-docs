@@ -4,11 +4,15 @@ id: contributing-to-nmrxiv-docs
 title: nmrXiv Docs
 ---
 
-This website is based on the [Docusaurus framework](https://docusaurus.io) that uses [Markdown](https://www.markdownguide.org/) with [JavaScript](https://www.javascript.com/) [(MDX)](https://mdxjs.com/). Therefore, the content is stored as a mixture mainly containing [Markdown](https://www.markdownguide.org/) with elements from [HTML](https://html.com/) and from the [JavaScript](https://www.javascript.com/) framework [React](https://reactjs.org/). The most important and used components are explained below. More information about [Markdown](https://www.markdownguide.org/) in docusaurus can be found in the [official Docusaurus documentation](https://docusaurus.io/docs/markdown-features).
+This website is based on the [Docusaurus framework](https://docusaurus.io) that uses [Markdown](https://www.markdownguide.org/) with [JavaScript](https://www.javascript.com/) [(MDX)](https://mdxjs.com/). Therefore, the content is stored as a mixture mainly containing [Markdown](https://www.markdownguide.org/) with elements from [HTML](https://html.com/) and from the [JavaScript](https://www.javascript.com/) framework [React](https://reactjs.org/). The most important and used components are explained below. More information about [Markdown](https://www.markdownguide.org/) in Docusaurus can be found in the [official Docusaurus documentation](https://docusaurus.io/docs/markdown-features).
 
 # Contributing to nmrXiv Documentation
+
+## Forking
+First, you need to fork the [documentation repository on GitHub](https://github.com/NFDI4Chem/nmrxiv-docs.git)
+
 ## Installation 
-Although one can edit the page directly on GitHub by clicking on **Edit this page** at the bottom of each page, we kindly ask you to avoid that as this option will not enable you to see the changes you are applying before pushing them to GitHub. Therefore, a local installation is needed first. 
+Although one can edit the page directly on GitHub by clicking on **Edit this page** at the bottom of each page, please avoid it as this option doesn't enable you to see the changes applied before pushing them to GitHub. Also because you need to make the changes on your fork first. Therefore, a local installation is needed first. 
 ### Dependencies
 * [git](https://git-scm.com/).
 * [Docker Desktop](https://www.docker.com/products/docker-desktop). 
@@ -16,10 +20,7 @@ Although one can edit the page directly on GitHub by clicking on **Edit this pag
 ### Setup:
 * Start Docker.
 * Open your chosen directory in the terminal.
-* Clone the [project from Github](https://github.com/NFDI4Chem/nmrxiv-docs) by running:
-```bash
-git clone https://github.com/NFDI4Chem/nmrxiv-docs.git
-```
+* Clone your fork.
 * Go to the project directory:
 ```bash
 cd nmrxiv-docs
@@ -32,25 +33,23 @@ yarn install
 ```bash
 yarn start
 ```
-
 Most changes are reflected live without having to restart the server as soon as you save them.
 
 ## Branching
 Whenever you want to edit a page, please do the following:
-* Create a new branch for that page.
-* Do your modifications locally first.
-* Create a pull request on GitHub.
+* Create a new branch for that page from the "development" branch.
+* Make your modifications on that branch.
+* Create a pull request on GitHub for your fork to "development".
 
 Afterwards, the maintainers will review your changes and merge them.
 
 ## How to
-### Editing
-In order to edit the documentation, you need a [GitHub](https://github.com/) account. Then, you can use the ```Edit this page``` button at the left bottom of every page. This will lead you to an [Editor on GitHub](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github/editing-files-in-your-repository) in the `development` branch, where you can directly edit the page. When you are satisfied with the changes you have made, `Commit changes`. You can check the [Actions](https://github.com/NFDI4Chem/nmrxiv-docs/actions) to see if the workflow run has completed successfully, and then make a `pull request`. The project admins review the requests regularly and merge the approved ones. After merging `development` branch with the `main` branch, changes will be directly deployed and gone online. To ensure consistent style and naming throughout the documentation, please refer to our [Conventions](#conventions)
 
 ### Adding a New Page
-* Go to the chosen directory on [GitHub](https://github.com/NFDI4Chem/nmrxiv-docs/tree/development/docs).
-* Click `Add file`, and choose <b>Create new file</b>.
-* <b>Name your file</b> in the corresponding field, and give it the extension ".mdx".
+* Go to the chosen directory.
+* Add a new file there.
+* Name your file complying with our conventions (kebab-case-of-small-letters).
+* Give it the extension ".mdx".
 * Insert at the top of the file, e.g.:
 
 ```bash
@@ -66,15 +65,13 @@ title: Contributing to nmrxiv Docs.mdx
 | id | String | File path (including folders, without the extension) | A unique document id.|
 | title | String | Markdown title or id | The text title of your document. Used for the page metadata and as a fallback value in multiple places (sidebar, next/previous buttons...). Automatically added at the top of your doc if it does not contain any Markdown title. |
 
-More fields and the <b>Description</b> of each field can be found in [docusaurus documentation](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs). 
-
-After you have inserted a new page, add its <b>id</b> from the metadata section at the top of the file to the [sidebars.js](https://github.com/NFDI4Chem/nmrxiv-docs/blob/development/sidebars.js) file, so that it is added to the TOC (table of contents) on the left of every documentation page, and it becomes visible on the page.
+More fields, and the <b>Description</b> of each field, can be found in [docusaurus documentation](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs). 
 
 ### Headings
-To create a heading, add one or more # signs in front of the word or phrase. The number of # you use should correspond to the heading level. A lot of # indicates a low level.
+To create a heading, add one or more # signs in front of the word or phrase. The number of # you use should correspond to the heading level. Many # indicates a low level.
 
 ### Escaping Signs
-To show signs that are specified in the Markdown syntax, escape them with "\".
+To show signs specified in the Markdown syntax, escape them with "\".
 
 ### Links
 Links can be added via [Markdown](https://www.markdownguide.org/) or [React](https://reactjs.org/):
@@ -91,7 +88,7 @@ import Link from '@docusaurus/Link';
 ```
 ### Lists
 #### Ordered List
-Enter the number that you want your list to start with, enter a dot and a space, then enter your text. When you hit enter, the next number will be generated automatically.
+Enter the number you want your list to start with, enter a dot and a space, then enter your text. When you hit enter, the next number will be generated automatically.
 ```
 2. First line.
 3. Second line.
@@ -103,7 +100,7 @@ Output:
 3. Second line.
 4. Third line.
 
-Please not, if you enter random numbers with dots, the generated list will still be ordered based on the first number!!
+Please note, if you enter random numbers with dots, the generated list will still be ordered based on the first number!
 ```
 2. First line.
 5. Second line.
@@ -128,13 +125,12 @@ Output:
 * First line.
 - Second line.
 
-
 ### Code Blocks
-Code blocks enable highliting your code and its syntax based on the language. To use code blocks:
-1. Wrap your code with 3 backticks.
+Code blocks enable highlighting your code and its syntax based on the language. To use code blocks:
+1. Wrap your code with three backticks.
 2. Add the right language.
 3. Insert your code.
-4. Optionally, you can add title or highlight certain lines in the code. For more details, please refer to [Docusaurus Code blocks](https://docusaurus.io/docs/markdown-features/code-blocks).
+4. Optionally, you can add a title or highlight certain lines in the code. For more details, please refer to [Docusaurus Code blocks](https://docusaurus.io/docs/markdown-features/code-blocks).
 
 For instance: 
 
@@ -144,13 +140,13 @@ For instance:
 
 \```
 
-Which will look like: 
+Which will look like this: 
 
 ```js
 <span style={{color:"yellow"}}>Example</span>
 ```
 
-For a list of the supported languages, please visit the [link](https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js). It is common to use "bash", "html", "js", and "md" in this documentation. Please also use "Bash" code blocks for errors too.
+For a list of the supported languages, please visit the [link](https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/vendor/prism/includeLangs.js). It is common to use "bash", "html", "js", and "md" in this documentation. Please use "Bash" code blocks for errors too.
 
 ### Images/gifs
 
@@ -170,7 +166,7 @@ Inserting an image/gif  with [HTML](https://html.com/) ([React](https://reactjs.
 ```
 
 #### SVG
-SVGs need a special treatment. First import them as [React component](https://reactjs.org/docs/react-component.html), and then insert them in your text with `className="logo"`:
+SVGs need special treatment. First import them as [React component](https://reactjs.org/docs/react-component.html), and then insert them in your text with `className="logo"`:
 
 ``` js
 import Sun from '@site/static/img/sun.svg'
@@ -189,14 +185,14 @@ Output:
 | Field 1  |  Field 2 |
 
 ### Info Boxes
-Highlighted info boxes with further informations are called "Admonitions" in [Docusaurus](https://docusaurus.io/docs/markdown-features/admonitions). There are 3 possibble admonitions in nmrXiv Docs:
+Highlighted info boxes with further information are called "Admonitions" in [Docusaurus](https://docusaurus.io/docs/markdown-features/admonitions). There are three possible admonitions in nmrXiv Docs:
 
 :::danger Caution
-Caution: When there is risk of losing data, breaking things down, and so on..
+Caution: When there is a risk of losing data, breaking things down, and so on.
 :::
 
 :::caution Recommendation
-Recommendation: When a certain behaviour is recommended, but not necessary.
+Recommendation: When a certain behavior is recommended, but not necessary.
 :::
 
 :::info Info
@@ -204,7 +200,7 @@ Info: Any important piece of information to be highlighted.
 :::
 
 ### Inserting Downloadable Files
-If you want to provide one or multiple file(s) to be downloaded directly form the documentation, upload them to the [files folder in GitHub](https://github.com/NFDI4Chem/nmrxiv-docs/tree/development/static/files), and insert a Download Button with the filepath(s) - separated by comma - in `files` and the text to be shown on the button in `text`:
+If you want to provide one or multiple file(s) to be downloaded directly from the documentation, upload them to the [files folder in GitHub](https://github.com/NFDI4Chem/nmrxiv-docs/tree/development/static/files), and insert a Download Button with the file path(s), separated by a comma, in `files` and the text to be shown on the button in `text`:
 
 ```
 import { DownloadBtn } from '@site/docs/download-files.js'
@@ -238,7 +234,7 @@ Output:
 `Example`
 
 #### Line Breaks
-Add two blank lines (two "enter"s) where the line break is intended to be.
+Add two blank lines (two "enter"s) where the line break is needed to be.
 
 #### Color
 * Colored letters:
@@ -267,29 +263,29 @@ Output:
 ## Conventions
 
 ### Hyperlinks
-We would recommend the intensive use of hyperlinks instead of plain text whenever possible. The intro of this page is a good example for that. 
+We would recommend the intensive use of hyperlinks instead of plain text whenever possible. The intro of this page is a good example of that. 
 
 ### Bold Text
-All terms in this documentation that are bolded can also be found within the user/developer interface. 
+All bolded terms in this documentation can also be found within the user/developer interface. 
 
 ### Tables
-To maintain a consistent view throught the table, the first letter from the first word will always be capitalized (unless it is a unit). Full stops will be used when the correct langiage requires them. The following table provides more details and examples.
+To maintain a consistent view throughout the table, the first letter from the first word will always be capitalized (unless it is a unit). Full stops will be used when the correct language requires them. The following table provides more details and examples.
 
 | Case | Capitalization | Full stop | Example |
 |---|---|---|---|
 | Unit | to be written as provided by [The International System of Units (SI)](https://www.bipm.org/en/measurement-units) | No | "Hz", "°C", "cm" |
 | Single word| Only first letter, unless the word is usually written differently| No | "No", "True", "NMR" |
 | Phrase | Only first letter from the first word, unless other words require so | No | "NMR technique", "Chemical formula" |
-| Sentence | To be written according to the correct use of langauge| Yes | "Fields with description are usually provided as sentences which requires adding a full stop at the end of the sentence." |
+| Sentence | To be written according to the correct use of language | Yes | "Fields with description are usually provided as sentences which requires adding a full stop at the end of the sentence." |
 
 ### Capitalization
 Please always capitalize:
 * The first letter of the first word, unless it is officially written with small letters, e.g., "nmrXiv".
-* Headings: The first letter of each word except articles, conjunctions, and prepositions that have less than four letters. e.g., "Contributing to nmrXiv Docs".
+* Headings: The first letter of each word except articles, conjunctions, and prepositions with less than four letters. e.g., "Contributing to nmrXiv Docs".
 
-Please note: Prepositions are dealt with as a normal word and are capitalized when applicable in the following cases:
+Please note: Prepositions are dealt with as normal words and are capitalized when applicable in the following cases:
 * If they are part of the verb: "Starting Up the Application".
-* If they have more than 4 letters: "Further Steps After Installation".
+* If they have more than four letters: "Further Steps After Installation".
 
 ### Highlighting Elements
 [Highlighted Elements](https://docs.nmrxiv.org/docs/contributing/contributing-to-nmrxiv-docs/#highlighted-elements) should be used with files and folders names, and to highlight words where bolding is not applicable.
