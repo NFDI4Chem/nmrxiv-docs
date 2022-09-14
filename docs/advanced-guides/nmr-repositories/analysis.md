@@ -5,22 +5,6 @@ title: NMR Repositories Overview
 ---
 # NMR Repositories Overview
 
-## Our Aim
-
-In order to get inspired by other NMR repositories previous experiences, we have performed some
-quantitative and qualitative overview on available NMR data in public datasets to see what metadata was covered and how often (in how many studies) this metadata was available, which aspects were challenging, and how were they tackled, and what, if any, ontologies are commonly used there. We hope to make our data [FAIRer](https://www.go-fair.org/fair-principles/) and machine-readable by using this knowledge.
-
-This overview was also used to identify common issues encountered while reporting data to avoid repeating same mistakes, and to consider approaches to retrospectively correct the data before importing it into nmrXiv. More details on those issues to be found in [Common Issues in NMR Repositories](https://docs.nmrxiv.org/docs/advanced-guides/common%20issues%20encountered%20in%20nmr%20repositories/)
-
-## The Scope of the Overview
-
-So far, all covered NMR repositories are biology-oriented ones, but non-biological metadata was also covered. Those repositories are [MetaboLights](https://www.ebi.ac.uk/metabolights/), [Metabolomics Workbench](https://www.metabolomicsworkbench.org/), and [CENAPT](https://dataverse.harvard.edu/dataverse/cenapt). The covered metadata includes sample metadata such as the organisms with their used parts and variants, and the solvents with the pH, in addition to assay metadata such as the instruments names, pulse sequence frequency, the detected Nuclei with the dimensionality, temperature, and more to come. It also covers the ontologies used. Please find GitHub repository with Python scripts and Jupyter notebooks to extract the metadata and visualize it [here](https://github.com/NFDI4Chem/repo-scripts).
-
-
-## The Overview
-
-Here you can find the graphs on NMR meta data. To find the corresponding notebooks used to generate the graphs, check the links coming with each graph. To find the scripts used to generate the csv files used in the notebooks, please follow this [link](https://github.com/NFDI4Chem/repo-scripts), but this repository is parivte at the moment.
-
 ### Organism
 Humans and mice are the most studied species in both [MetaboLights](https://www.ebi.ac.uk/metabolights/) and [Metabolomics Workbench](https://www.metabolomicsworkbench.org/), while [CENAPT](https://dataverse.harvard.edu/dataverse/cenapt) doesn't provide this information unless one checks in the corresponding articles. Other, less commonly studied, species include sheep, rats, horses, wild boars and others. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/organism.ipynb)
 ![organism](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/organism.png)
