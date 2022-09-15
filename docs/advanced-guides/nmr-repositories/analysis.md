@@ -21,9 +21,6 @@ The variant details were mostly missing, but when reported, they mostly come fro
 There intruments names were reported in so many various ways it was difficult sometimes to tell whether two names refer to the same instrument or not, which emphasize again on the importance of using ontology terms. More details on this are to be found [Common Issues in NMR Repositories](https://docs.nmrxiv.org/docs/advanced-guides/common%20issues%20encountered%20in%20nmr%20repositories/). [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/instruments-names.ipynb)
 ![instrument name](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/instrument.png)
 
-### Nuclei
-1H and 13C are the only nuclei used, also in 2D assays as 1H-13C and 1H-1H, while all the other nuclei were never used. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/nuclei.ipynb)
-![nuclei](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/nuclei.png)
 
 ### Ontologies
 They were used only in [MetaboLights](https://www.ebi.ac.uk/metabolights/). The ontologies mentioned here were evaluated for possible use in nmrXiv. For more details on that, check [ontologies](https://docs.nmrxiv.org/docs/introduction/ontologies) page. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/ontologies.ipynb)
