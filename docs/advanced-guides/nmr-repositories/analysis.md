@@ -21,14 +21,6 @@ The variant details were mostly missing, but when reported, they mostly come fro
 There intruments names were reported in so many various ways it was difficult sometimes to tell whether two names refer to the same instrument or not, which emphasize again on the importance of using ontology terms. More details on this are to be found [Common Issues in NMR Repositories](https://docs.nmrxiv.org/docs/advanced-guides/common%20issues%20encountered%20in%20nmr%20repositories/). [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/instruments-names.ipynb)
 ![instrument name](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/instrument.png)
 
-### Dimensionality
-Most of the studies are one-dimensional except when it comes to [CENAPT](https://dataverse.harvard.edu/dataverse/cenapt) where almost all the studies include one- and two-dimensional assays. In some cases, the dimensionality wasn't provided explicitly, but through the name of the technique, e.g., HSQC. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/dimensionality.ipynb)
-![dimensionality](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/dimensionality.png)
-
-### Pulse Frequency
-600 MHz is the one used most, the other frequencies can be found here. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/frequency.ipynb)
-![frequency](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/frequency.png)
-
 ### Nuclei
 1H and 13C are the only nuclei used, also in 2D assays as 1H-13C and 1H-1H, while all the other nuclei were never used. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/nuclei.ipynb)
 ![nuclei](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/nuclei.png)

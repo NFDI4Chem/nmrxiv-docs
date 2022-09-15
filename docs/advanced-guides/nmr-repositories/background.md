@@ -35,7 +35,7 @@ The covered metadata includes sample and assay (experiment) metadata. It also co
 
 Here is a list of the covered parameters
  - Dimensionality
- - Nominal 1H proton frequency
+ - Spectrometer frequency
  - Instruments used
  - Nuclei
  - pH
