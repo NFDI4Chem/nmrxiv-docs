@@ -54,7 +54,7 @@ When talking about "Spectrometer Frequency" here, we mean during the NMR assay, 
     <td><b>NMRShiftDB</b></td>
     <td>dedicated</td>
     <td>cml:field</td>
-    <td>machine-readable</td>
+    <td>float</td>
     <td>separate field</td>
     <td>The value is given as "Unreported" or other similar expressions</td>
     <td></td>
