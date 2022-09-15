@@ -34,10 +34,6 @@ It was possible to get the pH details only from [MetaboLights](https://www.ebi.a
 It was difficult to quantify the solvent data due to the lack of standardized writing, however, it seems that D2O is the solvent most used, or simply the value is missing. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/solvent.ipynb)
 ![solvent](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/solvent.png)
 
-### Temperature
-As [MetaboLights](https://www.ebi.ac.uk/metabolights/) provided the temperature unit using ontology terms, it was possible to convert all of them to Kelvin, and looking at the red bars, we can see that most assays were held around room temperature. That conversion was not possible in [Metabolomics Workbench](https://www.metabolomicsworkbench.org/), and although a human can guess whether values are provided in Kelvin or Celsius, Machine-readabilty was affected. Still, with a human eye we can say that most assays were held around room temperature as well. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/temperature.ipynb)
-![temperature](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/temperature.png)
-
 ### Study Sizes
 Although the study size was mostly in tens of megabytes, there were few studies with a size of tens of gigabytes. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/size.ipynb)
 ![size](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/size.png)

@@ -48,9 +48,9 @@ The term [acquisition nucleus](https://terminology.nfdi4chem.de/ts/ontologies/nm
     <td><b>NMRShiftDB</b></td>
     <td>dedicated</td>
     <td>nmr:OBSERVENUCLEUS</td>
-    <td>free text</td>
+    <td>machine-readable</td>
     <td>none</td>
-    <td>"1h" and "13c" were not found in the description, and checking for the regular expressions '\d+[a-zA-Z]+' didn't match any isotope.</td>
+    <td>none</td>
   </tr>
 </table>
 
