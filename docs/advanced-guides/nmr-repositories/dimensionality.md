@@ -102,20 +102,20 @@ Most of the studies were only one-dimensional. Here you can see the percentage o
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/analysis/dimensionality-h.png" width="1000"/>
-<figcaption>The number of studies in three repositories containing certain NMR dimensionalities</figcaption>
+<figcaption>The number of studies in three repositories based on NMR dimensionalities</figcaption>
 </div>
 
 However, NMRShiftDB similarily has mostly 1D NMR data.
 <div style={{textAlign: 'center'}}>
 <img src="/img/analysis/dimensionality-shift.png" width="1000"/>
-<figcaption>The number of studies in NMRShiftDB containing certain NMR dimensionalities</figcaption>
+<figcaption>The number of studies in NMRShiftDB based on NMR dimensionalities</figcaption>
 </div>
 
 And here you can find the whole view of the four repositories with logarithmic scale.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/analysis/dimensionality-log.png" width="1000"/>
-<figcaption>The number of studies in the four repositories containing certain NMR dimensionalities (with logarithmic scale)</figcaption>
+<figcaption>The number of studies in the four repositories based on NMR dimensionalities (with logarithmic scale)</figcaption>
 </div>
 
 
