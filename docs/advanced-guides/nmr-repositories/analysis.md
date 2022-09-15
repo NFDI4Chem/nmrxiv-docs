@@ -30,9 +30,6 @@ They were used only in [MetaboLights](https://www.ebi.ac.uk/metabolights/). The 
 It was possible to get the pH details only from [MetaboLights](https://www.ebi.ac.uk/metabolights/) where we see that most samples' pHs were leaning towards the neutral 7. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/ph.ipynb)
 ![pH](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/ph.png)
 
-### Solvent
-It was difficult to quantify the solvent data due to the lack of standardized writing, however, it seems that D2O is the solvent most used, or simply the value is missing. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/solvent.ipynb)
-![solvent](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/solvent.png)
 
 ### Study Sizes
 Although the study size was mostly in tens of megabytes, there were few studies with a size of tens of gigabytes. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/size.ipynb)
