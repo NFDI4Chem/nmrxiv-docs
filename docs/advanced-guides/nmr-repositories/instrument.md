@@ -35,7 +35,7 @@ Instrument names are found only in MTBLS and MW.
     <td>Instrument</td>
     <td>free text</td>
     <td>none</td>
-    <td>The field is not provided; or the value is provided as N/A or other similar expressions; or decoding the JSON file containing the study details has failed due to syntax error there..</td>
+    <td>The field is not provided; or the value is provided as N/A or other similar expressions; or decoding the JSON file containing the study details has failed due to syntax error there.</td>
   </tr>
 </table>
 

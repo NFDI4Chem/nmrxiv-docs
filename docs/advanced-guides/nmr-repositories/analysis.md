@@ -5,10 +5,6 @@ title: NMR Repositories Overview
 ---
 # NMR Repositories Overview
 
-### Organism
-Humans and mice are the most studied species in both [MetaboLights](https://www.ebi.ac.uk/metabolights/) and [Metabolomics Workbench](https://www.metabolomicsworkbench.org/), while [CENAPT](https://dataverse.harvard.edu/dataverse/cenapt) doesn't provide this information unless one checks in the corresponding articles. Other, less commonly studied, species include sheep, rats, horses, wild boars and others. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/organism.ipynb)
-![organism](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/organism.png)
-
 ### Organism Part
 As humans and mice are the most studied species in both [MetaboLights](https://www.ebi.ac.uk/metabolights/) and [Metabolomics Workbench](https://www.metabolomicsworkbench.org/), most of the cases where the organism part is reported come from them. Blood serum and plasma, liver, muscles, urine and feces are the most studied. [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/organism-part.ipynb)
 ![organism part](https://raw.githubusercontent.com/NFDI4Chem/nmrxiv-docs/main/static/img/part.png)
