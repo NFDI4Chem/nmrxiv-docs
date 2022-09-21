@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+sidebar_position: 18
 id: common issues encountered in nmr repositories
 title: Common Issues Encountered in NMR Repositories
 ---
