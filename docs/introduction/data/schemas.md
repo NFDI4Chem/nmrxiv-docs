@@ -14,7 +14,7 @@ nmrXiv uses the ISA [(Investigation, Study, Assay)](https://isa-tools.org/format
 - Study ⇛ Study 
 - Assay ⇛ Experiment 
 
-For more details about the objects and relations among them, please check the [Submission Guides](/docs/category/submission-guides/)
+For more details about the objects and relations among them, please check the [Data Model folder](/docs/category/data-model)
 
 ## Data Schemas in nmrXiv
 nmrXiv focus on obtaining DOIs for the different entities and describing the data with ontology terms led to prioritizing a list of schemas. Some have been already implemented, and others will be coming soon. Here you can find a list of those schemas:
