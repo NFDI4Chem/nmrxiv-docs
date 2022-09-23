@@ -49,7 +49,7 @@ All experiments (datasets) belonging to one sample should go to one folder. It m
 The sample rules apply when the user needs, for example, to add an exported JCAMP file to their Bruker data. The JCAMP file should added to the level of study it represents as it is one dataset. Same goes for other formats such as **.nmrium**, or **.nmredata**. It means in one study folder you can find JCAMP files and NMReData files at the same level next to Bruker folders (as long all of them belong to the same sample).
 
 ### Group Studies per Project
-All the data submitted to nmrXiv in one process is grouped as a project. Therefore, make sure that you you group related studies together. How those studies are related is up to the user. They can be a collection of studies used for teaching, or a collection used in a thesis. They can also be a part of one investigation (several samples from one source).
+All the data submitted to nmrXiv in one process is grouped as a project. Therefore, make sure that you group related studies together. How those studies are related is up to the user. They can be a collection of studies used for teaching, or a collection used in a thesis. They can also be a part of one investigation (several samples from one source).
 
 ## Final Step
 Make sure to give your folders and datasets proper names. in nmrXiv you can rename projects and studies, but you can't rename the folders they came from or the datasets. After this step you are ready for [Data Submission](/docs/submission-guides/submission/upload.md)

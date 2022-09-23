@@ -33,10 +33,10 @@ You cannot edit the project once it's made public, but you can always create ano
 
 
 ### How can I share my project?
-You can share your project with multiple users. Not only that you can also choose the type of role you want. Click [here](/docs/submission-guides/sharing) to learn more about sharing.
+You can share your project with multiple users. Not only that you can also choose the type of role you want. Click [here](/docs/submission-guides/data-model/sharing.md) to learn more about sharing.
 
 ### Can I create a team to work on a collaborative project?
-Yes, you can create a [Team](/docs/submission-guides/team) and add as many members as you want. You can also restrict the action of members by assigning different roles. Click [here](/docs/submission-guides/team) to learn more about Team.
+Yes, you can create a [Team](/docs/submission-guides/data-model/team.md) and add as many members as you want. You can also restrict the action of members by assigning different roles. Click [here](/docs/submission-guides/data-model/team.md) to learn more about Team.
 
 
 ### What are the different roles I can assign to a member of a team?
