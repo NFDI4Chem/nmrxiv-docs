@@ -12,7 +12,7 @@ The concept of project in nmrXiv is similar to the one of [Investigation](https:
 </div>
 <br></br>
 
-Starting from the top, one can see the project **name** (Software Development Datasets 1) with a star next to it to indicate whether it is starred and to enable starring/de-starring. Project Name must be unique within the workspace. And to the right, there is the `Project Settings` (more on that in [Delete](#delete)).
+Starting from the top, one can see the project **name** (Software Development Datasets 1), which must be unique within the workspace. Next to the name is a star to indicate whether the project is starred and to enable starring/de-starring, which helps to bookmark projects.  And to the right, there is the `Project Settings` (more on that in [Delete](#delete)).
 
 Below, one can see the first letters of the names of the people with whom the project is shared circled. Clicking on those circles enables sharing control (more on that in [Share](#share)). One can also click on `View details` to view and edit the project details (more on that in [Edit](#edit)) and see the privacy of the project and the ownership by the user. Both those last two are not clickable, but they are editable from `View details` and `Share`.
 
@@ -48,7 +48,7 @@ In the `Dashboard`, you can see a quick view of the project, including its **nam
 ## Edit
 To edit a project, you should have **editing** access to it, which is the case when you are its creator or when it is shared with you as an owner or a collaborator. The project should also still be private.
 
-Enter the chosen project by clicking anywhere on its card from the `Dashboard` or `Shared with me` folders, which leads to the project view. Within the project view, you can edit the project from `View details` at the top of the project view or from any `edit` buttons found next to the fields. 
+Enter the chosen project by clicking anywhere on its card from the `Dashboard` or `Shared with me` folders, which leads to the project view. Within the project view, you can edit the project from `View details` at the top of the project view or from any `Edit` buttons found next to the fields. 
 
 ### View Details
 Clicking on `View details` opens a side menu.

@@ -9,7 +9,7 @@ Folders structuring means how data should ideally be structured in folders befor
 ## nmrXiv Automated Structuring
 nmrXiv can detect the supported by [NMRium](https://www.nmrium.org/). In some cases, as with Bruker files, spectrum gets generated using a folder of files. Whatever generates spectra (one .jdx file, one .jdf file, or one entire Bruker folder) is considered a dataset. The direct parent folder to the dataset (or multiple datasets) is the study. It can be noticed during the submission pipeline as a folder marked with a blue dot.
 
-![Study Blue Dot](/img/study-dot.png)
+![Study Blue Dot](/img/study/dot.png)
 
 In the above image, Bruker folder (named Bruker dataset) was detected by nmrXiv, hence the blue dot on the parent folder Bruker study. The group of JCAMP files were detected too, and the parent folder received a blue dot.
 
