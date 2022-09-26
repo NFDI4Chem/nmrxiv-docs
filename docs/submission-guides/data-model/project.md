@@ -80,7 +80,7 @@ For the `Description`, `Keywords`, and the `License`, the `Edit` button will ope
 `Edit` the **Author** will also pop up a new window **New Author** where the user can use an article DOI to import its authors. By clicking `IMPORT`, the list of the article's authors appear so that the user can select out of it with checkboxes. An alternative would be to enter the authors manually, where all the fields marked with a red asterisk are mandatory. When the user finishes checking the boxes or filling the fields, they need to press `ADD`, which then shows an overview of the entered information. If the user is satisfied with it, they press `SAVE`. Otherwise, they can `delete` the author data or `CLOSE` without saving.
 
 ## Share
-When generating a project, it is shared by default with its creator. When it is generated in a team, then it is shared  with the team members. At the top of the project view, there are circles with the users', with whom the project is shared, names first letters. Clicking on those circles enables modifying the sharing settings by first opening a window that shows with whom the project is already shared along with the roles. 
+When generating a project, it is shared by default with its creator. When it is generated in a team, then it is shared with the team members. At the top of the project view, there are circles with the users', with whom the project is shared, names first letters. Clicking on those circles enables modifying the sharing settings by first opening a window that shows with whom the project is already shared along with the roles. 
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/project/new-share.png" width="1000"/>
