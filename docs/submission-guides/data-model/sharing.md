@@ -5,18 +5,33 @@ title: Sharing
 
 # Sharing
 
-[nmrXiv](https://nmrxiv.org/) sharing feature allows you to share your project quickly with a different user. This feature is helpful when you want someone to quickly review or collaborate to your project. You can choose the appropiate role for the user before sharing, a brief summary about the roles can be found in the info section below. 
+[nmrXiv](https://nmrxiv.org/) sharing feature allows users to share projects and studies singly or in bulks within teams facilitating collaboration and review. In both cases, there are roles controlling who can do what with the shared item.
 
 :::info Info
-* **Owner** - Can read and/or update including deleting the project, study and dataset.
-* **Collaborator** -  Can read and/or update project, study and dataset information.
-* **Reviewer** - Can only read project, study and dataset information.
+There are three roles for sharing:
+- **Owner**: read/update/delete the project/studies/datasets.
+- **Collaborator**: read/update the project/studies/datasets. A collaborator cannot delete any of the project content.
+- **Viewer**: read the project/studies/datasets. A viewer cannot update or delete any of the project content.
 :::
 
-To share the project :
-* From your dashboad, go to the project which you want to share.
-* Click on the share icon on top left header section just below your Project Name.
-* Add email id of the person you want to share and choose the role. You can also add optional message and then press `Send` button.
-* In few seconds the user will recieve an email about the invitation. He/She has to `Accept Invitation` or `Create Account` (if not already) and then `Accept Invitation`.
+## Single Sharing
+This option is available for both projects and studies. At the top of their views, there are circle indicating with whom the project or study shared by showing the users' names first letters. Clicking on those circles enables modifying the sharing settings by first opening a window that shows with whom the project is already shared along with the roles. 
+
+<div style={{textAlign: 'center'}}>
+<img src="/img/project/new-share.png" width="1000"/>
+<figcaption>Project sharing status</figcaption>
+</div>
+
+Then the user can click on the button `Share`, which will open another window to share the project or study with other users.
+
+<div style={{textAlign: 'center'}}>
+<img src="/img/project/select-share.png" width="1000"/>
+<figcaption>Share with users window</figcaption>
+</div>
+
+In the opened window, the user needs to fill in the email and select the role of the user to share with, and they can optionally add a message. For more details, check [Sharing projects](/docs/submission-guides/data-model/project/#share) and [Sharing studies](/docs/submission-guides/data-model/study/#share)
 
 ![Sharing](/img/sharing.gif)
+
+## Teams Sharing
+Teams enable sharing bulks of projects with the same people and roles, while providing the flexibility to add or remove members or change their roles. For more details on how to create teams and add members, please check [Team page](/docs/submission-guides/data-model/team.md)
