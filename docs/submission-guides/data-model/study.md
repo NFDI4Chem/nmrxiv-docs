@@ -79,7 +79,7 @@ Clicking on `View details` opens a side menu.
 </div>
 <br></br>
 
-In the side menu, the user can edit the study's name, description, keywords, privacy, and license. At the bottom, there is a link to the [#share](Share) section and an `activity` button, which opens a new side menu to show the updates-history of the study.
+In the side menu, the user can edit the study's name, description, keywords, privacy, and license. At the bottom, there is a link to the [Share](#share) section and an `activity` button, which opens a new side menu to show the updates-history of the study.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/study/activity.png" width="1000"/>
