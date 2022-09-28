@@ -1,0 +1,8 @@
+{
+    "label": "Data Model",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "nmrXiv uses the ISA [(Investigation, Study, Assay)](https://isa-tools.org/format/specification.html) approach to capture the experimental metadata in a structured format, though it has opted for a different terminology than the one used by ISA. In this section, you will find details about the definition and usage of each object and how they are related."
+    }
+}
