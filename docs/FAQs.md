@@ -3,63 +3,61 @@ sidebar_position: 7
 ---
 # FAQs
 
-### How can I submit my data?
-You need to first register to [nmrXiv](https://nmrxiv.org/) with your email id and then you can submit your data in 3 simple step via our automated submission pipeline. Please read the [submission guides](/docs/category/submission-guides) to get more understanding.
+### How can I submit my data to nmrXiv?
+* [Register to nmrXiv](/docs/submission-guides/registration.md).
+* Structure your data in folders similar to nmrXiv structuring of projects, studies, and datasets. This step might not be intuitive so we recommend [checking its docummentation](/docs/submission-guides/submission/folder-structure.md). 
+* Upload your data, edit it, and provide its metadata via the [submission pipeline](/docs/submission-guides/submission/upload.md).
 
-### Do I need to register before submitting the data to nmrXiv?
-Yes, you need to register via your email id or you can also log in via Single sign-on with your GitHub or Twitter ID.
+### Do I need to register before submitting data to nmrXiv?
+Yes. Registration is a prerequisite to submitting the data. Although you can submit data by logging in via Single sign-on with your GitHub or Twitter ID, this logging-in will result in registering you on nmrXiv. Alternatively, you can register via your email id. More on the registration [here](/docs/submission-guides/registration.md).
 
-### What should be the structure of the folder to be uploaded in nmrXiv?
+### How should I structure my data in folders before submitting it to nmrXiv?
+nmrXiv can structure the submitted data into datasets/studies/projects, but there is still no way to guarantee that the automatically generated structure is what the user was hoping to get. Therefore, it is recommended to have a look at the [folder structuring page](/docs/submission-guides/submission/folder-structure.md).
 
-
-### What are the files format currently supported in nmrXiv?
-
+### What are supported files format in nmrXiv?
+nmrXiv accepts all NMR formats uploaded. However, not all of them are readable at the moment. So far, only NMRium-supported formats can be translated into spectra in nmrXiv. Those formats are jcamp-dx, jeol, Bruker folders, NMReData, and nmrium. For validation purposes, the uploaded data should have at least one readable format.
 
 ### What happens to my data once submitted?
 
+### What are public and private objects in nmrXiv?
+**Public** objects (projects, studies, and datasets) are visible and accessible to everyone(even to the non-registered users of [nmrXiv](https://nmrxiv.org/)). You can see all the open projects [here](https://nmrxiv.org/projects) or find them in the Projects tab in the left-hand panel of your dashboard.
 
-### What is a public and private project in nmrXiv?
-**Public** projects(including the underline studies and datasets) are visible and accessible to everyone(even to the non-registered user of [nmrXiv](https://nmrxiv.org/)). You can see all the open projects [here](https://nmrxiv.org/projects) or can also find them in the Projects tab in the left-hand panel of your dashboard.
+**Private** objects (projects, studies, and datasets) are only visible and accessible to the people with whom they are shared by [single sharing](/docs/submission-guides/data-model/sharing/#single-sharing) or in a [team](/docs/submission-guides/data-model/sharing/#teams-sharing).
 
-**Private** projects(including the underline studies and datasets) are only visible and accessible to you or the members of the team and also to the user with whom you explicitly share the project.
+:::danger Caution
+Once an object is made public, it cannot be edited, versioned, or deleted anymore, nor be made private again.
+:::
 
-### What happens when I make my project public?
-If you make your project public you are making it open for access(including the underline studies and datasets) to everyone(even to the non-registered user of [nmrXiv](https://nmrxiv.org/)), but you can define rights by choosing a license for your project. Once your project is made public you cannot edit, delete or change it to private again.
+### Who can use my public resources?
+If you make your resources public (projects, studies, datasets), you are making them open for access to everyone (even to the non-registered user of [nmrXiv](https://nmrxiv.org/)), but you can specify rights by choosing licenses for your projects and studies (study license propagate to its datasets). Once your project is made public, you cannot edit, delete or make it private again.
 
-### Can I edit my project once made public?
-You cannot edit the project once it's made public, but you can always create another version of the project and make changes on top of it.
+### How can I edit my public resources?
+You cannot edit a resource (project, study, dataset) once it's made public, but you can always create another version and make changes on top of it.
 
-### How can I delete my project, studies or dataset?
+### How can I delete my projects, studies or dataset?
+You can only delete private ones. For more details, check deletion of [projects](/docs/submission-guides/data-model/project/#delete), [studies](/docs/submission-guides/data-model/study/#delete), and [datasets](/docs/submission-guides/data-model/dataset/#delete).
 
+### How can I share my resources?
+You can share your resources (projects, studies, datasets) singly or in bulks within teams. For more details on sharing, please check the [sharing page](/docs/submission-guides/data-model/sharing.md).
 
-### How can I share my project?
-You can share your project with multiple users. Not only that you can also choose the type of role you want. Click [here](/docs/submission-guides/data-model/sharing.md) to learn more about sharing.
-
-### Can I create a team to work on a collaborative project?
-Yes, you can create a [Team](/docs/submission-guides/data-model/team.md) and add as many members as you want. You can also restrict the action of members by assigning different roles. Click [here](/docs/submission-guides/data-model/team.md) to learn more about Team.
-
-
-### What are the different roles I can assign to a member of a team?
-Below are the three major roles which you assign to a member. 
-* **Owner** - Can read and/or update including deleting the project, study and dataset.
-* **Collaborator** -  Can read and/or update project, study and dataset information.
-* **Reviewer** - Can only read project, study and dataset information.
+### What are the available roles when sharing a resource?
+You can assign roles to people with whom you share content:
+* **Owner** - Can read and/or update, including deleting the project, study, and dataset.
+* **Collaborator** -  Can read and/or update the project, study, and dataset.
+* **Reviewer** - Can only read the project, study, and dataset.
 
 ### How can I delete or edit my account?
-You can edit the basic information in your account by clicking on the `Account` tab from the top right corner drop-down in your dashboard. To delete your account please reach out to our [Helpdesk](https://www.nfdi4chem.de/index.php/helpdesk/) or write to us at info@nmrxiv.org.
+You can edit your account details by heading to your name at the top right corner and clicking on the `Account` tab from the drop-down. To delete your account, please reach out to our [Helpdesk](https://www.nfdi4chem.de/index.php/helpdesk/), or write to us at info@nmrxiv.org.
 
-### How can I license my project and how to know which license to choose?
-Licensing your project is important before you make it public. You can choose the license from the license dropdown. Please go through this [discussion](https://github.com/NFDI4Chem/nmrxiv/discussions/123) to learn more about which license to choose.
+### How can I license my resources, and which license to choose?
+You can license your project during or after submission as long as it is private. The license will propagate to the underlying studies, but you can still change the studies licenses. For more details about licenses and when to use each one, please visit the [licenses page](/docs/submission-guides/licenses.md).
 
 ### Can I use nmrXiv for my teaching and demo purposes?
-Yes, you can use our [dev site](https://dev.nmrxiv.org) for teaching, demoing, and also test most of the features. But please keep in mind this site is just for testing and demonstration purposes only and all your data can be reset anytime.
+Please avoid using the official nmrXiv site for the mentioned purposes since we have dedicated our [dev site](https://dev.nmrxiv.org) for teaching, demoing, and testing. However, the dev site is just sandbox, and all the data there could be reset anytime.
 To learn more about our environment click [here](docs/developer-guides/deployment/environment).
 
 ### How to report a bug?
-Before reporting a new issue
-* Please read the [documentation](https://docs.nmrxiv.org/) carefully.
-* Search from the existing [issue](https://github.com/NFDI4Chem/nmrxiv/issues) for your bug. [Here](https://docs.github.com/en/issues/tracking-your-work-with-issues/filtering-and-searching-issues-and-pull-requests#searching-for-issues-and-pull-requests) are some tips that can help you to narrow down your search. You can also provide some additional information on any existing issue if it differs. 
+Before reporting a new issue, check the existing [issues](https://github.com/NFDI4Chem/nmrxiv/issues) to avoid duplication. [Here](https://docs.github.com/en/issues/tracking-your-work-with-issues/filtering-and-searching-issues-and-pull-requests#searching-for-issues-and-pull-requests) are some tips that can help you to narrow down your search. You can also comment on existing issues to provide additional details. 
 
-#### Reporting a new issue
+### How to reach to you?
 Please write to us at info@nmrxiv.org or reach out to our [Helpdesk](https://www.nfdi4chem.de/index.php/helpdesk/). We will try to get back to your queries as soon as possible.
-

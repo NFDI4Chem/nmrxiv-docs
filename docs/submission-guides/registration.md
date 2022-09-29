@@ -4,9 +4,9 @@ title: Registration in nmrXiv
 ---
 # Registration in nmrXiv
 
-Before submitting data to nmrXiv, users need to have nmrXiv accounts. Alternatively, they can submit data by logging in using their GitHub or Twitter accounts.
-To create a new nmrXiv account:
+Before submitting data to nmrXiv, users need to have nmrXiv accounts. Although they can log in using their GitHub or Twitter accounts, this logging will result in registering them on nmrXiv.
 
+To create a new nmrXiv account:
 - Head to [nmrXiv website](https://nmrxiv.org/)
 - Click on register on the top right side.
 - Fill in the fields in the registration form.
