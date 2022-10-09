@@ -7,19 +7,19 @@ The concept of project in nmrXiv is similar to the one of [Investigation](https:
 
 ## Project View
 <div style={{textAlign: 'center'}}>
-<img src="/img/project/project-details.png" width="1000"/>
-<figcaption>Public project view</figcaption>
+<img src="/img/project/view.png" width="1000"/>
+<figcaption>Private project view</figcaption>
 </div>
 <br></br>
 
-Starting from the top, one can see the project **name** (Software Development Datasets 1), which must be unique within the workspace. Next to the name is a star to indicate whether the project is starred and to enable starring/de-starring, which helps to bookmark projects.  And to the right, there is the `Project Settings` (more on that in [Delete](#delete)).
-
-Below, one can see the first letters of the names of the people with whom the project is shared circled. Clicking on those circles enables sharing control (more on that in [Share](#share)). One can also click on `View details` to view and edit the project details (more on that in [Edit](#edit)) and see the privacy of the project and the ownership by the user. Both those last two are not clickable, but they are editable from `View details` and `Share`.
+Starting from the top, one can see the project **name** (FSU NMR Platform Samples), which must be unique within the workspace. Next to the name is a star to indicate whether the project is starred and to enable starring/de-starring, which helps to bookmark projects.  Below, one can see one or more circles with either images or letters of the users' names with whom the project is shared. Clicking on those circles enables sharing control (more on that in [Share](#share)). One can also click on `View details` to view and edit the project details (more on that in [Edit](#edit)) and see the privacy of the project and the ownership by the user. Both those last two are not clickable, but they are editable from `View details` and `Share`. And finally, there are details about when the project was last updated.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/project/project-share.png" width="450"/>
 </div>
 <br></br>
+
+To the right, there is the `Project Settings` (more on that in [Delete](#delete)), and the `Publish` button.  This button remains inactive as long as the data validation fails. To get more details on the failing validation and to fix it, the user can click on **Why can't I publish?**, which leads to the validation page (more on that in [Validation](#validation)).
 
 Moving down, the view of the private project differs from the public one by having `edit` buttons next to the fields in the earlier one.
 
@@ -78,6 +78,8 @@ For the `Description`, `Keywords`, and the `License`, the `Edit` button will ope
 **Update Citation** window enables adding/editing the citation by either importing from a DOI or manually filling the fields , where all the fields marked with a red asterisk are mandatory. When the user finishes filling the fields, they need to press `ADD`, which then shows an overview of the entered information. If the user is satisfied with it, they press `SAVE`. Otherwise, they can `delete` the citation or `CLOSE` without saving.
 
 `Edit` the **Author** will also pop up a new window **New Author** where the user can use an article DOI to import its authors. By clicking `IMPORT`, the list of the article's authors appear so that the user can select out of it with checkboxes. An alternative would be to enter the authors manually, where all the fields marked with a red asterisk are mandatory. When the user finishes checking the boxes or filling the fields, they need to press `ADD`, which then shows an overview of the entered information. If the user is satisfied with it, they press `SAVE`. Otherwise, they can `delete` the author data or `CLOSE` without saving.
+
+## Validation
 
 ## Share
 When generating a project, it is shared by default with its creator. When it is generated in a team, then it is shared with the team members. At the top of the project view, there are circles with the users', with whom the project is shared, names first letters. Clicking on those circles enables modifying the sharing settings by first opening a window that shows with whom the project is already shared along with the roles. 
