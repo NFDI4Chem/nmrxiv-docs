@@ -8,6 +8,9 @@ sidebar_position: 7
 * Structure your data in folders similar to nmrXiv structuring of projects, studies, and datasets. This step might not be intuitive so we recommend [checking its docummentation](/docs/submission-guides/submission/folder-structure.md). 
 * Upload your data, edit it, and provide its metadata via the [submission pipeline](/docs/submission-guides/submission/upload.md).
 
+
+
+
 ### Do I need to register before submitting data to nmrXiv?
 Yes. Registration is a prerequisite to submitting the data. Although you can submit data by logging in via Single sign-on with your GitHub or Twitter ID, this logging-in will result in registering you on nmrXiv. Alternatively, you can register via your email id. More on the registration [here](/docs/submission-guides/registration.md).
 
@@ -61,10 +64,9 @@ Before reporting a new issue
 * Check the existing [issues](https://github.com/NFDI4Chem/nmrxiv/issues) to avoid duplication. [Here](https://docs.github.com/en/issues/tracking-your-work-with-issues/filtering-and-searching-issues-and-pull-requests#searching-for-issues-and-pull-requests) are some tips that can help you to narrow down your search. You can also comment on existing issues to provide additional details. 
 * Check our [documentation](https://docs.nmrxiv.org/) first, if you can find an answer to your question.
 
-If the above criteria is not satisfied 
+If the above criteria are not met 
 
 * Click [here](https://github.com/NFDI4Chem/nmrxiv/issues/new/choose) to report a new one under appropiate category.
-* Or you can also write your issue to us at info@nmrxiv.org.
 
 ### How to reach to you?
 Please write to us at info@nmrxiv.org or reach out to our [Helpdesk](https://www.nfdi4chem.de/index.php/helpdesk/). 
