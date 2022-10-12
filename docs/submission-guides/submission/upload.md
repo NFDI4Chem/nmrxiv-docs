@@ -105,3 +105,12 @@ In step 3, you can find how your project compares to [recommended community stan
 <div style={{textAlign: 'center'}}>
 <img src="/img/upload/check.png" width="1000"/>
 </div> 
+
+### Manage Studies and Datasets
+After your submission is complete, you can always manage your studies or datasets by deleting or adding more files to your project.
+Click on your projects and click on the `Manage Studies` button and the upload window will appear where you can drag and drop to add more files. To delete just select the files/folder you want to remove and click on the delete button that appears on the right side.
+Once done click on `Proceed` to assign metadata and perform analysis and then the `Finish` button at the end before which you might have to input missing information to fulfill the validation for the newly added files. Similar steps can be followed to Manage datasets by clicking on the `Manage Datasets` button.
+
+<div style={{textAlign: 'center'}}>
+<img src="/img/upload/manage-studies-dataset.gif" width="1000"/>
+</div> 
