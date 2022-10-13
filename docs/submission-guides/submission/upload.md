@@ -81,7 +81,7 @@ There are three vertical dots on the right side of the NMRium window. Double-cli
 
 ![Assignement & Meta data](/img/upload/assignment-metadata.gif)
 
-- **Sample Info** tab shows details about the chemical composition of the sample (available molecules and their percentages). If you already know part of the composition of your sample before the NMR spectroscopy, please add the molecules here. You can load structures by adding **SMILES** to the corresponding field and pressing `Load Structure`. It will view the structure in the [structure editor](/docs/submission-guides/submission/editor.md), where you can apply any needed changes. Alternatively, you can draw the structure in the [editor](/docs/submission-guides/submission/editor.md) from scratch. When you feel satisfied with the structure, set its percentage using the bar and press `ADD`. The molecule with its percentage and INChI will appear in the molecules list on the left side. If you need to edit added structures, delete them and add new ones. For more details about the structure editor, please [visit its documentation](/docs/submission-guides/submission/editor.md).
+- **Sample Info** tab shows details about the chemical composition of the sample (available molecules and their percentages). If you already know part of the composition of your sample before the NMR spectroscopy, please add the molecules here. You can load structures by adding **SMILES** to the corresponding field and pressing `Load Structure`. It will view the structure in the [structure editor](/docs/submission-guides/submission/editor.md), where you can apply any needed changes. Alternatively, you can draw the structure in the [editor](/docs/submission-guides/submission/editor.md) from scratch. When you feel satisfied with the structure, set its percentage using the bar and press `ADD`. The molecule with its percentage and INChI will appear in the molecules list on the left side. You can edit and delete the added structures from the corresponding buttons in the molecules list. For more details about the structure editor, please [visit its documentation](/docs/submission-guides/submission/editor.md).
  
 :::caution Please note
 If you don't know the percentage of a molecule in your sample, you have to set it to **zero**.
@@ -104,4 +104,13 @@ In step 3, you can find how your project compares to [recommended community stan
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/upload/check.png" width="1000"/>
+</div> 
+
+### Manage Studies and Datasets
+After your submission is complete, you can always manage your studies or datasets by deleting or adding more files to your project.
+Click on your projects and click on the `Manage Studies` button and the upload window will appear where you can drag and drop to add more files. To delete just select the files/folder you want to remove and click on the delete button that appears on the right side.
+Once done click on `Proceed` to assign metadata and perform analysis and then the `Finish` button at the end before which you might have to input missing information to fulfill the validation for the newly added files. Similar steps can be followed to Manage datasets by clicking on the `Manage Datasets` button.
+
+<div style={{textAlign: 'center'}}>
+<img src="/img/upload/manage-studies-dataset.gif" width="1000"/>
 </div> 

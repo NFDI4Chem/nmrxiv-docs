@@ -150,19 +150,13 @@ For a list of the supported languages, please visit the [link](https://github.co
 
 ### Images/gifs
 
-Images/gifs can be inserted as [Markdown](https://www.markdownguide.org/), or as [HTML](https://html.com/) for special configurations (optional "width" and "height" etc.) or if the image is inside an [HTML tag](https://html.com/#What_are_Tags_and_Attributes).
-The `![...]` in [Markdown](https://www.markdownguide.org/) or `alt={...}` in [HTML](https://html.com/)/[React](https://reactjs.org/) creates an `alt` tag for an additional title, if the image loading fails.
-Keep in mind, that the image/gif paths for [Markdown](https://www.markdownguide.org/) and [HTML](https://html.com/) differ due to different treatment of [Markdown](https://www.markdownguide.org/)  and [React](https://reactjs.org/) (which creates the [HTML](https://html.com/)) in [Docusaurus framework](https://docusaurus.io).
+Images/gifs can be inserted in a centered mode with a specified width using HTML. Please use the following block and change the path to your image, along with the width and caption. If you have many images related to one topic, please group them in one folder. All images are to be added to `/static/img` folder.
 
-Inserting an image/gif  with [Markdown](https://www.markdownguide.org/):
-
-``` md
-![Docusaurus Logo](/img/docusaurus.png)
-```
-
-Inserting an image/gif  with [HTML](https://html.com/) ([React](https://reactjs.org/)):
-``` js
-<img src={require('@site/static/img/docusaurus.png').default} width={"30px"} height={"30px"} alt={"Docusaurus Logo"} />
+```html
+<div style={{textAlign: 'center'}}>
+<img src="/img/project/view.png" width="1000"/>
+<figcaption>Private project view</figcaption>
+</div>
 ```
 
 #### SVG
@@ -292,3 +286,6 @@ Please note: Prepositions are dealt with as normal words and are capitalized whe
 
 ### Images
 Images are to be added directly after the corresponding paragraph.
+
+### Citations
+When citing nother resource, please add a number at the end of the cited section within brackets. For instance: "This is a cited line.[1]". At the bottom of the page, pleas add a new paragraph highlighted with one "\#" and name it as "References". Then provide the numbered list of references as persistent links.
