@@ -53,8 +53,7 @@ The `Files` tab view differs between private and public studies too, with the pr
 <br></br>
 
 ## Create
-There are two ways to create studies. First is through the [submission pipeline](/docs/category/submission-pipeline) where the studies will be created within the submitted project. Second is after submission from within the project.
-
+There are two ways to create studies. First is through the [submission pipeline](/docs/submission-guides/submission/upload.md) where the studies will be created within the submitted project. Second is after submission from within the project.
 
 ## Access
 You can access your created studies by [entering their parent projects](/docs/submission-guides/data-model/project/#access) and scrolling down to **Studies**. You can also find the ones shared with you by others in the `Shared with me` folder directly if the parent project is not shared with you. Lists of studies show quick view of them, including its **name**, **privacy**, and **last updating date**.
@@ -103,6 +102,8 @@ If you don't know the percentage of a molecule in your sample, you have to set i
 <figcaption>Sample chemical composition section of a private study</figcaption>
 </div>
 <br></br>
+
+## Validation
 
 ## Share
 Studies are shared by default with the members of the project. At the top of the study view, there are circles with the users' names first letters with whom the study is shared. Clicking on those circles enables modifying the sharing settings by first opening a window that shows with whom the study is already shared along with the roles. 

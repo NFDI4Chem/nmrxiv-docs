@@ -31,7 +31,7 @@ Below NMRium there is the license of the datasets. This field is uneditable, and
 - **Meta** is the second table coming after **Info**. It includes the metadata from the instrument file.
 
 ## Create
-There are two ways to create datasets. First is through the [submission pipeline](/docs/category/submission-pipeline), where the datasets will be automatically detected. The second is after submission from the `Files` tab within a study by dragging and dropping files or folders, but the second option is possible only for private ones.
+There are two ways to create datasets. First is through the [submission pipeline](/docs/submission-guides/submission/upload.md), where the datasets will be automatically detected. The second is after submission from the `Files` tab within a study by dragging and dropping files or folders, but the second option is possible only for private ones.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/dataset/files.png" width="1000"/>
@@ -46,6 +46,8 @@ You can access your created datasets by [entering their parent studies](/docs/su
 To edit a dataset, you should have **editing** access to it, which is the case when you are its creator or when it is shared with you as an owner or a collaborator. The dataset should also still be private.
 
 You can edit the dataset through NMRium, and a history of changes is kept.
+
+### Manage Datasets
 
 ## Share
 Coming soon.
