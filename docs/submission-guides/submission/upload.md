@@ -15,7 +15,8 @@ Before you start submitting your data, you need to:
 * Keep in mind that your submission will be structured as a **Project**. 
 * If you submit more than one folder at once, they will still be one **Project**, and the underlying folders with datasets will be studies. 
 
-## Files Upload - Step 1
+## The Submission Pipeline
+### Files Upload - Step 1
 
 - Click on the `UPLOAD` button in your Dashboard or the [team Dahsboard](/docs/submission-guides/data-model/team.md) to start the submission pipeline. 
 <div style={{textAlign: 'center'}}>
@@ -41,7 +42,7 @@ Before you start submitting your data, you need to:
 
   ![File Upload](/img/upload/fileupload.gif)
 
-## Assignement & Meta data - Step 2
+### Assignement & Meta data - Step 2
 
 Within this step, you can use [NMRium](https://www.nmrium.org/) to edit your spectra and assign peaks to the corresponding chemical groups. Additionally, you can provide the metadata of the studies and samples within the project. 
 
@@ -99,18 +100,12 @@ After providing all the details in this tab, you can go back to step 1 with the 
 <img src="/img/upload/meta.png" width="1000"/>
 </div> 
 
-## Complete - Step 3
+### Complete - Step 3
 In step 3, you can find how your project compares to [recommended community standards](https://nfdi4chem.github.io/workshops/). Whenever a piece of information is missing, you will have it marked in red with an `Edit` button for a quick update. You can press `FINISH` to end the submission process even while having red marks, but your project will remain private, and complying with the standards is a prerequisite for publishing.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/upload/check.png" width="1000"/>
 </div> 
 
-### Manage Studies and Datasets
-After your submission is complete, you can always manage your studies or datasets by deleting or adding more files to your project.
-Click on your projects and click on the `Manage Studies` button and the upload window will appear where you can drag and drop to add more files. To delete just select the files/folder you want to remove and click on the delete button that appears on the right side.
-Once done click on `Proceed` to assign metadata and perform analysis and then the `Finish` button at the end before which you might have to input missing information to fulfill the validation for the newly added files. Similar steps can be followed to Manage datasets by clicking on the `Manage Datasets` button.
-
-<div style={{textAlign: 'center'}}>
-<img src="/img/upload/manage-studies-dataset.gif" width="1000"/>
-</div> 
+## After Submission
+After completing your submission, you can still manage to add and delete folders and files to and from your project. This option is available in the project view as the `Manage Studies` button and in the study view as the `Manage Datasets` button. To learn more about this, please check the [Manage Studies](/docs/submission-guides/data-model/project/#manage-studies) and [Manage Datasets](/docs/submission-guides/data-model/dataset/#managedatasets) documentation.
