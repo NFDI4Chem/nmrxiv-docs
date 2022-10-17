@@ -51,12 +51,6 @@ The sample rules apply when the user needs, for example, to add an exported JCAM
 ### Group Studies per Project
 All the data submitted to nmrXiv in one process is grouped as a project. Therefore, make sure that you group related studies together in one folder. How those studies are related is up to the user. They can be a collection of studies used for teaching, or a collection used in a thesis. They can also be a part of one investigation (several samples from one source).
 
-### Delete Files
-You can always delete non required files or folder after your upload is complete. Just select the file/folder you want to delete and click on the delete button provided on the right side shown as below.
-
-<img src="/img/upload/delete-files.png" width="600" />
-
-
 ## Final Step
 Make sure to give your folders and datasets proper names. in nmrXiv you can rename projects and studies, but you can't rename the folders they came from or the datasets. After this step you are ready for [Data Submission](/docs/submission-guides/submission/upload.md)
 
