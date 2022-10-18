@@ -4,7 +4,7 @@ title: Structure Editor
 ---
 
 # Structure Editor
-**[nmrXiv](https://nmrxiv.org)** uses [OpenChemLib](https://github.com/Actelion/openchemlib) as its structure editor, which is presented to the user during the [submission](/docs/submission-guides/submission/upload.md) and, after submission, on the [study](/docs/submission-guides/data-model/study.md) level. Its purpose is to allow the user to provide the structures already known to them before running the NMR spectroscopy analysis. The editor allows drawing up structures from scratch, and it also accepts structures loaded from [SMILES](https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html). Above the editor, there is a link to this documentation that you can always access by clicking `Need help?`.
+**[nmrXiv](https://nmrxiv.org)** uses [OpenChemLib](https://github.com/Actelion/openchemlib) as its structure editor, which is presented to the user during the [submission](/docs/submission-guides/submission/upload.md) and, after submission, on the [study](/docs/submission-guides/data-model/study#edit) level, and on the [dataset](/docs/submission-guides/data-model/dataset#edit) level within NMRium as, in the Chemical structures section, the user can press **+** to open the editor. The editor allows drawing up structures from scratch, and it also accepts structures loaded from [SMILES](https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html). Above the editor, there is a link to this documentation that you can always access by clicking `Need help?`.
 
 Here we provide an overview of the tools available in the editor:
 
@@ -23,7 +23,7 @@ Here we provide an overview of the tools available in the editor:
   </tr>
   <tr>
     <td><img src="/img/editor/star.png" alt=""/></td>
-    <td>Tidy up canvas: it reorders the molecules and the bonds to provide a better shae of the spaces, lengths, angles, and distances.</td>
+    <td>Tidy up canvas: it changes the coordinates of the molecules and the bonds to provide a better view of the structure in terms of bond lengths and angles.</td>
     <td><img src="/img/editor/rotate.png" alt=""/></td>
     <td>Zoom and Rotate: by clicking anywhere in the space and scrolling up and down, it enables zooming out and in, while scrolling right and left, it rotates clock-wise and counter-clock.</td>
   </tr>
@@ -31,31 +31,31 @@ Here we provide an overview of the tools available in the editor:
     <td><img src="/img/editor/laso.png" alt=""/></td>
     <td>Lasso select: it enables the lasso selection of atoms and bonds to apply bulk actions, such as with the eraser.</td>
     <td><img src="/img/editor/tool.png" alt=""/></td>
-    <td></td>
+    <td>Mapping: This tool is only for reactions and not applicable in nmrXiv</td>
   </tr>
   <tr>
     <td><img src="/img/editor/question.png" alt=""/></td>
-    <td>Chirality unknown: it enables adding question marks on chiral centers with unknown chirality.</td>
+    <td>Stereo configuration unknown: it enables adding question marks on chiral centers with unknown stereo configuration.</td>
     <td><img src="/img/editor/abs.png" alt=""/></td>
-    <td>Enantiomere: this tool extends to three tools: **Abs**, which indicates that the provided enantiomer is the one intended. **Or** indicates that the intended structure is either this one, or the other enantiomer. **And** indicates that the intended structure is both of this enantiomer and the other one, with equal quantities, which means having a racemic mixture.</td>
+    <td>Enantiomere: this tool extends to three tools: **Abs**, which indicates that the provided enantiomer is the one intended. **Or** indicates that the intended structure is either this one or the other enantiomer. **And** indicates that the intended structure is both this enantiomer and the other one, with equal quantities, which means having a racemic mixture.</td>
   </tr>
   <tr>
     <td><img src="/img/editor/eraser.png" alt=""/></td>
     <td>Eraser: it deletes atoms and bonds. When applied to atoms, it deletes the adjacent bonds, while when applied to bonds, it only deletes the adjacent atoms having no more bonds. Bulk erasing can be done by selecting a set of atoms and bonds. Please note that erasing a double bond will result in the full deletion and not in reducing the bond to a single one.</td>
     <td><img src="/img/editor/text.png" alt=""/></td>
-    <td></td>
+    <td>Text: not applicable in nmrXiv.</td>
   </tr>
   <tr>
     <td><img src="/img/editor/bond.png" alt=""/></td>
-    <td>When applied in empty space, it draws a bond between two carbon atoms, while when applied on an atom, it draws a bond between that atom and a carbon atom. Additionally, it can link two already existing atoms. It can also increase the bond level (e.g., single bond to double bond).</td>
+    <td>When applied in empty space, it draws a bond between two carbon atoms, while when applied on an atom, it draws a bond between that atom and a carbon atom. Additionally, it can link two already existing atoms. It can also increase the bond order (e.g., single bond to double bond).</td>
     <td><img src="/img/editor/chain.png" alt=""/></td>
     <td>Chain: it enables drawing saturated aliphatic chains.</td>
   </tr>
   <tr>
     <td><img src="/img/editor/wedge.png" alt=""/></td>
-    <td>Wedge bond: it indicates that the chiral bond is above the ring.</td>
+    <td>Wedge bond: it indicates that the chiral bond is above the ring. It can be used similarly to the bond tool, or to change the bond type.</td>
     <td><img src="/img/editor/hatch.png" alt=""/></td>
-    <td>Hatched bond: it indicates that the chiral bond is below the ring.</td>
+    <td>Hatched bond: it indicates that the chiral bond is below the ring. It can be used similarly to the bond tool, or to change the bond type.</td>
   </tr>
   <tr>
     <td><img src="/img/editor/triangle.png" alt=""/></td>
@@ -109,12 +109,13 @@ Here we provide an overview of the tools available in the editor:
     <td><img src="/img/editor/br.png" alt=""/></td>
     <td>Bromine atom: it creates a bromine atom, along with a hydrogen atom bonded to it to reach the bromine's one bond. So if clicked in space, it creates a hydrogen bromide molecule. It can also replace an existing atom with a bromine one.</td>
     <td><img src="/img/editor/i.png" alt=""/></td>
-    <td>Iodine atom: it creates an iodine atom, along with a hydrogen atom bonded to it, to reach the iodine one bond. So if clicked in space, it creates a hydrogen iodide molecule. It can als replace an existing atom with an iodine one.</td>
+    <td>Iodine atom: it creates an iodine atom, along with a hydrogen atom bonded to it, to reach the iodine one bond. So if clicked in space, it creates a hydrogen iodide molecule. It can also replace an existing atom with an iodine one.</td>
   </tr>
   <tr>
     <td><img src="/img/editor/h.png" alt=""/></td>
     <td>Hydrogen atom: it creates a hydrogen atom, along with a hydrogen atom bonded to it, to reach the hydrogen's one bond. So if clicked in space, it creates a hydrogen molecule. It can also replace an existing atom with a hydrogen one.</td>
     <td><img src="/img/editor/q.png" alt=""/></td>
-    <td>Atom properties: when applied to an atom, it displays its properties, including the label, mass, valence, and radical state, where the user can edit all of these values.</td>
+    <td>Atom properties: when applied to an atom, it displays its properties, including the label, mass, valence, and radical state, where the user can edit all of these values. It is mostly useful for isotope and radicals</td>
   </tr>
 </table>
+
