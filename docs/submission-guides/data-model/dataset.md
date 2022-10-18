@@ -49,6 +49,8 @@ You can edit the dataset through NMRium, and a history of changes is kept.
 
 ### Manage Datasets
 
+## Validation
+
 ## Share
 Coming soon.
 
