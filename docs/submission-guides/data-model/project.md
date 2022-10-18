@@ -12,7 +12,7 @@ The concept of project in **[nmrXiv](https://nmrxiv.org/)** is similar to the [I
 </div>
 <br></br>
 
-Starting from the top, one can see the project **name** (FSU NMR Platform Samples), which must be unique within the workspace. Next to the name is a star to indicate whether the project is starred and to enable starring/de-starring, which helps to bookmark projects.  Below, one can see the avatars of the people with whom the project is shared as circles with either the users' images or names' first letters. Clicking on those avatars enables sharing control (more on that in [Share](#share)). One can also click on `View details` to view and edit the project details (more on that in [Edit](#edit)), and to see the project's privacy and the user's ownership. Both those last two are not clickable, but they are editable from `View details` and `Share`. And finally, there are details about when the project was last updated.
+Starting from the top, one can see the project **name** (FSU NMR Platform Samples), which must be unique within the workspace. Next to the name is a star to indicate whether the project is starred and to enable starring/de-starring, which helps to bookmark projects. Below, one can see the avatars of the users with whom the project is shared as circles with either the users' images or names' first letters. Clicking on those avatars enables sharing control (more on that in [Share](#share)). One can also click on `View details` to view and edit the project details (more on that in [Edit](#edit)), and to see the project's privacy and the user's ownership. Both those last two are not clickable, but they are editable from `View details` and `Share`. And finally, there are details about when the project was last updated.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/project/project-share.png" width="450"/>
@@ -95,7 +95,7 @@ For the `Description`, `Keywords`, and `License` fields, the `Edit` button will 
 </div>
 
 ### Manage Studies
-Files and folders stored under the project can be managed (by adding more or deleting some out of them) with the button `Manage Studies`, which leads you back to the [upload](/docs/submission-guides/submission/upload#files-upload---step-1) window, where you can add more files or delete existing ones. Once the editing is done, you can click `Proceed` to continue normally with the submission pipeline.
+Files and folders stored under the project can be managed (by adding more or deleting some out of them) with the button `Manage Studies`, which leads you back to the [upload](/docs/submission-guides/submission/upload#files-upload---step-1) window, where you can add more files by dragging and dropping to the project folder, or delete existing ones by selecting them in the **left panel** and clicking `Delete` button. Once the editing is done, you can click `Proceed` to continue normally with the submission pipeline.
 
 :::caution Folder Structure
 Please pay attention to preserving your project folder structure when adding more studies. This means that the new study should be added to the same level as the rest of the existing ones. The recommended structuring is to group all the studies in one folder and then upload this folder. Thus, when adding a new study, it should be added to the same folder and not the root. In the following image, the study should be added to the **data** folder. Please find more in [Folder Structure documentation](/docs/submission-guides/submission/folder-structure.md)
@@ -121,7 +121,7 @@ Clicking on **Why can't I publish?** leads to a new page similar to the [step-3 
 
 ## Share
 
-When generating a project, it is shared by default with its creator. When it is generated in a team, then it is shared with the team members. At the top of the project view, there are avatars of the people with whom the project is shared as circles with either the users' images or names' first letters. Clicking on those avatars enables modifying the sharing settings by first opening a window that shows with whom the project is already shared along with the roles. 
+When generating a project, it is shared by default with its creator. When it is generated in a team, then it is shared with the team members. At the top of the project view, there are avatars of the users with whom the project is shared as circles with either their images or names' first letters. Clicking on those avatars enables modifying the sharing settings by first opening a window that shows with whom the project is already shared along with the roles. 
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/project/new-share.png" width="1000"/>
@@ -155,7 +155,7 @@ After an invitation is accepted, the creator can still remove any of the members
 </div>
 
 ## Delete and Archive
-Only private projects can be deleted, while public ones can be [archive](#archived). The reason is that once a project is public, it can be referenced somewhere else, which requires the repository to keep an active link to this project. Therefore, when the creators of a project decide that it is no longer maintained, or that the data provided is not accurate, they can only archive it instead of deleting it, while deletion is always an option for private projects.
+Only private projects can be deleted, while public ones can be archived. The reason is that once a project is public, it can be referenced somewhere else, which requires the repository to keep an active link to this project. Therefore, when the creators of a public project decide that it is no longer maintained, or that the data provided is not accurate, they can only archive it instead of deleting it, while deletion is always an option for private projects.
 
 To delete/archive a project, click on `Project Settings` at the top right of the project view. It will lead to a new window where you can click on `DELETE PROJECT`/ `ARCHIVE PROJECT`. 
 
