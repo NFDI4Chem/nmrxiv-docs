@@ -34,4 +34,4 @@ In the opened window, the user needs to fill in the email and select the role of
 ![Sharing](/img/sharing.gif)
 
 ## Teams Sharing
-Teams enable sharing bulks of projects with the same people and roles, while providing the flexibility to add or remove members or change their roles. For more details on how to create teams and add members, please check [Team page](/docs/submission-guides/data-model/team.md).
+Teams enable sharing bulks of projects with the same people and roles while providing the flexibility to add or remove members or change their roles. For more details on how to create teams and add members, please check [Team page](/docs/submission-guides/data-model/team.md).
