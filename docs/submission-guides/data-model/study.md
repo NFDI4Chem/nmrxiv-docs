@@ -108,7 +108,7 @@ If you don't know the percentage of a molecule in your sample, you have to set i
 
 ## Validation
 
-To publish a project, a.k.a. to make it public, it must comply with community standards. At the moment, we are checking for [DataCite](https://datacite.org/) mandatory metadata needed to receive a [DOI](https://www.doi.org/) in addition to requesting an image for the project. If any piece of metadata is missing, you will see a **Why can't I publish?** link message at the top of the project view.
+To publish a study, i.e., to make it public, you need to publish its parent project, which must comply with community standards. At the moment, we are checking for [DataCite](https://datacite.org/) mandatory metadata needed to receive a [DOI](https://www.doi.org/) in addition to requesting an image for the project. If any piece of metadata is missing, you will see a **Why can't I publish?** link message at the top of the project view.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/project/publish.png" width="1000"/>
@@ -118,9 +118,8 @@ Clicking on **Why can't I publish?** leads to a new page similar to the [step-3 
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/study/validation.png" width="1000"/>
-<figcaption>Validation Checklist of the Project</figcaption>
+<figcaption>Validation Checklist of the Study</figcaption>
 </div>
-
 
 ## Share
 
