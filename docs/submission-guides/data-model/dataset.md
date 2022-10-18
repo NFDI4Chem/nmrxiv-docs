@@ -23,11 +23,13 @@ The selected experiment will be viewed in the embedded NMRium. For more details 
 
 Next to the `Select Experiment` menu, there is a `Manage Datasets` button, which enables adding datasets or deleting them to and from a study through the [submission pipeline](/docs/submission-guides/submission/upload.md).
 
-Directly above the NMRium window, you can see a gray message on the left that informs the user about the current status of the spectra (being uploaded, saved, etc.). On the right side, there exist three buttons. `Reset` will reset all the edits done on the spectra, getting it back to its original status when uploaded. Resting is an edit that is saved along with other edits in the history, which can be viewed by clicking `Edit History`, which opens a side menu to show the editors, and the dates of edits.
+Directly above the NMRium window, you can see a gray message on the left that informs the user about the current status of the spectra (being uploaded, saved, etc.). On the right side, there exist three buttons. `Reset` will reset all the edits done on the spectra, getting it back to its original status when uploaded. Resetting is an edit that is saved along with other edits in the history, which can be viewed by clicking `Edit History`, which opens a side menu to show the editors, and the dates of edits.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/dataset/history.png" width="1000"/>
 </div> 
+
+Below, there is [NMRium](https://www.nmrium.org/) window. Clicking on the `User manual` leads to [NMRium Documentation page](https://docs.nmrium.org/). You can control the panels and tools you have by default in [NMRium](https://www.nmrium.org/) from `General settings`. You can also click `Full screen` to enable that mode.
 
 If any structure is added to `Chemical structures` field in NMRium, it appears directly below NMRium. Then there is the metadata of the experiment:
 - **Info** includes all the information extracted by [NMRium](https://www.nmrium.org/) about the NMR experiment.
