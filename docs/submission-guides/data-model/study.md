@@ -13,7 +13,7 @@ The concept of study in **[nmrXiv](https://nmrxiv.org/)** is similar to the one 
 </div>
 <br></br>
 
-As with the project, the study public view differs from the private one. Starting with the public one, at top there is the path to the study (Dashboard > Project name), followed by a somehow similar view to the project's. Below is the study **name** (Eserine), which in contrast to the project, doesn't have to be unique within the project namespace. Next to the name is a star to indicate whether the study is starred and to enable starring/de-starring, which helps to bookmark studies. Starring a project doesn't propagate to the underlying studies. Starred studies can all be  found in the `Starred` folder in the left panel. Below, one can see the avatars of the users with whom the study is shared as circles with either their images or names' first letters. Clicking on those avatars enables sharing control (more on that in [Share](#share)). One can also click on `View details` to view and edit the study details (more on that in [Edit](#edit)), and see the privacy of the study, when it was last updated, and the ownership by the user. Those three are not clickable but editable from `View details` and `Share`.
+As with the project, the study's public view differs from the private one. Starting with the public one, at the top, there is the path to the study (Dashboard > Project name), followed by a somehow similar view to the project. Below is the study **name** (Eserine), which in contrast to the project, doesn't have to be unique within the project namespace. Next to the name is a star to indicate whether the study is starred and to enable starring/de-starring, which helps to bookmark studies. Starring a project doesn't propagate to the underlying studies. Starred studies can all be found in the `Starred` folder in the left panel. Below, one can see the avatars of the users with whom the study is shared as circles with either their images or names' first letters. Clicking on those avatars enables sharing control (more on that in [Share](#share)). One can also click on `View details` to view and edit the study details (more on that in [Edit](#edit)), and see the privacy of the study, when it was last updated, and the ownership by the user. Those three are not clickable but editable from `View details` and `Share`.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/study/top.png" width="1000"/>
@@ -32,7 +32,7 @@ At the bottom is the **Sample chemical composition**, which also differs between
 With public studies, the option of adding more structures disappears, removing the entire right side of the section, including the structure editor with the [SMILES](https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html) field and the percentage bar. On the left side, one can see all the added molecules with their percentage and [INChI](https://iupac.org/who-we-are/divisions/division-details/inchi/) in the molecules list.
 
 :::caution 
-The purpose of the **Sample chemical composition** section is to enable the user to add the molecules they are aware of their existence in the sample **before the NMR spectroscopy** along with their percentages. Molecules identified throught the NMR analysis are located in the dataset level.
+The purpose of the **Sample chemical composition** section is to enable the user to add the molecules they are aware of their existence in the sample **before the NMR spectroscopy** along with their percentages. Molecules identified through the NMR analysis are located at the dataset level.
 :::
 
 The `Datasets` tab has a dropdown menu with all the datasets within the study. This tab will be covered in [Dataset page](/docs/submission-guides/data-model/dataset.md).
@@ -55,7 +55,7 @@ The `Files` tab view is similar in both private and public studies where the use
 There are two ways to create studies. First is through the [submission pipeline](/docs/submission-guides/submission/upload.md) where the studies will be created within the submitted project. Second is after submission from within the project view using [`Manage Studies` button](/docs/submission-guides/data-model/project#manage-studies), which leads back to the [submission pipeline](/docs/submission-guides/submission/upload.md). 
 
 ## Access
-You can access your created studies by [entering their parent projects](/docs/submission-guides/data-model/project/#access) and scrolling down to **Studies**. You can also find the ones shared with you by others in the `Shared with me` folder directly if the parent project is not shared with you. Studies that you have starred can be found in the `Starred` folder. Other folders, such as `Recent` and `Trash`, can include projects only. Lists of studies show quick view of them, including its **name**, **privacy**, and **last updating date**.
+You can access your created studies by [entering their parent projects](/docs/submission-guides/data-model/project/#access) and scrolling down to **Studies**. You can also find the ones shared with you by others in the `Shared with me` folder directly if the parent project is not shared with you. Studies that you have starred can be found in the `Starred` folder. Other folders, such as `Recent` and `Trash`, can include projects only. Lists of studies show a quick view of them, including their **name**, **privacy**, and **last updating date**.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/project/studies.png" width="1000"/>
@@ -77,7 +77,7 @@ Clicking on `View details` opens a side menu where the user can edit the study n
 </div>
 <br></br>
 
-At the bottom, there is a link to the [Share](#share) section and an `activity` button, which opens a new side menu to show the updates-history of the study.
+At the bottom, there is a link to the [Share](#share) section and an `activity` button, which opens a new side menu to show the updates history of the study.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/study/activity.png" width="1000"/>
@@ -93,7 +93,7 @@ For all the fields `Description`, `Keywords`, and the `License`, the `Edit` butt
 In the private mode, you can load structures by adding **SMILES** to the corresponding field and pressing `Load Structure`. It will view the structure in the structure editor, where you can apply any needed changes. Alternatively, you can draw the structure in the editor from scratch. Here are more [details on how to use the structure editor](/docs/submission-guides/submission/editor.md). When you feel satisfied with the structure, set its percentage using the bar and press `ADD`. The molecule with its percentage and INChI will appear in the molecules list on the left side. Added structures can be `Edit`ed and `Delete`d using the corresponding buttons.
 
 :::caution
-The purpose of the **Sample chemical composition** section is to enable the user to add the molecules they are aware of their existence in the sample **before the NMR spectroscopy** along with their percentages. Molecules identified throught the NMR analysis are located in the dataset level.
+The purpose of the **Sample chemical composition** section is to enable the user to add the molecules they are aware of their existence in the sample **before the NMR spectroscopy** along with their percentages. Molecules identified through the NMR analysis are located at the dataset level.
 :::
 
 :::caution
@@ -114,7 +114,7 @@ To publish a study, i.e., to make it public, you need to publish its parent proj
 <img src="/img/project/publish.png" width="1000"/>
 </div>
 
-Clicking on **Why can't I publish?** leads to a new page similar to the [step-3 of the submission pipeline](/docs/submission-guides/submission/upload#complete---step-3). Here you can find either red <span style={{color:"red"}}>x</span> or green <span style={{color:"green"}}>✓</span> to indicate the existence or absence of the metadata respectively. Whenever the red <span style={{color:"red"}}>x</span> exists, it is accompanied by an `Edit` button to facilitate providing the missing data. If the datasets validation fail, the study validation fails too as a parent, which can be inferred from the red highlighting of its name. More on validating datasets in the [dataset page](/docs/submission-guides/data-model/dataset#validation)
+Clicking on **Why can't I publish?** leads to a new page similar to the [step-3 of the submission pipeline](/docs/submission-guides/submission/upload#complete---step-3). Here you can find either red <span style={{color:"red"}}>x</span> or green <span style={{color:"green"}}>✓</span> to indicate the existence or absence of the metadata respectively. Whenever the red <span style={{color:"red"}}>x</span> exists, it is accompanied by an `Edit` button to facilitate providing the missing data. If the datasets validation fails, the study validation fails too as a parent, which can be inferred from the red highlighting of its name. More on validating datasets in the [dataset page](/docs/submission-guides/data-model/dataset#validation)
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/study/validation.png" width="1000"/>
@@ -141,7 +141,7 @@ In the opened window, the user needs to fill in the email and select the role of
 - **Collaborator**: read/update the study/datasets. A collaborator cannot delete any of the study content.
 - **Viewer**: read the study/datasets. A viewer cannot update or delete any of the study content.
 
-When the user is satisfied with their entries, they can click `SEND` to send an email to the other user. Then the window gets refreshed to enable entering details of other users to share with them. When all the invitations are sent, the user can click the back arrow to go back to the project sharing status window, which will be updated to show the status of the new invitations. Sharing can be canceled as long the invitation is still pending (not accepted or rejected by the receivers). 
+When the user is satisfied with their entries, they can click `SEND` to send an email to the other user. Then the window gets refreshed to enable entering details of other users to share with them. When all the invitations are sent, the user can click the back arrow to go back to the project-sharing status window, which will be updated to show the status of the new invitations. Sharing can be canceled as long the invitation is still pending (not accepted or rejected by the receivers). 
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/study/update-share.png" width="1000"/>
