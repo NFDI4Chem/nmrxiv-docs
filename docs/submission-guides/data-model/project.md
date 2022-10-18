@@ -106,7 +106,7 @@ Please pay attention to preserving your project folder structure when adding mor
 </div>
 
 ## Validation
-To publish a project, a.k.a. to make it public, it must comply with community standards. At the moment we are checking for [DataCite](https://datacite.org/) mandatory metadata needed to receive a [DOI](https://www.doi.org/) in addition to requesting an image for the project. If any piece of metadata is missing, you will see a **Why can't I publish?** link message at the top of the project view.
+To publish a project, i.e., to make it public, it must comply with community standards. At the moment we are checking for [DataCite](https://datacite.org/) mandatory metadata needed to receive a [DOI](https://www.doi.org/) in addition to requesting an image for the project. If any piece of metadata is missing, you will see a **Why can't I publish?** link message at the top of the project view.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/project/publish.png" width="1000"/>

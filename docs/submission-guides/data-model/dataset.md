@@ -3,7 +3,7 @@ sidebar_position: 3
 title: Dataset
 ---
 
-The concept of the dataset in nmrXiv is similar to the one of [assay](https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay) in [ISA model](https://isa-tools.org/format/specification.html) yet broader, as it refers to the files corresponding to experiments along with their metadata. For instance, one dataset could be a Bruker folder with all the underlying files corresponding to a 1H assay. nmrXiv is capable of detecting datasets automatically and grouping them in studies, which requires the user to make sure that they submit their data in a compatible way. For more details, it is highly recommended to check the [folder structuring section](/docs/submission-guides/submission/folder-structure.md) before submitting data.
+The concept of the dataset in **[nmrXiv](https://nmrxiv.org/)** is similar to the one of [assay](https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay) in [ISA model](https://isa-tools.org/format/specification.html) yet broader, as it refers to the files corresponding to experiments along with their metadata. For instance, one dataset could be a Bruker folder with all the underlying files corresponding to a 1H assay. **[nmrXiv](https://nmrxiv.org/)** is capable of detecting datasets automatically and grouping them in studies, which requires the user to ensure submitting their data in a compatible way. For more details, it is highly recommended to check the [folder structuring section](/docs/submission-guides/submission/folder-structure.md) before submitting data.
 
 ## Dataset View
 <div style={{textAlign: 'center'}}>
@@ -12,7 +12,7 @@ The concept of the dataset in nmrXiv is similar to the one of [assay](https://is
 </div>
 <br></br>
 
-The view of a public dataset is similar to the private's one. In fact, it is just a tab from the [study view](/docs/submission-guides/data-model/study/#study-view), and it is similar to the [Step 2](/docs/submission-guides/submission/upload#assignement--meta-data---step-2) Experiments (Spectra) tab of the [Data Submission Pipeline](/docs/submission-guides/submission/upload). At the top, there is a drop-down menu to select an experiment (within a study, aka, sample). 
+The view of a public dataset is similar to the private's one. In fact, it is just a tab from the [study view](/docs/submission-guides/data-model/study/#study-view), and it is similar to the [Step 2](/docs/submission-guides/submission/upload#assignement--meta-data---step-2) Experiments (Spectra) tab of the [Data Submission Pipeline](/docs/submission-guides/submission/upload). At the top, there is a drop-down menu to select an experiment (within a study, thus, sample). 
 <div style={{textAlign: 'center'}}>
 <img src="/img/dataset/experiment.png" width="1000"/>
 <figcaption>Select experiment menu</figcaption>
@@ -21,41 +21,55 @@ The view of a public dataset is similar to the private's one. In fact, it is jus
 
 The selected experiment will be viewed in the embedded NMRium. For more details about [NMRium](https://www.nmrium.org/), please visit our [NMRium documentation page](/docs/advanced-guides/nmrium/) and [NMRium official documentation](https://docs.nmrium.org/).
 
-:::caution Please note
-On the very right side of the NMRium window, there are three vertical dots. Double-clicking on them will expand a menu with several fields.
-:::
+Next to the `Select Experiment` menu, there is a `Manage Datasets` button, which enables adding datasets or deleting them to and from a study through the [submission pipeline](/docs/submission-guides/submission/upload.md).
 
-Below NMRium there is the license of the datasets. This field is uneditable, and it takes its value from the parent study license. Then there is metadata of the experiment:
+Directly above the NMRium window, you can see a gray message on the left that informs the user about the current status of the spectra (being uploaded, saved, etc.). To the right side, there exist three buttons. `Reset` will reset all the edits done on the spectra, getting it back to its original status when uploaded. Resting is an edit that is saved along with other edits in the history, which can be viewed by clicking `Edit History`, which opens a side menu to show the editors, and the dates of edits.
+
+<div style={{textAlign: 'center'}}>
+<img src="/img/dataset/history.png" width="1000"/>
+</div> 
+
+If any structure is added to `Chemical structures` field in NMRium, it appears directly below NMRium. Then there is metadata of the experiment:
 - **Info** includes all the information extracted by [NMRium](https://www.nmrium.org/) about the NMR experiment.
 
 - **Meta** is the second table coming after **Info**. It includes the metadata from the instrument file.
 
 ## Create
-There are two ways to create datasets. First is through the [submission pipeline](/docs/submission-guides/submission/upload.md), where the datasets will be automatically detected. The second is after submission from the `Files` tab within a study by dragging and dropping files or folders, but the second option is possible only for private ones.
+There are two ways to create datasets. First is through the [submission pipeline](/docs/submission-guides/submission/upload.md), where the datasets will be automatically detected. The second is after submission from the `Datasets` tab within a study by dragging and dropping files or folders to the opened [submission pipeline](/docs/submission-guides/submission/upload.md), but the second option is possible only for private ones.
 
-<div style={{textAlign: 'center'}}>
-<img src="/img/dataset/files.png" width="1000"/>
-<figcaption>Files tab in a private study with the option to drag and drop more datasets there.</figcaption>
-</div>
-<br></br>
 
 ## Access
-You can access your created datasets by [entering their parent studies](/docs/submission-guides/data-model/study/#access) and going to `Files` tab. You can also find the ones shared with you by others in the `Shared with me` folder directly if the parent study is not shared with you. All the public datasets on nmrXiv are in the `Datasets` folder.
+You can access your created datasets and the ones shared with you by [entering their parent studies](/docs/submission-guides/data-model/study/#access) and going to `Datasets` or `Files` tabs. All the public datasets on **[nmrXiv](https://nmrxiv.org/)** are in the `Datasets` folder.
 
 ## Edit
-To edit a dataset, you should have **editing** access to it, which is the case when you are its creator or when it is shared with you as an owner or a collaborator. The dataset should also still be private.
-
-You can edit the dataset through NMRium, and a history of changes is kept.
+To edit a dataset, you should have **editing** access to it, which is the case when you are its creator or when it is shared with you as an owner or a collaborator. The dataset should also still be private. You can edit the dataset through NMRium, and a history of changes is kept.
 
 ### Manage Datasets
+From the `Datasets` tab within a study, you can add more datasets by dragging and dropping files or folders to the opened [submission pipeline](/docs/submission-guides/submission/upload.md), or you can delete them by selecting a dataset **in the left panel** and pressing `Delete`.
 
 ## Validation
 
+To publish a dataset, i.e., to make it public, you need to publish its parent project, which must comply with community standards. At the moment, we are checking for [DataCite](https://datacite.org/) mandatory metadata needed to receive a [DOI](https://www.doi.org/) in addition to requesting an image for the project. If any piece of metadata is missing, you will see a **Why can't I publish?** link message at the top of the project view.
+
+<div style={{textAlign: 'center'}}>
+<img src="/img/project/publish.png" width="1000"/>
+</div>
+
+Clicking on **Why can't I publish?** leads to a new page similar to the [step-3 of the submission pipeline](/docs/submission-guides/submission/upload#complete---step-3). Here you can find either red <span style={{color:"red"}}>x</span> or green <span style={{color:"green"}}>✓</span> to indicate the existence or absence of the metadata respectively. Whenever the red <span style={{color:"red"}}>x</span> exists, it is accompanied by an `Edit` button to facilitate providing the missing data. If `NMRium info` validation fails, this means NMRium didn't manage to extract the metadata from the files. Please click `Edit`, which will lead you to the corresponding dataset, and there click on `Preview`, which will update the preview and save it. You can make sure that the metadata is generated by checking the `Info` table below NMRium.
+
+If `Assignments` validation fails, this means you have no structure at the dataset level. Click `Edit`, which will lead you to the corresponding dataset, and in NMRium `Chemical structures`, you have to ensure providing a structure there. The datasets where validation failed can be found from the red highlighting of their name. 
+
+<div style={{textAlign: 'center'}}>
+<img src="/img/dataset/validation.png" width="1000"/>
+<figcaption>Validation Checklist of the Dataset</figcaption>
+</div>
+
 ## Share
-Coming soon.
+[Sharing a study](/docs/submission-guides/data-model/study#share) results in sharing all the underlying datasets. There is no way to share individual datasets.
 
-## Delete
-[Deleting a project](/docs/submission-guides/data-model/project/#delete) will delete all the underlying datasets.
+## Delete and Archive
+Only private datasets can be deleted, while public ones can be archived. The reason is that once a dataset is public, it can be referenced somewhere else, which requires the repository to keep an active link to this dataset. Therefore, when the creators of a public dataset decide that it is no longer maintained, or that the data provided is not accurate, they can only archive it instead of deleting it, while deletion is always an option for private datasets.
 
-## Archive
-[Archiving a project](/docs/submission-guides/data-model/project/#archive) will archive all the underlying datasets.
+Deleting/Archiving a [project](/docs/submission-guides/data-model/project#delete-and-archive) or a [study](/docs/submission-guides/data-model/study#delete-and-archive) will delete/archive all the underlying datasets. In the case of project deletion, this action is reversible for 30 days as the deleted project will be stored in the **Trash** folder, where the user can find the project and restore it from the `Project Settings`. After 30 days, deletion leads to permanently deleting the project and all of its content data. In the case of archiving, the user can unarchive the project anytime from the `Project Settings`. Archived projects are not moved to the trash.
+
+However, there is another way to delete datasets, which is from the [`Manage Datasets` button](#manage-datasets) in the [dataset view](#dataset-view).
