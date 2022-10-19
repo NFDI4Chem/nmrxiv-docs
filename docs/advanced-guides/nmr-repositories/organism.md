@@ -68,7 +68,7 @@ Some values were ambiguous such as "Various", "Extract", "Multi-species non-defi
 
 However, even after taking all that was mentioned above, it is still clear that the most studied species are humans (Homo sapiens) and mice (Mus musculus)
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/org/all.png" width="500"/>
+<img src="/img/analysis/org/all.png" width="700"/>
 <figcaption>A rough estimate of the percentages of all studies in MTBLS and MW repositories based on the sample pH</figcaption>
 </div>
 <br></br>

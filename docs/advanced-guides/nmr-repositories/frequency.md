@@ -97,7 +97,7 @@ When talking about "Spectrometer Frequency" here, we mean during the NMR assay, 
 The four repositories provided frequency values in one way or another. However, Metabolights only provided the instrument's maximum frequency value. Only NMRShiftDB provided a field for the unit. Including the large number of studies in NMRShiftDB, the most used spectrometer frequency was 100-150MHz.
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/freq/all.png" width="500"/>
+<img src="/img/analysis/freq/all.png" width="600"/>
 <figcaption>The percentages of all studies in three repositories (without MTBLS) based on the Spectrometer frequency</figcaption>
 </div>
 
