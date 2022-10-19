@@ -3,8 +3,11 @@ sidebar_position: 7
 title: Solvent
 ---
 # Solvent
-[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/solvent.ipynb)
+[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/solvent.ipynb) where you can find all the graphs.
 
+Data created on 17.10.2022 at 19:32:45
+
+Data updated on 17.10.2022 at 19:32:45
 
 ## Support by Ontologies
 The concept of [NMR solvent](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1000330) already exists in [nmr CV](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv), unfortunately, without a definition. The same happens with [NMR buffer](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1000331). Despite that, the values for [solvents, buffers,](https://terminology.nfdi4chem.de/ts/ontologies/chebi) and their [concentrations units](https://terminology.nfdi4chem.de/ts/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000051&viewMode=All&siblings=false) can be ideally provided with ontology terms.
@@ -84,16 +87,16 @@ The concept of [NMR solvent](https://terminology.nfdi4chem.de/ts/ontologies/nmrc
 </table>
 
 ## Results
-The solvent was possible to obtain in most studies and repositories, but it was rarely machine-readable, with a high level of inconsistencies. The following graph can give a rough estimate about popular solvents. However, it is far from accuracy when it comes to exact numbers, as one solvent can be mentioned tens of times with different expressions. 
+The solvent was possible to obtain in most studies and repositories, but it was rarely machine-readable, with a high level of inconsistencies. The following graph can give a rough estimate of popular solvents. However, it is far from accurate when it comes to exact numbers, as one solvent can be mentioned tens of times with different expressions. 
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/solvent-all.png" width="700"/>
+<img src="/img/analysis/slv/all.png" width="700"/>
 <figcaption>A rough estimate of the percentages of all studies in the four repositories based on the NMR solvent (only solvent used in more than 50 studies are shown)</figcaption>
 </div>
 
 Here you can find the whole view of the four repositories with a logarithmic scale where you can easily notice how some solvents get repeated with different expressions.
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/solvent-log.png" width="1000"/>
+<img src="/img/analysis/slv/log.png" width="1000"/>
 <figcaption>The number of studies in the four repositories based on NMR solvent (with a logarithmic scale)</figcaption>
 </div>
