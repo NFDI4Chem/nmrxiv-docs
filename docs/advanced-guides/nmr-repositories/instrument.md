@@ -5,6 +5,10 @@ title: Instruments
 # Instruments Names
 [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/instruments-names.ipynb)
 
+Data created at: 17.10.2022 at 19:32:45
+
+Data updated at: 17.10.2022 at 19:32:45
+
 ## Support by Ontologies
 
 [NMR instrument](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400059)s are already provided in [nmr CV](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv), along with [instruments parts](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1000463&viewMode=All&siblings=false).

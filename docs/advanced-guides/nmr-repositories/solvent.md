@@ -5,6 +5,9 @@ title: Solvent
 # Solvent
 [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/solvent.ipynb)
 
+Data created at: 17.10.2022 at 19:32:45
+
+Data updated at: 17.10.2022 at 19:32:45
 
 ## Support by Ontologies
 The concept of [NMR solvent](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1000330) already exists in [nmr CV](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv), unfortunately, without a definition. The same happens with [NMR buffer](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1000331). Despite that, the values for [solvents, buffers,](https://terminology.nfdi4chem.de/ts/ontologies/chebi) and their [concentrations units](https://terminology.nfdi4chem.de/ts/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000051&viewMode=All&siblings=false) can be ideally provided with ontology terms.

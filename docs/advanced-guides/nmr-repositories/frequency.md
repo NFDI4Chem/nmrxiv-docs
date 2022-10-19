@@ -4,7 +4,11 @@ title: Spectrometer Frequency
 ---
 
 # Spectrometer Frequency
-[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/frequency.ipynb)
+[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/frequency.ipynb) where you can find all the graphs.
+
+Data created at: 17.10.2022 at 19:32:45
+
+Data updated at: 17.10.2022 at 19:32:45
 
 ## Support by Ontologies
 

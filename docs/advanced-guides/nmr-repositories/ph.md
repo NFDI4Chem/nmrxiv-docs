@@ -5,6 +5,10 @@ title: pH
 # Sample pH
 [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/ph.ipynb)
 
+Data created at: 17.10.2022 at 19:32:45
+
+Data updated at: 17.10.2022 at 19:32:45
+
 ## Support by Ontologies
 The [definition of the pH](https://terminology.nfdi4chem.de/ts/search?q=ph) is easily found in ontologies
 https://terminology.nfdi4chem.de/ts/search?q=ph, the difiniton of [Sample pH](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1000019) too. However, when users provide this value, it is not clear whether it really means the pH of the sample, the solvent, the solvent with the buffer, or another value. Due to the possible confusion, users tend to provide a detailed explanation within the solvent field as a free text, which unfortunately affects the machine-readability of both the solvent and the pH. You can find examples in the [solvent](/docs/advanced-guides/nmr-repositories/solvent.md) page.

@@ -6,6 +6,10 @@ title: Atomic Nuclei
 # Atomic Nuclei
 [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/nuclei.ipynb)
 
+Data created at: 17.10.2022 at 19:32:45
+
+Data updated at: 17.10.2022 at 19:32:45
+
 ## Support by Ontologies
 The term [acquisition nucleus](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400083) is already provided in [nmr CV](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv). However, 2D NMR isotopes related terms are largely missing. The possible values such as "1H" are very well annotated, either simply as atoms ([in CHEBI](https://terminology.nfdi4chem.de/ts/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33250&viewMode=All&siblings=false)), or encoded in the name of the NMR method ([in CHMO](https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHMO_0000613&viewMode=All&siblings=false) despite the lack of consistency with dimensionality there). Currently, available ontologies are adequate to cover the atomic nuclei values in most cases.
 

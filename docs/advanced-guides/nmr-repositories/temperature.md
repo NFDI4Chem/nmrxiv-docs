@@ -6,6 +6,10 @@ title: Temperature
 # Temperature
 [Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/temperature.ipynb)
 
+Data created at: 17.10.2022 at 19:32:45
+
+Data updated at: 17.10.2022 at 19:32:45
+
 ## Support by Ontologies
 While searching in NMR-related ontologies, finding terms about the temperature through an NMR assay wasn't possible. When saying "Temperature" here, we mean the temperature at which the NMR spectroscopy was conducted.  Unit-wise, one can easily use [ontology-driven units](https://terminology.nfdi4chem.de/ts/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000005&viewMode=All&siblings=false).
 
