@@ -4,11 +4,11 @@ title: Temperature
 ---
 
 # Temperature
-[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/temperature.ipynb)
+[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/temperature.ipynb) where you can find all the graphs.
 
-Data created at: 17.10.2022 at 19:32:45
+Data created on 17.10.2022 at 19:32:45
 
-Data updated at: 17.10.2022 at 19:32:45
+Data updated on 17.10.2022 at 19:32:45
 
 ## Support by Ontologies
 While searching in NMR-related ontologies, finding terms about the temperature through an NMR assay wasn't possible. When saying "Temperature" here, we mean the temperature at which the NMR spectroscopy was conducted.  Unit-wise, one can easily use [ontology-driven units](https://terminology.nfdi4chem.de/ts/ontologies/uo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FUO_0000005&viewMode=All&siblings=false).
@@ -76,7 +76,7 @@ While searching in NMR-related ontologies, finding terms about the temperature t
   </tr>
   <tr>
     <td><b>MW</b></td>
-    <td>["4C", "4 oC", 	"281 ± 0.5 K", "15 celsius", "23d", "22 degree Celsius", "27", "5mm", "295.9", "36,85"]</td>
+    <td>["4C", "4 oC",  "281 ± 0.5 K", "15 celsius", "23d", "22 degree Celsius", "27", "5mm", "295.9", "36,85"]</td>
     <td>"288", "293"</td>
   </tr>
   <tr>
@@ -87,16 +87,16 @@ While searching in NMR-related ontologies, finding terms about the temperature t
 </table>
 
 ## Results
-The temperature was easy to obtain in all the three repositories that provide it. However, the inconsistency encountered in the values and units  made it time-consuming to harmonize the data.  In the end, having units coming (or possibly to be mapped) from ontologies made most of the data clear and machine-readable. The temperature provided in Celsius was converted to Kelvin, and with visualization, one can see that most of the assays were held around room temperature.
+The temperature was easy to obtain in all the three repositories that provide it. However, the inconsistency encountered in the values and units made it time-consuming to harmonize the data.  In the end, having units coming (or possibly to be mapped) from ontologies made most of the data clear and machine-readable. The temperature provided in Celsius was converted to Kelvin, and with visualization, one can see that most of the assays were held around room temperature.
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/temperature-all.png" width="500"/>
+<img src="/img/analysis/tmp/all.png" width="500"/>
 <figcaption>The percentages of all studies in the three repositories based on the Temperature</figcaption>
 </div>
 
-Still, some of the values were reported wrongly in Kelvin, as values like 0 and 37 can be seen in the graph showing the number of studies for each temperature (with logarithmic scale).
+Still, some of the values were reported wrongly in Kelvin, as values like 0 and 37 can be seen in the graph showing the number of studies for each temperature (with a logarithmic scale).
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/temperature-log.png" width="1000"/>
+<img src="/img/analysis/tmp/log.png" width="1000"/>
 <figcaption>The number of studies in the three repositories based on the Temperature (with a logarithmic scale)</figcaption>
 </div>

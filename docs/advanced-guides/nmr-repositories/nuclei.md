@@ -4,7 +4,7 @@ title: Atomic Nuclei
 ---
 
 # Atomic Nuclei
-[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/nuclei.ipynb)where you can find all the graphs.
+[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/nuclei.ipynb) where you can find all the graphs.
 
 Data created on 17.10.2022 at 19:32:45
 
