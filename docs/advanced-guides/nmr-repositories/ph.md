@@ -36,7 +36,6 @@ It was possible to get the pH details only from [MetaboLights](https://www.ebi.a
 
 ## Results
 
-### pH
 It was possible to obtain the pH only from MTBLS, even though most of the studies didn't provide this metadata. Most samples' pHs were leaning towards the neutral 7, while a small percentage was around 4.
 
 <div style={{textAlign: 'center'}}>
