@@ -14,7 +14,7 @@ We provide a detailed description of the data sanitization we performed based on
   - **absent** means that no such field was found in the database. 
 - Then, the field name is mentioned. 
 - Afterwards, given that there is a dedicated or semi-dedicated field, we describe the **Values Readability** whether they are:
-  - **Ontology-Driven**.
+  - **ontology-driven**.
   - **machine-readable** when they are free text, but reasonable cleaning makes them machine-readable in most cases.
   - **free text**
 - We describe whether the **Unit** was provided as a 
