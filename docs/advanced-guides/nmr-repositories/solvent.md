@@ -87,7 +87,7 @@ The concept of [NMR solvent](https://terminology.nfdi4chem.de/ts/ontologies/nmrc
 </table>
 
 ## Results
-The solvent was possible to obtain in most studies and repositories, but it was rarely machine-readable, with a high level of inconsistencies. The following graph can give a rough estimate about popular solvents. However, it is far from accuracy when it comes to exact numbers, as one solvent can be mentioned tens of times with different expressions. 
+The solvent was possible to obtain in most studies and repositories, but it was rarely machine-readable, with a high level of inconsistencies. The following graph can give a rough estimate of popular solvents. However, it is far from accurate when it comes to exact numbers, as one solvent can be mentioned tens of times with different expressions. 
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/analysis/slv/all.png" width="700"/>

@@ -3,11 +3,11 @@ sidebar_position: 8
 title: Instruments
 ---
 # Instruments Names
-[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/instruments-names.ipynb)
+[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/instruments-names.ipynb) where you can find all the graphs.
 
-Data created at: 17.10.2022 at 19:32:45
+Data created on 17.10.2022 at 19:32:45
 
-Data updated at: 17.10.2022 at 19:32:45
+Data updated on 17.10.2022 at 19:32:45
 
 ## Support by Ontologies
 
@@ -66,13 +66,14 @@ Instrument names are found only in MTBLS and MW.
 Both repositories have a dedicated field for the instrument name, making it easily obtainable. However, none used ontology terms. As a result, one can see in the graph of the percentages of studies using the same instruments how small and plenty the sections are due to variations in the names used to indicate the same instrument. One can easily tell that Bruker and Agilent are the most used instruments, but getting exact numbers on how much a specific instrument is used was quite difficult.
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/instrument-all.png" width="700"/>
+<img src="/img/analysis/inst/all.png" width="700"/>
 <figcaption>A rough estimate of the percentages of all studies in the two repositories based on the NMR instrument</figcaption>
 </div>
+<br></br>
 
 Looking at the distribution of instrument names in the two repositories, one can see that the same value (except for once) was never used in both, although the same instrument actually was. 
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/instrument-h.png" width="1000"/>
+<img src="/img/analysis/inst/h.png" width="1000"/>
 <figcaption>The number of studies in MW and MTBLS based on the instrument name.</figcaption>
 </div>
