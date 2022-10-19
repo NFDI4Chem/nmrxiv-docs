@@ -4,14 +4,14 @@ title: Atomic Nuclei
 ---
 
 # Atomic Nuclei
-[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/nuclei.ipynb)
+[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/nuclei.ipynb)where you can find all the graphs.
 
-Data created at: 17.10.2022 at 19:32:45
+Data created on 17.10.2022 at 19:32:45
 
-Data updated at: 17.10.2022 at 19:32:45
+Data updated on 17.10.2022 at 19:32:45
 
 ## Support by Ontologies
-The term [acquisition nucleus](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400083) is already provided in [nmr CV](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv). However, 2D NMR isotopes related terms are largely missing. The possible values such as "1H" are very well annotated, either simply as atoms ([in CHEBI](https://terminology.nfdi4chem.de/ts/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33250&viewMode=All&siblings=false)), or encoded in the name of the NMR method ([in CHMO](https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHMO_0000613&viewMode=All&siblings=false) despite the lack of consistency with dimensionality there). Currently, available ontologies are adequate to cover the atomic nuclei values in most cases.
+The term [acquisition nucleus](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400083) is already provided in [nmr CV](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv). However, 2D NMR isotope-related terms are largely missing. The possible values such as "1H" are very well annotated, either simply as atoms ([in CHEBI](https://terminology.nfdi4chem.de/ts/ontologies/chebi/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHEBI_33250&viewMode=All&siblings=false)), or encoded in the name of the NMR method ([in CHMO](https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHMO_0000613&viewMode=All&siblings=false) despite the lack of consistency with dimensionality there). Currently, available ontologies are adequate to cover the atomic nuclei values in most cases.
 
 ## Data Sanitisation and Missing Values
 
@@ -90,26 +90,26 @@ The term [acquisition nucleus](https://terminology.nfdi4chem.de/ts/ontologies/nm
 Taking the large number of studies from NMRShiftDB into account or not, the most reported atomic nuclei are "1H" and "13C". But NMRSiftDB adds more 1D nuclei to the scene, such as "19F" and "11B". 
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/nuclei-all.png" width="500"/>
+<img src="/img/analysis/ncl/all.png" width="500"/>
 <figcaption>The percentages of all studies in the four repositories based on the acquisition nucleus (only nuclei appearing in more than 200 studies can be seen here.)</figcaption>
 </div>
 
 Excluding NMRShiftDB, we see that the other repositories have only 1D and 2D NMR based on proton and carbon.
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/nuclei-h.png" width="1000"/>
+<img src="/img/analysis/ncl/h.png" width="1000"/>
 <figcaption>The number of studies in three repositories based on the acquisition nucleus</figcaption>
 </div>
 
 Here one can see the variation in nuclei reported in NMRShiftDB.
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/nuclei-shift.png" width="1000"/>
-<figcaption>The number of studies in NMRShiftDB based on the aquisition nucleus</figcaption>
+<img src="/img/analysis/ncl/shift.png" width="1000"/>
+<figcaption>The number of studies in NMRShiftDB based on the acquisition nucleus</figcaption>
 </div>
 
 And here you can find the whole view of the four repositories with a logarithmic scale.
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/nuclei-log.png" width="1000"/>
-<figcaption>The number of studies in the four repositories based on the acquisition nucleus (with logarithmic scale)</figcaption>
+<img src="/img/analysis/ncl/log.png" width="1000"/>
+<figcaption>The number of studies in the four repositories based on the acquisition nucleus (with a logarithmic scale)</figcaption>
 </div>
