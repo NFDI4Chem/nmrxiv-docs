@@ -6,26 +6,23 @@ title: Overview
 
 **[nmrXiv](https://nmrxiv.org)** (pronounced `nm-archive`) is a FAIR and Open, Consensus-Driven Nuclear Magnetic Resonance (NMR) Data Repository and Computational platform. It is currently being developed as a part of [NFDI4Chem](https://www.nfdi4chem.de/) initiative with the ultimate goal of accelerating broader coordination and data sharing among researchers by creating a platform for managing, sharing, and analyzing raw and processed NMR spectral data.
 
-This documentation site comprises detailed walk-through explanations from basic to more complex functionalities for developers ([Developer Guides](/docs/category/developer-guides)), submitters ([Submission Guides](/docs/category/submission-guides)) and users (Search and [API](/docs/developer-guides/API.md)) of **[nmrXiv](https://nmrxiv.org)**. This documentation-first approach allows developers and users to discuss proposed features and ensure that the implementations reflect the actual use cases. All the adopted core concepts, such as [Data Schemas](/docs/introduction/data/schemas.md), [NMR File Formats](/docs/introduction/data/formats.md), tools & [Converters](/docs/introduction/data/file-format#nmr-file-formats-converters), [Ontologies](/docs/introduction/data/ontologies.md), FAIR best practices, etc., are documented to ensure a clear scaffolding for developers to revisit previously developed parts and continue building upon them.
-
-The immediate goal of **[nmrXiv](https://nmrxiv.org)** is to integrate and execute the following objectives by establishing **[nmrXiv](https://nmrxiv.org)** as a consensus-driven resource designed to serve global research and adjacent communities.
+The immediate goal of **[nmrXiv](https://nmrxiv.org)** is to integrate and execute the following objectives by establishing **[nmrXiv](https://nmrxiv.org)** as a consensus-driven resource designed to serve global chemistry research and adjacent natural products / metabolomics communities.
 
 ### Software Development
-To develop a voluntarily FAIR, cloud-based infrastructure that uses freely shared source code and deployment methods. Apply industry-grade development practices to ensure platform reliability, safety, and efficacy. Use Continuous Improvement principles will ensure an always-on user experience and high reliability. Release the codebase and infrastructure details (including the development, documentation, and usage practices) through [MIT Open Source License](/docs/license.md) for openness.
+To develop nmrXiv based on a voluntarily FAIR, cloud-based infrastructure that uses freely shared source code and deployment methods. Apply industry-grade development practices to ensure platform reliability, safety, and efficacy. Use Continuous Improvement principles will ensure an always-on user experience and high reliability. Release the codebase and infrastructure details (including the development, documentation, and usage practices) through [MIT Open Source License](/docs/license.md) for openness.
 
 *More details about the platform architecture and related topics* - [here](/docs/category/developer-guides)
 
 ### Submission, Curation, and Analysis
 
-Enable the FAIR Sharing of raw NMR data to enhance the quality of chemical research and dissemination. Also, to develop non-prescriptivist curation and analysis standards by nature for data and metadata. Build standards with input and contributions from the community and make them compatible with existing and potential newly developed formats and approaches.
-
-**F**indable &middot; **A**ccessible &middot; **I**nteroperable &middot; **R**eusable
+Enable the FAIR (**F**indable &middot; **A**ccessible &middot; **I**nteroperable &middot; **R**eusable) Sharing of raw NMR data to enhance the quality of chemical research and dissemination. Also, to develop non-prescriptivist curation and analysis standards for data and metadata. Build standards with input and contributions from the community and make them compatible with existing and potential newly developed formats and approaches.
 
 *More details about the data standards and related topics* - [here](/docs/category/data)
 
-
 ### Workshops and Training
 To engage analytical chemistry researchers and adjacent communities through webinars, workshops, tutorials, and community calls to ensure that **[nmrXiv](https://nmrxiv.org)** meets the researchers’ needs and implements adequate incentive mechanisms for data contributions and curation.
+
+This documentation site comprises detailed walk-through explanations from basic to more complex functionalities for developers ([Developer Guides](/docs/category/developer-guides)), submitters ([Submission Guides](/docs/category/submission-guides)) and users (Search and [API](/docs/developer-guides/API.md)) of **[nmrXiv](https://nmrxiv.org)**. All the adopted core concepts, such as [Data Schemas](/docs/introduction/data/schemas.md), [NMR File Formats](/docs/introduction/data/formats.md), tools & [Converters](/docs/introduction/data/file-format#nmr-file-formats-converters), [Ontologies](/docs/introduction/data/ontologies.md), FAIR best practices, etc., are documented to ensure a clear scaffolding for developers to revisit previously developed parts and continue building upon them. This documentation-first approach allows developers and users to discuss proposed features and ensure that the implementations reflect the actual use cases.
 
 :::info note
 **Why another NMR Repository?** <br/>
