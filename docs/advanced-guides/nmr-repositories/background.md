@@ -11,7 +11,7 @@ We are interested in knowing what metadata was covered, and how often (in how ma
 
 We would also like to find out what aspects were challenging and how they were tackled. Then, we move to the ontologies to see which ones are commonly used and relevant to NMR data to help us shape the process of data reporting in **[nmrXiv](https://nmrxiv.org/)**. We hope to make our data [FAIRer](https://www.go-fair.org/fair-principles/), and more machine-readable by using this knowledge.
 
-By identifying common issues encountered while reporting data, we can avoid repeating the same mistakes. We can also work on approaches to retrospectively correct the data before importing it into nmrXiv. More details on those issues to be found in [Common Issues in NMR Repositories](/docs/advanced-guides/nmr-repositories/common-issues-encountered-in-nmr-repositories.md)
+By identifying common issues encountered while reporting data, we can avoid repeating the same mistakes. We can also work on approaches to retrospectively correct the data before importing it into nmrXiv.
 
 ## The Overview Scope
 
