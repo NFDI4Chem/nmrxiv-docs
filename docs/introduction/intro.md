@@ -25,7 +25,7 @@ To engage analytical chemistry researchers and adjacent communities through webi
 This documentation site comprises detailed walk-through explanations from basic to more complex functionalities for developers ([Developer Guides](/docs/category/developer-guides)), submitters ([Submission Guides](/docs/category/submission-guides)) and users (Search and [API](/docs/developer-guides/API.md)) of **[nmrXiv](https://nmrxiv.org)**. All the adopted core concepts, such as [Data Schemas](/docs/introduction/data/schemas.md), [NMR File Formats](/docs/introduction/data/formats.md), tools & [Converters](/docs/introduction/data/file-format#nmr-file-formats-converters), [Ontologies](/docs/introduction/data/ontologies.md), FAIR best practices, etc., are documented to ensure a clear scaffolding for developers to revisit previously developed parts and continue building upon them. This documentation-first approach allows developers and users to discuss proposed features and ensure that the implementations reflect the actual use cases.
 
 :::info note
-**Why another NMR Repository?** <br/>
+**Why nmrXiv?** <br/>
 Over the past few decades, several attempts have been made to host literature-derived NMR data; however, these databases do not meet the needs of all chemical communities (including natural products & metabolomics) in several ways, including a lack of experimental data, limited search capabilities, and more importantly, they are not FAIR compliant.
 
 **[nmrXiv](https://nmrxiv.org)** is the **first FAIR and Open archive to preserve NMR data in its original instrument format**, and it promotes **Open Data and Open Standards** to maximize long term sustainability of the resource and FAIRness of the archived data.
