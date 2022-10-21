@@ -4,11 +4,15 @@ title: Dimensionality
 ---
 
 # Dimensionality
-[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/dimensionality.ipynb)
+[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/dimensionality.ipynb) where you can find all the graphs.
+
+Data created on 17.10.2022 at 19:32:45
+
+Data updated on 17.10.2022 at 19:32:45
 
 ## Support by Ontologies
 
-Despite the difficulty of finding definitions of NMR Dimensionality in ontologies, the term itself exists ([in nuclear magnetic resonance CV](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1000117&viewMode=All&siblings=false), and in [Physico-chemical methods and properties](https://terminology.nfdi4chem.de/ts/ontologies/fix/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFIX_0000140&viewMode=All&siblings=false)). However, its subclasses are not rich with either definitions or values, with the values mostly being missing in the case of 1D NMR, or provided ([as in CHMO](https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHMO_0000613&viewMode=All&siblings=false)), but not classified as 1D. Still, the available ontologies are sufficient for providing the piece of metadata describing the dimensionality as the subclasses can be added in another field in the repository. 
+Despite the difficulty of finding definitions of NMR Dimensionality in ontologies, the term itself exists ( in [nuclear magnetic resonance CV](https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1000117&viewMode=All&siblings=false), and in [Physico-chemical methods and properties](https://terminology.nfdi4chem.de/ts/ontologies/fix/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFIX_0000140&viewMode=All&siblings=false)). However, its subclasses are not rich with either definitions or values, with the values mostly being missing in the case of 1D NMR, or provided ([as in CHMO](https://terminology.nfdi4chem.de/ts/ontologies/chmo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCHMO_0000613&viewMode=All&siblings=false)), but not classified as 1D. Still, the available ontologies are sufficient for providing the piece of metadata describing the dimensionality as the subclasses can be added in another field in the repository. 
 
 ## Data Sanitisation and Missing Values
 
@@ -29,7 +33,7 @@ Despite the difficulty of finding definitions of NMR Dimensionality in ontologie
     <td>free text</td>
     <td>none</td>
     <td>The field is not provided; or the expressions "1D" or "2D" are not found in the field, and also the method mentioned is not available in the mapping between the method and dimensionality made with hard-coding; or the value is provided as N/A or other similar expressions; or the study "assays" value is "null"</td>
-    <td>Due to providing methods names in free text, much hard-coding was needed</td>
+    <td>Due to providing methods names in free text, much hard coding was needed</td>
   </tr>
   <tr>
     <td><b>MW</b></td>
@@ -37,8 +41,8 @@ Despite the difficulty of finding definitions of NMR Dimensionality in ontologie
     <td>NMR Eexperiment Type</td>
     <td>free text</td>
     <td>none</td>
-    <td>The field is not provided; or the expressions "1D" and "2D" are not found in the field, and also the method mentioned is not available in the mapping between the method and dimensionality made with hard-coding; or the value is provided as N/A or other similar expressions; or decoding the json file that contains the study details has failed due to syntax error there</td>
-    <td>Due to providing methods names in free text, much hard-coding was needed</td>
+    <td>The field is not provided; or the expressions "1D" and "2D" are not found in the field, and also the method mentioned is not available in the mapping between the method and dimensionality made with hard-coding; or the value is provided as N/A or other similar expressions; or decoding the JSON file that contains the study details has failed due to syntax error there</td>
+    <td>Due to providing methods names in free text, much hard coding was needed</td>
   </tr>
   <tr>
     <td><b>CENAPT</b></td>
@@ -47,7 +51,7 @@ Despite the difficulty of finding definitions of NMR Dimensionality in ontologie
     <td>machine-readable</td>
     <td>none</td>
     <td>Description field is always available, so missing means only that the expressions "1D" and "2D" are not found there</td>
-    <td>It was machine-readable as looking for "1D" and "2D" espressions was enough in all the texts</td>
+    <td>It was machine-readable as looking for "1D" and "2D" expressions was enough in all the texts</td>
   </tr>
   <tr>
     <td><b>NMRShiftDB</b></td>
@@ -56,7 +60,7 @@ Despite the difficulty of finding definitions of NMR Dimensionality in ontologie
     <td>free text</td>
     <td>none</td>
     <td>The field is not provided; or the expressions "1D" and "2D" are not found in the field, and also the method mentioned is not available in the mapping between the method and dimensionality made with hard-coding. The value can also be given as "Unreported" or other similar expressions.</td>
-    <td>Due to providing methods names in free text, much hard-coding was needed</td>
+    <td>Due to providing methods names in free text, much hard coding was needed</td>
   </tr>
 </table>
 
@@ -94,30 +98,26 @@ The Dimensionality was possible to obtain in most studies and repositories. It c
 Most of the studies were only one-dimensional. Here you can see the percentage of studies based on their dimensionalities. If a study has both 1D and 2D spectra, it will appear twice.
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/dimensionality-all.png" width="500"/>
+<img src="/img/analysis/dim/all.png" width="500"/>
 <figcaption>The percentages of all studies in the four repositories based on the Dimensionality</figcaption>
 </div>
 
 [CENAPT](https://dataverse.harvard.edu/dataverse/cenapt) was the only exception to provide 2D NMR for almost all the studies as one can see below (NMRShiftDB data were not added due to the huge number of studies there).
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/dimensionality-h.png" width="1000"/>
+<img src="/img/analysis/dim/h.png" width="1000"/>
 <figcaption>The number of studies in three repositories based on NMR dimensionalities</figcaption>
 </div>
 
-However, NMRShiftDB similarily has mostly 1D NMR data.
+However, NMRShiftDB similarly has mostly 1D NMR data.
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/dimensionality-shift.png" width="1000"/>
+<img src="/img/analysis/dim/shift.png" width="1000"/>
 <figcaption>The number of studies in NMRShiftDB based on NMR dimensionalities</figcaption>
 </div>
 
-And here you can find the whole view of the four repositories with logarithmic scale.
+And here you can find the whole view of the four repositories with a logarithmic scale.
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/dimensionality-log.png" width="1000"/>
-<figcaption>The number of studies in the four repositories based on NMR dimensionalities (with logarithmic scale)</figcaption>
+<img src="/img/analysis/dim/log.png" width="1000"/>
+<figcaption>The number of studies in the four repositories based on NMR dimensionalities (with a logarithmic scale)</figcaption>
 </div>
-
-
-
-

@@ -4,7 +4,11 @@ title: Spectrometer Frequency
 ---
 
 # Spectrometer Frequency
-[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/frequency.ipynb)
+[Notebook link](https://github.com/NFDI4Chem/repo-scripts/blob/main/notebooks/frequency.ipynb) where you can find all the graphs.
+
+Data created on 17.10.2022 at 19:32:45
+
+Data updated on 17.10.2022 at 19:32:45
 
 ## Support by Ontologies
 
@@ -93,21 +97,21 @@ When talking about "Spectrometer Frequency" here, we mean during the NMR assay, 
 The four repositories provided frequency values in one way or another. However, Metabolights only provided the instrument's maximum frequency value. Only NMRShiftDB provided a field for the unit. Including the large number of studies in NMRShiftDB, the most used spectrometer frequency was 100-150MHz.
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/frequency-all.png" width="500"/>
+<img src="/img/analysis/freq/all.png" width="600"/>
 <figcaption>The percentages of all studies in three repositories (without MTBLS) based on the Spectrometer frequency</figcaption>
 </div>
 
 However, when NMRShiftDB is excluded, the most used spectrometer frequency is 600-650MHz.
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/frequency-h.png" width="1000"/>
+<img src="/img/analysis/freq/h.png" width="1000"/>
 <figcaption>The number of studies in MW and CENAPT based on Spectrometer frequency</figcaption>
 </div>
 
 Looking into the instruments in Metabolights, the most used maximum frequency was also 600-650MHz.
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/frequency-mtbls.png" width="1000"/>
+<img src="/img/analysis/freq/mtbls.png" width="1000"/>
 <figcaption>The number of studies in MTBLS based on Maximum spectrometer frequency</figcaption>
 </div>
 
@@ -115,6 +119,6 @@ Looking into the instruments in Metabolights, the most used maximum frequency wa
 And here you can find the whole view of the three repositories with a logarithmic scale.
 
 <div style={{textAlign: 'center'}}>
-<img src="/img/analysis/frequency-log.png" width="1000"/>
+<img src="/img/analysis/freq/log.png" width="1000"/>
 <figcaption>The number of studies in the three repositories based on Spectrometer frequency (with a logarithmic scale)</figcaption>
 </div>
