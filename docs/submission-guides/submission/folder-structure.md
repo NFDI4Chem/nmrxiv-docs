@@ -41,7 +41,7 @@ All experiments (datasets) belonging to one sample should go to one folder. It m
 
 <div style={{textAlign: 'center'}}>
 
-<img src="/img/study-structure.png" width="600" />
+<img src="/img/study/structure.png" width="600" />
 
 </div>
 
