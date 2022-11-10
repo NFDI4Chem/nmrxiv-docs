@@ -151,18 +151,18 @@ After an invitation is accepted, the creator can still remove any of the members
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/project/modify-share.png" width="500"/>
-<figcaption>Project sharing status with option to remove a collaborator</figcaption>
+<figcaption>Project sharing status with the option to remove a collaborator</figcaption>
 </div>
 
 ## Project Up
-After projects are published, they can be found in the **Projects** folder in the left pannel.
+After projects are published, they can be found in the **Projects** folder in the left panel.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/project/projects-folder.png" width="1000"/>
 <figcaption>Projects folder view</figcaption>
 </div>
 
- **[nmrXiv](https://nmrxiv.org/)** users can use the up arrow, which can be found at the top right corner of each project, to give it an "up", increasing the number next to the arrow by one. If the user finds a project interesting, or if they have used the provided data there, or if they are aware of similar confirming work, they can press the "up" arrow, and based on the number of the users who decided to move a project upward, the project will move up in the view of public projects. 
+ **[nmrXiv](https://nmrxiv.org/)** users can use the up arrow, which can be found at the top right corner of each project, to give it an "up", increasing the number next to the arrow by one. If the user finds a project interesting, if they have used the provided data there, or if they are aware of similar confirming work, they can press the "up" arrow, and based on the number of users who decided to move a project upward, the project will move up in the view of public projects. 
 
 :::caution 
 Sorting projects by the number of ups is not provided yet, but it is coming soon.
