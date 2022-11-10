@@ -7,13 +7,14 @@ The concept of study in **[nmrXiv](https://nmrxiv.org/)** is similar to the one 
 
 
 ## Study View
+### Private Study View
 <div style={{textAlign: 'center'}}>
-<img src="/img/study/view.png" width="1000"/>
-<figcaption>Public study view</figcaption>
+<img src="/img/study/private-view.png" width="1000"/>
+<figcaption>Private study view</figcaption>
 </div>
 <br></br>
 
-As with the project, the study's public view differs from the private one. Starting with the public one, at the top, there is the path to the study (Dashboard > Project name), followed by a somehow similar view to the project. Below is the study **name** (Eserine), which in contrast to the project, doesn't have to be unique within the project namespace. Next to the name is a star to indicate whether the study is starred and to enable starring/de-starring, which helps to bookmark studies. Starring a project doesn't propagate to the underlying studies. Starred studies can all be found in the `Starred` folder in the left panel. Below, one can see the avatars of the users with whom the study is shared as circles with either their images or names' first letters. Clicking on those avatars enables sharing control (more on that in [Share](#share)). One can also click on `View details` to view and edit the study details (more on that in [Edit](#edit)), and see the privacy of the study, when it was last updated, and the ownership by the user. Those three are not clickable but editable from `View details` and `Share`.
+As with the project, the study's public view differs from the private one. Starting with the private one, at the top, there is the path to the study (Dashboard > CENAPTnmr), followed by a somehow similar view to the project. Below is the study **name** (Eugenol 400 MHz CDCl3 NMR data), which in contrast to the project, doesn't have to be unique within the project namespace. Next to the name is a star to indicate whether the study is starred and to enable starring/de-starring, which helps to bookmark studies. Starring a project doesn't propagate to the underlying studies. Starred studies can all be found in the `Starred` folder in the left panel. Below, one can see the avatars of the users with whom the study is shared as circles with either their images or names' first letters. Clicking on those avatars enables sharing control (more on that in [Share](#share)). One can also click on `View details` to view and edit the study details (more on that in [Edit](#edit)), and see the privacy of the study, when it was last updated, and the ownership by the user. Those three are not clickable but editable from `View details` and `Share`.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/study/top.png" width="1000"/>
@@ -21,7 +22,7 @@ As with the project, the study's public view differs from the private one. Start
 </div>
 <br></br>
 
-Moving down, there are three tabs: `About`, `Datasets`, and `Files`, with `About` being the one shown by default when entering a study, and the one similar to the project view. Its view differs in the private study from the public's one by having `edit` buttons next to the fields in the private one, while they disappear in the public studies as no more editing is allowed after publishing. Those fields include the study `Description` must be at least 20 characters describing its content and/or its purpose, while the `Keywords` are tags used to search for the study and increase its findability. Then comes the `License` with an `i`nformation sign. When hovering over the `i`, a brief description of the license appears. More about **[nmrXiv](https://nmrxiv.org/)** licenses can be found [here](/docs/submission-guides/licenses.md) 
+Moving down, there are three tabs: `About`, `Datasets`, and `Files`, with `About` being the one shown by default when entering a study, and the one similar to the project view. Its view differs in the private study from the public's one by having `edit` buttons next to the fields in the private one. Those fields include the study `Description` must be at least 20 characters describing its content and/or its purpose, while the `Keywords` are tags used to search for the study and increase its findability. Then comes the `License` with an `i`nformation sign. When hovering over the `i`, a brief description of the license appears. More about **[nmrXiv](https://nmrxiv.org/)** licenses can be found [here](/docs/submission-guides/licenses.md) 
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/study/edit.png" width="1000"/>
@@ -29,7 +30,6 @@ Moving down, there are three tabs: `About`, `Datasets`, and `Files`, with `About
 
 At the bottom is the **Sample chemical composition**, which also differs between private and public studies. This section is similar to the [**Sample Info**](/docs/submission-guides/submission/upload#assignement--meta-data---step-2) tab during the [submission upload](/docs/submission-guides/submission/upload.md). More on how to edit this section in [Sample chemical composition section](#sample-chemical-composition). More on how to use the structure editor in [Structure Editor Page](/docs/submission-guides/submission/editor.md).
 
-With public studies, the option of adding more structures disappears, removing the entire right side of the section, including the structure editor with the [SMILES](https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html) field and the percentage bar. On the left side, one can see all the added molecules with their percentage and [INChI](https://iupac.org/who-we-are/divisions/division-details/inchi/) in the molecules list.
 
 :::caution 
 The purpose of the **Sample chemical composition** section is to enable the user to add the molecules they are aware of their existence in the sample **before the NMR spectroscopy** along with their percentages. Molecules identified through the NMR analysis are located at the dataset level.
@@ -50,6 +50,20 @@ The `Files` tab view is similar in both private and public studies where the use
 <figcaption>Study Files tab</figcaption>
 </div>
 <br></br>
+
+
+### Public Study View
+
+<div style={{textAlign: 'center'}}>
+<img src="/img/study/public-view.png" width="1000"/>
+<figcaption>Public study view</figcaption>
+</div>
+<br></br>
+
+The public study view is similar to the [private's](#private-project-view), but still, there are some differences. Once a project is public, a green bar appears at the top informing the user that no more edits are possible, and any needed changes can be made as a new version.
+Moving down, a blue bar contains the citation details which can be adjusted according to the citation system (can be picked from the drop-down menu on the right). The citation includes a DOI to the study, which contains the study identifier (S46 in the image). This identifier always has the structure of "S", which stands for the study, and a number. Studies identifiers are [**Persistent Identifiers (PID)**](https://en.wikipedia.org/wiki/Persistent_identifier) within the repository. Additionally, all the `Edit` buttons disappear in public study as no more editing is allowed after publishing.
+
+With public studies, the option of adding more structures disappears, removing the entire right side of the section, including the structure editor with the [SMILES](https://www.daylight.com/dayhtml/doc/theory/theory.smiles.html) field and the percentage bar. On the left side, one can see all the added molecules with their percentage and [INChI](https://iupac.org/who-we-are/divisions/division-details/inchi/) in the molecules list.
 
 ## Create
 There are two ways to create studies. First is through the [submission pipeline](/docs/submission-guides/submission/upload.md) where the studies will be created within the submitted project. Second is after submission from within the project view using [`Manage Studies` button](/docs/submission-guides/data-model/project#manage-studies), which leads back to the [submission pipeline](/docs/submission-guides/submission/upload.md). 
