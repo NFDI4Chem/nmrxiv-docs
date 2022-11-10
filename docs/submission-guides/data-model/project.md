@@ -6,13 +6,14 @@ title: Project
 The concept of project in **[nmrXiv](https://nmrxiv.org/)** is similar to the [Investigation](https://isa-specs.readthedocs.io/en/latest/isamodel.html#investigation) one in [ISA model](https://isa-tools.org/format/specification.html). Therefore, the project helps to group related studies and describe their collective metadata. How those studies are related is up to the user. They can be a collection of studies used for teaching or in a thesis. They can also be a part of one [Investigation](https://isa-specs.readthedocs.io/en/latest/isamodel.html#investigation)  (several samples from one source). In other words, the relation can be based on the domain of the studies, their usage, or any other basis, as long the user is aware that all the data submitted to **[nmrXiv](https://nmrxiv.org/)** in [one process](/docs/submission-guides/submission/upload.md) are grouped as one project.
 
 ## Project View
+
+### Private Project View
 <div style={{textAlign: 'center'}}>
 <img src="/img/project/view.png" width="1000"/>
 <figcaption>Private project view</figcaption>
 </div>
 <br></br>
-
-Starting from the top, one can see the project **name** (FSU NMR Platform Samples), which must be unique within the workspace. Next to the name is a star to indicate whether the project is starred and to enable starring/de-starring, which helps to bookmark projects. Below, one can see the avatars of the users with whom the project is shared as circles with either the users' images or names' first letters. Clicking on those avatars enables sharing control (more on that in [Share](#share)). One can also click on `View details` to view and edit the project details (more on that in [Edit](#edit)), and to see the project's privacy and the user's ownership. Both those last two are not clickable, but they are editable from `View details` and `Share`. And finally, there are details about when the project was last updated.
+Starting with **private** projects, from the top, one can see the project **name** (FSU NMR Platform Samples), which must be unique within the workspace. Next to the name is a star to indicate whether the project is starred and to enable starring/de-starring, which helps to bookmark projects. Below, one can see the avatars of the users with whom the project is shared as circles with either the users' images or names' first letters. Clicking on those avatars enables sharing control (more on that in [Share](#share)). One can also click on `View details` to view and edit the project details (more on that in [Edit](#edit)), and to see the project's privacy and the user's ownership. Both those last two are not clickable, but they are editable from `View details` and `Share`. And finally, there are details about when the project was last updated.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/project/project-share.png" width="450"/>
@@ -21,7 +22,7 @@ Starting from the top, one can see the project **name** (FSU NMR Platform Sample
 
 To the right, there is the `Project Settings` (more on that in [Delete](#delete)), and the `Publish` button.  This button remains inactive as long as the data validation fails. To get more details on the failing validation and to fix it, the user can click on **Why can't I publish?**, which leads to the validation page (more on that in [Validation](#validation)).
 
-Moving down, the view of the private project differs from the public one by having `edit` buttons next to the fields in the earlier one, while they disappear in the public projects as no more editing is allowed after publishing. Those fields include the project's `Description`, which must be at least 20 characters describing its content and/or its purpose, while the `Keywords` are tags used to search for the project and increase its findability. Then comes the `License` with an `i`nformation sign. When hovering over the `i`, a brief description of the license appears. More about **[nmrXiv](https://nmrxiv.org/)** licenses can be found [here](/docs/submission-guides/licenses.md) 
+Moving down, the view of the **private** project differs from the **public** one by having the `Edit` buttons next to the fields in the earlier one. Those fields include the project's `Description`, which must be at least 20 characters describing its content and/or its purpose, while the `Keywords` are tags used to search for the project and increase its findability. Then comes the `License` with an `i`nformation sign. When hovering over the `i`, a brief description of the license appears. More about **[nmrXiv](https://nmrxiv.org/)** licenses can be found [here](/docs/submission-guides/licenses.md) 
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/project/edit.png" width="1000"/>
@@ -41,6 +42,17 @@ At the bottom are the studies included in the project supported by the `Search` 
 <img src="/img/project/studies.png" width="1000"/>
 </div>
 <br></br>
+
+### Public Project View
+
+<div style={{textAlign: 'center'}}>
+<img src="/img/project/public-project.png" width="1000"/>
+<figcaption>Public project view</figcaption>
+</div>
+<br></br>
+
+The public project view is similar to the [private's](#private-project-view), but still, there are some differences. Once a project is public, a green bar appears at the top informing the user that no more edits are possible, and any needed changes can be made as a new version.
+Moving down, a blue bar contains the citation details which can be adjusted according to the citation system (can be picked from the drop-down menu on the right). The citation includes a DOI to the project, which contains the project identifier (P7 in the image). This identifier always has the structure of "P", which stands for the project, and a number. Projects identifiers are [**Persistent Identifiers (PID)**](https://en.wikipedia.org/wiki/Persistent_identifier) within the repository. Additionally, all the `Edit` buttons disappear in public projects as no more editing is allowed after publishing.
 
 ## Create
 The only way to create projects is through the [Data Submission](/docs/submission-guides/submission/upload.md). 
