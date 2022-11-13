@@ -11,7 +11,7 @@ Data created on 17.10.2022 at 19:32:45
 Data updated on 17.10.2022 at 19:32:45
 
 ## Support by Ontologies
-[The BRENDA Tissue Ontology - BTO](https://www.ebi.ac.uk/ols/ontologies/bto) and [Experimental Factor Ontology - EFO](https://www.ebi.ac.uk/ols/ontologies/efo) areexcellent sources for organisms parts. 
+[The BRENDA Tissue Ontology - BTO](https://www.ebi.ac.uk/ols/ontologies/bto) and [Experimental Factor Ontology - EFO](https://www.ebi.ac.uk/ols/ontologies/efo) are excellent sources for organisms parts. 
 
 ## Data Sanitisation and Missing Values
 Organisms parts are found only in metabolomics-related repositories, i.e., MTBLS and MW. 
@@ -57,15 +57,15 @@ Organisms parts are found only in metabolomics-related repositories, i.e., MTBLS
   </tr>
   <tr>
     <td><b>MW</b></td>
-    <td>["Urine", "urine", "BLOOD", "Serum", "Plasma, Liver", ]</td>
+    <td>["Urine", "urine", "BLOOD", "Serum", "Plasma, Liver"]</td>
     <td>["blood serum", "urine", etc.]</td>
   </tr>
 </table>
 
 ## Results
-Organism parts details are available in metabolomics repositories. The use of different source of ontologies was easy to seen when using terms such us "Blood" vs "blood". Additionally, alues other than organism parts were wometimes provided, such as "Acetonitrile:H2O (1:3)". 
+Organism parts details are available in metabolomics repositories. The use of different sources of ontologies was easy to see when using terms such as "Blood" vs "blood". Additionally, values other than organism parts were sometimes provided, such as "Acetonitrile:H2O (1:3)". 
 
-Most used part was the blood serum, then come the urine, blood plasma, liver, and others.
+The most used part was the blood serum, then come the urine, blood plasma, liver, and others.
 
 <div style={{textAlign: 'center'}}>
 <img src="/img/analysis/part/all.png" width="700"/>
