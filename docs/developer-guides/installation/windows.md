@@ -83,6 +83,13 @@ npm install
 npm run dev
 ```
 
+* For all background jobs to run, nmrXiv is powered with [Redis](https://redis.com/) and packaged with [Horizon](https://github.com/laravel/horizon).
+Run the below command to publish all the jobs and start the worker for the background jobs to execute.
+```bash
+./vendor/bin/sail artisan horizon:publish
+./vendor/bin/sail artisan horizon
+```
+
 Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost). But first, you will be prompted to <b>Generate app key</b>. After pressing the generation button, the following message is shown on the screen: "The solution was executed successfully. Refresh now." After refreshing, you can access the application.
 
 Run `code .` to open the code base to your VSCode editor. 
