@@ -11,6 +11,7 @@ The whole project is a package of below services and features.
 * [Selenium](https://www.selenium.dev/documentation/)
 * [Meilisearch](https://docs.meilisearch.com/)
 * [MailHog](https://mailtrap.io/blog/mailhog-explained/)
+* [Minio](https://min.io/)
 
 #### Ubuntu 20.04
 
@@ -68,6 +69,27 @@ Run the below command to publish all the jobs and start the worker for the backg
 ```bash
 ./vendor/bin/sail artisan horizon:publish
 ./vendor/bin/sail artisan horizon
+```
+
+* To configure file object storage, you should have [Minio](https://min.io/) instance already running in your local(for more details check your docker-compose file). For the first time you have to generate the Access Keys, create the buckets and configure that in your `.env` file.
+    * Open the Minio instance running in your [http://localhost:8900](http://localhost:8900/)
+    * Login with user - `sail` and password - `password`
+    * Go to Access Keys and create a new access key.
+    * Create the two buckets with Read Write Access as `nmrxiv` and `nmrxiv-public`
+    * Update Filesystem driver and the AWS Keys as below in the `.env` file. Make sure you point your `AWS_URL` to Minio API which is running in port 9000.
+
+```bash
+FILESYSTEM_DRIVER=minio
+FILESYSTEM_DRIVER_PUBLIC=minio_public
+
+AWS_ACCESS_KEY_ID=RjcSdMxMiiGYycQV
+AWS_SECRET_ACCESS_KEY=jCq9hAvsW4lmMzLzdyuvmoX7dqBpSc7W
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=nmrxiv
+AWS_ENDPOINT=http://localhost:9000/
+AWS_URL=http://localhost:9000/
+AWS_USE_PATH_STYLE_ENDPOINT=false
+AWS_BUCKET_PUBLIC=nmrxiv-public
 ```
 
 Once the application's Docker containers have been started, you can access the application in your web browser at [http://localhost](http://localhost). But first, you will be prompted to <b>Generate app key</b>. After pressing the generation button, the following message is shown on the screen: "The solution was executed successfully. Refresh now." After refreshing, you access the application.
