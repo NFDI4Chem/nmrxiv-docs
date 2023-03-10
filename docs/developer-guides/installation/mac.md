@@ -69,14 +69,14 @@ Run the below command to publish all the jobs and start the worker for the backg
     * Login with user - `sail` and password - `password`
     * Go to Access Keys and create a new access key.
     * Create the two buckets with Read Write Access as `nmrxiv` and `nmrxiv-public`
-    * Update Filesystem driver and the AWS Keys as below in the `.env` file. Make sure you point your `AWS_URL` to Minio API which is running in port 9000.
+    * Update the Filesystem driver and the AWS Keys as below in the `.env` file. Make sure you point your `AWS_URL` to Minio API endpoint which is running in port 9000. Please define both the public and private driver. The public bucket is used to store all the files which can be publicly accessible through out the application, such as profile & project images. All the private files uploaded by the user will end up in the private bucket.
 
 ```bash
 FILESYSTEM_DRIVER=minio
 FILESYSTEM_DRIVER_PUBLIC=minio_public
 
-AWS_ACCESS_KEY_ID=RjcSdMxMiiGYycQV
-AWS_SECRET_ACCESS_KEY=jCq9hAvsW4lmMzLzdyuvmoX7dqBpSc7W
+AWS_ACCESS_KEY_ID=**********
+AWS_SECRET_ACCESS_KEY=************
 AWS_DEFAULT_REGION=us-east-1
 AWS_BUCKET=nmrxiv
 AWS_ENDPOINT=http://localhost:9000/
