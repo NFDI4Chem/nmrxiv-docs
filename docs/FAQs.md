@@ -48,7 +48,7 @@ You can assign roles to people with whom you share content:
 * **Reviewer** - Can only read the project, study, and dataset.
 
 ### How can I delete or edit my account?
-You can edit your account details by heading to your name at the top right corner and clicking on the `Account` tab from the drop-down. To delete your account, please reach out to our [Helpdesk](https://www.nfdi4chem.de/index.php/helpdesk/), or write to us at info@nmrxiv.org.
+You can edit your account details by heading to your name at the top right corner and clicking on the `Account` tab from the drop-down. To delete your account, please reach out to our [Helpdesk](https://www.nfdi4chem.de/index.php/helpdesk/), or write to us at info.nmrxiv@uni-jena.de.
 
 ### How can I license my resources, and which license to choose?
 You can license your project during or after submission as long as it is private. The license will propagate to the underlying studies, but you can still change the studies licenses. For more details about licenses and when to use each one, please visit the [licenses page](/docs/submission-guides/licenses.md).
@@ -67,6 +67,6 @@ If the above criteria are not met
 * Click [here](https://github.com/NFDI4Chem/nmrxiv/issues/new/choose) to report a new one under appropiate category.
 
 ### How to reach to you?
-Please write to us at info@nmrxiv.org or reach out to our [Helpdesk](https://www.nfdi4chem.de/index.php/helpdesk/). 
+Please write to us at info.nmrxiv@uni-jena.de or reach out to our [Helpdesk](https://www.nfdi4chem.de/index.php/helpdesk/). 
 You can also leave us a message via our support bubble which you find in the left down corner on our [application](https://nmrxiv.org/) page. 
 We will try to get back to your queries as soon as possible.
